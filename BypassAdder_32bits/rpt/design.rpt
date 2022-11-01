@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+------------------+-----------+------------
+                        |                  |Area (squm)|Leakage (uW)
+------------------------+------------------+-----------+------------
+Design Name             |BypassAdder_32bits|           |            
+  Total Instances       |               160|        204|       4.645
+    Macros              |                 0|          0|       0.000
+    Pads                |                 0|          0|       0.000
+    Phys                |                 0|          0|       0.000
+    Blackboxes          |                 0|          0|       0.000
+    Cells               |               160|        204|       4.645
+      Buffers           |                 0|          0|       0.000
+      Inverters         |                 0|          0|       0.000
+      Clock-Gates       |                 0|          0|       0.000
+      Combinational     |               160|        204|       4.645
+      Latches           |                 0|          0|       0.000
+      FlipFlops         |                 0|          0|       0.000
+       Single-Bit FF    |                 0|          0|       0.000
+       Multi-Bit FF     |                 0|          0|       0.000
+       Clock-Gated      |                 0|           |            
+       Bits             |                 0|          0|       0.000
+         Load-Enabled   |                 0|           |            
+         Clock-Gated    |                 0|           |            
+  Tristate Pin Count    |                 0|           |            
+Physical Info           |Placed            |           |            
+  Chip Size (mm x mm)   |0.078 x 0.078     |       6154|            
+  Fixed Cell Area       |                  |          0|            
+    Phys Only           |                 0|          0|            
+  Placeable Area        |                  |        335|            
+  Movable Cell Area     |                  |        204|            
+  Utilization (%)       |                60|           |            
+  Chip Utilization (%)  |                60|           |            
+  Total Wire Length (mm)|             4.006|           |            
+  Longest Wire (mm)     |             0.043|           |            
+  Average Wire (mm)     |             0.041|           |            
+------------------------+------------------+-----------+------------
