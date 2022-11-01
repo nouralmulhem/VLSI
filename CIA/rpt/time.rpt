@@ -1,0 +1,107 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: input2[1]
+    (Clocked by vsysclk R)
+Endpoint: carry
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 2219.7
+Slack: 17280.3
+Logic depth: 42
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+input2[1]                {set_input_delay}        r   1000.0   1000.0   1000.0                        2.2     10.1      2    40,    0                       
+ripple_adder_inst/genblk1_1_full_adder_inst/i_0_0/B->Z
+                         XOR2_X2                 rf   1017.7     17.5     17.5      0.0      0.0      0.6      7.9      2    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_1_full_adder_inst/i_0_2/A1->ZN
+                         AOI22_X4                fr   1078.8     61.1     61.1      0.0     14.5      0.3     25.8      1    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_1_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf   1087.1      8.3      8.3      0.0     50.3      0.6      8.3      2    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_2_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr   1149.1     62.2     62.0      0.2      3.9      0.3     25.8      1    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_2_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf   1157.4      8.5      8.3      0.2     50.3      0.6      8.3      2    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_3_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr   1219.4     62.0     62.0      0.0      3.9      0.3     25.8      1    40,   39  /PD_TOP        (1.10)
+ripple_adder_inst/genblk1_3_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf   1226.4      7.0      7.0      0.0     50.3      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_4_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1250.9     24.5     24.5      0.0      3.6      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_4_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1276.5     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_4_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1302.1     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_4_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1325.8     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_4_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   1365.6     39.8     39.8      0.0      5.1      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_8_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1392.6     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_8_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1418.2     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_8_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1443.8     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_8_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1467.5     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_8_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   1507.3     39.8     39.8      0.0      5.1      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_12_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1534.3     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_12_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1559.9     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_12_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1585.5     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_12_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1609.2     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_12_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   1649.0     39.8     39.8      0.0      5.1      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_16_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1676.0     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_16_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1701.6     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_16_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1727.2     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_16_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1750.9     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_16_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   1790.7     39.8     39.8      0.0      5.1      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_20_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1817.7     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_20_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1843.3     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_20_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1868.9     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_20_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1892.6     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_20_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   1932.4     39.8     39.8      0.0      5.1      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_24_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1959.4     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_24_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   1985.0     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_24_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2010.6     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_24_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2034.3     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_24_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   2074.1     39.8     39.8      0.0      5.1      2.9      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_28_ripple_adder_ha_inst/genblk2_0_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2101.1     27.0     27.0      0.0      8.7      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_28_ripple_adder_ha_inst/genblk2_1_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2126.7     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_28_ripple_adder_ha_inst/genblk2_2_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2152.3     25.6     25.6      0.0      6.0      0.5      5.9      2    40,   39  /PD_TOP        (1.10)
+genblk1_28_ripple_adder_ha_inst/genblk2_3_half_adder/i_0_1/A1->ZN
+                         AND2_X4                 ff   2176.0     23.7     23.7      0.0      6.0      0.3      2.4      1    40,   39  /PD_TOP        (1.10)
+genblk1_28_ripple_adder_ha_inst/i_0_0/A1->ZN
+                         OR2_X4                  ff   2219.5     43.5     43.5      0.0      5.1      2.4     12.4      1    40,   39  /PD_TOP        (1.10)
+carry                                             f   2219.7      0.2               0.2     10.5                             43,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O

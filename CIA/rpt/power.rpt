@@ -1,0 +1,16 @@
+warning: No library characterized for (process = 1.00 voltage = 0.85 temperature = 25.00) can be found in the database for power domain '/PD_TOP'  [NL-174]
+Report Power (instances with prefix '*' are included in total) : 
+-----+--------------------------------+--------------------+---------------------+-------------------+-----------------
+     | Instance                       | Internal Power(uw) | Switching Power(uw) | Leakage Power(uw) | Total Power(uw) 
+-----+--------------------------------+--------------------+---------------------+-------------------+-----------------
+1    |*ripple_adder_inst              |            0.863989|             2.608657|           0.419107|         3.891753
+2    |*genblk1_4_ripple_adder_ha_inst |            1.375478|             3.130125|           0.686722|         5.192325
+3    |*genblk1_8_ripple_adder_ha_inst |            1.376447|             3.134336|           0.686722|         5.197505
+4    |*genblk1_12_ripple_adder_ha_inst|            1.376491|             3.134619|           0.686722|         5.197832
+5    |*genblk1_16_ripple_adder_ha_inst|            1.376495|             3.135430|           0.686722|         5.198647
+6    |*genblk1_20_ripple_adder_ha_inst|            1.376496|             3.135584|           0.686722|         5.198802
+7    |*genblk1_24_ripple_adder_ha_inst|            1.376498|             3.136389|           0.686722|         5.199609
+8    |*genblk1_28_ripple_adder_ha_inst|            1.379446|             3.231723|           0.686722|         5.297891
+9    |                                |                    |                     |                   |                 
+10   |*TOTAL                          |           10.501340|            24.646866|           5.226158|        40.374367
+-----+--------------------------------+--------------------+---------------------+-------------------+-----------------
