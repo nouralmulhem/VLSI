@@ -1,0 +1,53 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: b[4]
+    (Clocked by vsysclk R)
+Endpoint: sum[31]
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 1925.1
+Slack: 17574.9
+Logic depth: 15
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+b[4]                     {set_input_delay}        r   1000.0   1000.0   1000.0                        2.4     14.6      4    86,   42                       
+genblk1_1_c1/r11/genblk1_0_f1/h1/i_0_0/B->Z
+                         XOR2_X2*                rf   1127.4    127.2    127.2      0.0    707.3      0.5     28.1      2    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_0_f1/i_0_0/A1->ZN
+                         OR2_X4                  ff   1171.8     44.4     44.4      0.0     15.3      0.5      6.2      2    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_1_f1/h2/i_0_1/A2->ZN
+                         AND2_X4                 ff   1199.2     27.4     27.4      0.0      8.8      0.3      2.4      1    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_1_f1/i_0_0/A1->ZN
+                         OR2_X4                  ff   1239.3     40.1     40.1      0.0      5.1      0.5      6.2      2    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_2_f1/h2/i_0_1/A2->ZN
+                         AND2_X4                 ff   1266.7     27.4     27.4      0.0      8.8      0.3      2.4      1    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_2_f1/i_0_0/A1->ZN
+                         OR2_X4                  ff   1306.8     40.1     40.1      0.0      5.1      0.5      6.2      2    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_3_f1/h2/i_0_1/A2->ZN
+                         AND2_X4                 ff   1334.2     27.4     27.4      0.0      8.8      0.3      2.4      1    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/r11/genblk1_3_f1/i_0_0/A1->ZN
+                         OR2_X4                  ff   1371.0     36.8     36.8      0.0      5.1      0.3      1.6      1    43,   42  /PD_TOP        (1.10)
+genblk1_1_c1/carry_sel/i_0_0/B->Z
+                         MUX2_X2                 ff   1437.5     66.5     66.5      0.0      7.5      1.6     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_2_c1/carry_sel/i_0_0/S->Z
+                         MUX2_X2                 fr   1512.8     75.5     75.3      0.2     15.6      1.6     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_3_c1/carry_sel/i_0_0/S->Z
+                         MUX2_X2                 rf   1600.0     87.2     87.2      0.0     19.6      1.6     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_4_c1/carry_sel/i_0_0/S->Z
+                         MUX2_X2                 fr   1675.3     75.3     75.3      0.0     15.6      1.6     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_5_c1/carry_sel/i_0_0/S->Z
+                         MUX2_X2                 rf   1762.5     87.2     87.2      0.0     19.6      1.6     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_6_c1/carry_sel/i_0_0/S->Z
+                         MUX2_X2                 fr   1837.8     75.3     75.3      0.0     15.6      4.2     12.9      5    43,   42  /PD_TOP        (1.10)
+genblk1_7_c1/sum_sel/i_0_3/S->Z
+                         MUX2_X2                 rf   1924.8     87.0     87.0      0.0     19.6      2.7     12.7      1    43,   42  /PD_TOP        (1.10)
+sum[31]                                           f   1925.1      0.3               0.3     15.5                             46,   86                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O
