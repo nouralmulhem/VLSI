@@ -8,7 +8,8 @@ module ComplementAdder
    input [WIDTH-1:0] i_add1,
    input [WIDTH-1:0] i_add2,
    output [WIDTH-1:0]  o_result,
-   output o_carry
+   output o_carry,
+   output shift_flag
    );
 
    wire test;
@@ -55,4 +56,6 @@ always@* begin
               );
       end
   endgenerate
+  assign shift_flag=(test==1'b0 && o_carry==1'b1)? 1'b1:1'b0 ;
+
 endmodule
