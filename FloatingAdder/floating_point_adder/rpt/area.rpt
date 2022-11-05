@@ -1,0 +1,98 @@
+Report Instance Areas: 
+-----+-------------------------------+----------------------+-----+---------
+     |Instance                       |Module                |Cells|Cell Area
+-----+-------------------------------+----------------------+-----+---------
+1    |top                            |                      |  933|     1204
+2    |  comp1                        |comparator            |   80|       96
+3    |    subtract_1                 |subtractor8bits__0_226|   52|       51
+4    |      half_subtractor1         |halfsubtractor__0_225 |    3|        3
+5    |      genblk1_1_full_subtractor|subtractor__0_222     |    7|        7
+6    |        h1                     |halfsubtractor__0_221 |    3|        3
+7    |        h2                     |halfsubtractor__0_218 |    3|        3
+8    |      genblk1_2_full_subtractor|subtractor__0_214     |    7|        7
+9    |        h1                     |halfsubtractor__0_213 |    3|        3
+10   |        h2                     |halfsubtractor__0_210 |    3|        3
+11   |      genblk1_3_full_subtractor|subtractor__0_206     |    7|        7
+12   |        h1                     |halfsubtractor__0_205 |    3|        3
+13   |        h2                     |halfsubtractor__0_202 |    3|        3
+14   |      genblk1_4_full_subtractor|subtractor__0_198     |    7|        7
+15   |        h1                     |halfsubtractor__0_197 |    3|        3
+16   |        h2                     |halfsubtractor__0_194 |    3|        3
+17   |      genblk1_5_full_subtractor|subtractor__0_190     |    7|        7
+18   |        h1                     |halfsubtractor__0_189 |    3|        3
+19   |        h2                     |halfsubtractor__0_186 |    3|        3
+20   |      genblk1_6_full_subtractor|subtractor__0_182     |    7|        7
+21   |        h1                     |halfsubtractor__0_181 |    3|        3
+22   |        h2                     |halfsubtractor__0_178 |    3|        3
+23   |      genblk1_7_full_subtractor|subtractor__0_174     |    7|        7
+24   |        h1                     |halfsubtractor__0_173 |    3|        3
+25   |        h2                     |halfsubtractor__0_170 |    3|        3
+26   |    complement2                |twosComplement        |   13|       17
+27   |  m1                           |Mux__0_321            |   24|       45
+28   |  m2                           |Mux                   |   24|       45
+29   |  shift1                       |Shifter               |  128|      154
+30   |  adder                        |ComplementAdder       |  309|      429
+31   |    genblk1_0_full_adder_inst  |full_adder__0_230     |    2|        3
+32   |    genblk1_1_full_adder_inst  |full_adder__0_234     |    4|        5
+33   |    genblk1_2_full_adder_inst  |full_adder__0_238     |    4|        5
+34   |    genblk1_3_full_adder_inst  |full_adder__0_242     |    4|        5
+35   |    genblk1_4_full_adder_inst  |full_adder__0_246     |    4|        5
+36   |    genblk1_5_full_adder_inst  |full_adder__0_250     |    4|        5
+37   |    genblk1_6_full_adder_inst  |full_adder__0_254     |    4|        5
+38   |    genblk1_7_full_adder_inst  |full_adder__0_258     |    4|        5
+39   |    genblk1_8_full_adder_inst  |full_adder__0_262     |    4|        5
+40   |    genblk1_9_full_adder_inst  |full_adder__0_266     |    4|        5
+41   |    genblk1_10_full_adder_inst |full_adder__0_270     |    4|        5
+42   |    genblk1_11_full_adder_inst |full_adder__0_274     |    4|        5
+43   |    genblk1_12_full_adder_inst |full_adder__0_278     |    4|        5
+44   |    genblk1_13_full_adder_inst |full_adder__0_282     |    4|        5
+45   |    genblk1_14_full_adder_inst |full_adder__0_286     |    4|        5
+46   |    genblk1_15_full_adder_inst |full_adder__0_290     |    4|        5
+47   |    genblk1_16_full_adder_inst |full_adder__0_294     |    4|        5
+48   |    genblk1_17_full_adder_inst |full_adder__0_298     |    4|        5
+49   |    genblk1_18_full_adder_inst |full_adder__0_302     |    4|        5
+50   |    genblk1_19_full_adder_inst |full_adder__0_306     |    4|        5
+51   |    genblk1_20_full_adder_inst |full_adder__0_310     |    4|        5
+52   |    genblk1_21_full_adder_inst |full_adder__0_314     |    4|        5
+53   |    genblk1_22_full_adder_inst |full_adder__0_318     |    4|        5
+54   |    genblk1_23_full_adder_inst |full_adder            |    4|        5
+55   |  output_normalize             |Normalize             |  305|      361
+56   |  emans                        |ControlledIncrementor |   62|       73
+57   |    subtract_1                 |subtractor8bits       |   38|       38
+58   |      half_subtractor1         |halfsubtractor        |    3|        3
+59   |      genblk1_1_full_subtractor|subtractor__0_126     |    7|        7
+60   |        h1                     |halfsubtractor__0_125 |    3|        3
+61   |        h2                     |halfsubtractor__0_122 |    3|        3
+62   |      genblk1_2_full_subtractor|subtractor__0_134     |    7|        7
+63   |        h1                     |halfsubtractor__0_133 |    3|        3
+64   |        h2                     |halfsubtractor__0_130 |    3|        3
+65   |      genblk1_3_full_subtractor|subtractor__0_142     |    7|        7
+66   |        h1                     |halfsubtractor__0_141 |    3|        3
+67   |        h2                     |halfsubtractor__0_138 |    3|        3
+68   |      genblk1_4_full_subtractor|subtractor__0_150     |    7|        7
+69   |        h1                     |halfsubtractor__0_149 |    3|        3
+70   |        h2                     |halfsubtractor__0_146 |    3|        3
+71   |      genblk1_5_full_subtractor|subtractor__0_158     |    3|        3
+72   |        h2                     |halfsubtractor__0_154 |    3|        3
+73   |      genblk1_6_full_subtractor|subtractor__0_166     |    3|        3
+74   |        h2                     |halfsubtractor__0_162 |    3|        3
+75   |      genblk1_7_full_subtractor|subtractor            |    1|        2
+76   |        h2                     |halfsubtractor__0_118 |    1|        2
+77   |    adder_1                    |fullAdder8bit         |   14|       18
+78   |      genblk1_0_f1             |fullAdder__0_64       |    1|        1
+79   |        h1                     |halfAdder__0_63       |    1|        1
+80   |      genblk1_1_f1             |fullAdder__0_72       |    2|        3
+81   |        h2                     |halfAdder__0_68       |    2|        3
+82   |      genblk1_2_f1             |fullAdder__0_80       |    2|        3
+83   |        h2                     |halfAdder__0_76       |    2|        3
+84   |      genblk1_3_f1             |fullAdder__0_88       |    2|        3
+85   |        h2                     |halfAdder__0_84       |    2|        3
+86   |      genblk1_4_f1             |fullAdder__0_96       |    2|        3
+87   |        h2                     |halfAdder__0_92       |    2|        3
+88   |      genblk1_5_f1             |fullAdder__0_104      |    2|        3
+89   |        h2                     |halfAdder__0_100      |    2|        3
+90   |      genblk1_6_f1             |fullAdder__0_112      |    2|        3
+91   |        h2                     |halfAdder__0_108      |    2|        3
+92   |      genblk1_7_f1             |fullAdder             |    1|        2
+93   |        h2                     |halfAdder             |    1|        2
+-----+-------------------------------+----------------------+-----+---------
