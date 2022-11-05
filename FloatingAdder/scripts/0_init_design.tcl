@@ -21,8 +21,8 @@ set output_dir "${ekit_dir}/${top_module}"
 
 ###########################TODO RTL and Constraints paths ######################
 set rtl_list { "comparator.v" "ComplementAdder.v" "controlledIncrementor.v" "floating_point_adder.v"
-"full_adder.v" "fullAdder.v" "Mux.v" "Normalize.v" "Shifter.v"
-"subtractor.v" "subtractor8bits.v" "twosComplement8bits.v"}
+"full_adder.v" "fullAdder.v" "Mux.v" "Normalize.v" "Shifter.v" "OverFlow.v" "UnderFlow.v"
+"subtractor.v" "subtractor8bits.v" "twosComplement8bits.v" "subtractor24bit.v"}
 set demo_adder_sdc_files "${ekit_dir}/constraints/demo_adder_func.sdc"
 ################################# RTL and Libraries ###########################################
 
