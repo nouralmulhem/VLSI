@@ -1,0 +1,192 @@
+Report for group default
+Report for group I2R
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: inputA[24]
+    (Clocked by vsysclk R)
+Endpoint: under_flow
+    (Clocked by vsysclk R)
+Path Group: I2O
+Data required time: 19500.0
+    (Clock shift: 20000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 4586.2
+Slack: 14913.8
+Logic depth: 115
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+inputA[24]               {set_input_delay}        r   1000.0   1000.0   1000.0                        3.2     12.5      3   108,   51                       
+comp1/subtract_1/genblk1_1_full_subtractor/h1/i_0_0/A->Z
+                         XOR2_X2                 rr   1058.2     57.8     57.8      0.0      0.0      0.5      8.0      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_1_full_subtractor/h2/i_0_2/A2->ZN
+                         NOR2_X2                 rf   1070.8     12.6     12.6      0.0     35.0      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_1_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1127.9     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_2_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1140.5     13.0     12.6      0.4     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_2_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1147.3      7.2      6.8      0.4      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_2_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1204.4     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_3_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1217.0     12.6     12.6      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_3_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1223.8      6.8      6.8      0.0      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_3_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1280.9     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_4_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1293.5     12.6     12.6      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_4_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1300.3      6.8      6.8      0.0      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_4_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1357.4     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_5_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1370.0     12.6     12.6      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_5_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1376.8      6.8      6.8      0.0      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_5_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1433.9     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_6_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1446.5     12.6     12.6      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_6_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1453.3      6.8      6.8      0.0      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_6_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1510.4     57.1     57.1      0.0      5.2      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_7_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  fr   1523.0     12.6     12.6      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_7_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 rf   1529.8      6.8      6.8      0.0      5.3      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+comp1/subtract_1/genblk1_7_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 ff   1615.2     85.4     85.4      0.0      5.2     12.6    126.6     40    54,   54  /PD_TOP        (1.10)
+comp1/i_0_3/S->Z         MUX2_X2*                fr   1724.2    109.0    108.5      0.5     15.3      2.6     60.9      9    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_82/A2->ZN   NOR2_X4*                rf   1749.2     25.0     24.9      0.1     15.3      1.4     34.2      4    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_81/A->ZN    INV_X8                  fr   1770.1     20.9     20.9      0.0     15.3      1.8     26.2      6    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_80/A1->ZN   NOR2_X4                 rf   1785.2     15.1     15.1      0.0     10.7      2.2     21.7      6    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_5/B2->ZN    AOI221_X4               fr   1921.9    136.7    136.6      0.1      9.6      0.3     25.8      1    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_4/A->ZN     INV_X8                  rf   1928.5      6.6      6.6      0.0     18.3      0.3      2.9      1    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_3/A->ZN     AOI221_X2               fr   2004.8     76.3     76.3      0.0      3.3      0.4      4.2      1    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_2/A->ZN     AOI21_X4                rf   2036.3     31.5     31.5      0.0     48.1      0.3     25.7      1    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_1/A->ZN     INV_X8                  fr   2049.3     13.0     13.0      0.0     16.6      0.3      4.4      1    54,   54  /PD_TOP        (1.10)
+shift1/i_0/i_0/B1->ZN    OAI22_X4                rf   2073.9     24.6     24.6      0.0      5.3      1.5     16.7      5    54,   54  /PD_TOP        (1.10)
+adder/i_5/i_44/A3->ZN    OR3_X4                  ff   2152.1     78.2     78.2      0.0     16.4      0.8      8.5      3    54,   54  /PD_TOP        (1.10)
+adder/i_5/i_43/A1->ZN    OR2_X4                  ff   2195.5     43.4     43.4      0.0     13.1      0.5      6.1      2    54,   54  /PD_TOP        (1.10)
+adder/i_5/i_42/A1->ZN    OR2_X4                  ff   2239.5     44.0     44.0      0.0      8.8      0.9     10.5      3    54,   54  /PD_TOP        (1.10)
+adder/i_5/i_5/B->Z       XOR2_X1                 ff   2294.6     55.1     55.1      0.0     10.0      0.3      1.6      1    54,   54  /PD_TOP        (1.10)
+adder/i_1_27/A->Z        MUX2_X2                 ff   2360.9     66.3     66.3      0.0     11.1      0.9     12.1      3    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_55/B2->ZN  OAI21_X4                fr   2394.9     34.0     34.0      0.0     15.2      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_54/A2->ZN  NAND2_X4                rf   2412.9     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_52/A->ZN   OAI21_X4                fr   2432.6     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_51/A2->ZN  NAND2_X4                rf   2450.6     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_49/A->ZN   OAI21_X4                fr   2470.3     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_48/A2->ZN  NAND2_X4                rf   2488.3     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_46/A->ZN   OAI21_X4                fr   2508.0     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_45/A2->ZN  NAND2_X4                rf   2526.0     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_43/A->ZN   OAI21_X4                fr   2545.7     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_42/A2->ZN  NAND2_X4                rf   2563.7     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_40/A->ZN   OAI21_X4                fr   2583.4     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_39/A2->ZN  NAND2_X4                rf   2601.4     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_37/A->ZN   OAI21_X4                fr   2621.1     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_36/A2->ZN  NAND2_X4                rf   2639.1     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_34/A->ZN   OAI21_X4                fr   2658.8     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_33/A2->ZN  NAND2_X4                rf   2676.8     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_31/A->ZN   OAI21_X4                fr   2696.5     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_30/A2->ZN  NAND2_X4                rf   2714.5     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_28/A->ZN   OAI21_X4                fr   2734.2     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_27/A2->ZN  NAND2_X4                rf   2752.2     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_25/A->ZN   OAI21_X4                fr   2771.9     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_24/A2->ZN  NAND2_X4                rf   2789.9     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_22/A->ZN   OAI21_X4                fr   2809.6     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_21/A2->ZN  NAND2_X4                rf   2827.6     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_19/A->ZN   OAI21_X4                fr   2847.3     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_18/A2->ZN  NAND2_X4                rf   2865.3     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_16/A->ZN   OAI21_X4                fr   2885.0     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_15/A2->ZN  NAND2_X4                rf   2903.0     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_13/A->ZN   OAI21_X4                fr   2922.7     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_12/A2->ZN  NAND2_X4                rf   2940.7     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_10/A->ZN   OAI21_X4                fr   2960.4     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_9/A2->ZN   NAND2_X4                rf   2978.4     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_7/A->ZN    OAI21_X4                fr   2998.1     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_6/A2->ZN   NAND2_X4                rf   3016.1     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_4/A->ZN    OAI21_X4                fr   3035.8     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_3/A2->ZN   NAND2_X4                rf   3053.8     18.0     18.0      0.0     18.3      0.6      8.0      2    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_1/A->ZN    OAI21_X4                fr   3073.5     19.7     19.7      0.0      8.4      0.3      4.2      1    54,   54  /PD_TOP        (1.10)
+adder/cla/i_0_0/A2->ZN   NAND2_X4                rf   3090.7     17.2     17.2      0.0     18.3      0.6      6.6      2    54,   54  /PD_TOP        (1.10)
+adder/i_1_70/A->ZN       AOI21_X4*               fr   3173.8     83.1     83.1      0.0      7.9      7.3     59.5     23    54,   54  /PD_TOP        (1.10)
+adder/i_1_62/S->Z        MUX2_X2*                rf   3283.6    109.8    109.6      0.2     15.3      2.4     48.4      7    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_61/A4->ZN
+                         NOR4_X4*                fr   3430.6    147.0    146.9      0.1     15.3      0.6     30.0      2    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_76/A->ZN
+                         INV_X8                  rf   3438.4      7.8      7.8      0.0     15.3      0.6      7.3      2    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_77/A1->ZN
+                         NOR2_X4                 fr   3468.7     30.3     30.3      0.0      3.8      0.9     11.4      3    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_79/A1->ZN
+                         AND2_X4                 rr   3520.1     51.4     51.4      0.0     23.6      0.9     32.7      3    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_85/A->ZN
+                         INV_X8                  rf   3530.3     10.2     10.2      0.0     23.1      0.9     13.1      3    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_86/A1->ZN
+                         NOR2_X4*                fr   3585.3     55.0     55.0      0.0      4.4      0.8     34.0      3    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_115/A->ZN
+                         INV_X8                  rf   3593.6      8.3      8.3      0.0     15.3      0.6      8.8      2    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_116/A1->ZN
+                         NOR3_X4*                fr   3678.8     85.2     85.2      0.0      4.0      1.6     39.3      5    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_131/A->ZN
+                         INV_X8                  rf   3687.1      8.3      8.3      0.0     15.3      0.6      8.9      2    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_140/A1->ZN
+                         NOR3_X4                 fr   3736.8     49.7     49.7      0.0      4.0      0.9     12.8      3    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_173/A1->ZN
+                         NAND3_X4                rf   3776.8     40.0     40.0      0.0     42.9      1.6     18.5      5    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_186/A1->ZN
+                         NOR2_X4*                fr   3835.8     59.0     59.0      0.0     19.8      2.6     30.4      8    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_236/A1->ZN
+                         AND4_X4*                rr   3911.0     75.2     75.1      0.1     15.3      2.1     45.7      6    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_295/A1->ZN
+                         AOI22_X4                rf   3927.2     16.2     16.1      0.1     15.3      0.3      4.4      1    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_296/B1->ZN
+                         AOI21_X4                fr   3955.0     27.8     27.8      0.0     12.4      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+output_normalize/i_0_297/A1->ZN
+                         NOR2_X4*                rf   3980.4     25.4     25.4      0.0     21.9      0.8     33.9      3    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_1_full_subtractor/h1/i_0_0/B->Z
+                         XOR2_X2                 ff   4044.5     64.1     64.1      0.0     15.3      0.5      8.0      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_1_full_subtractor/h2/i_0_2/A2->ZN
+                         NOR2_X2                 fr   4072.5     28.0     28.0      0.0     14.6      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_1_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 rr   4113.0     40.5     40.5      0.0     13.5      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_2_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  rf   4120.0      7.0      7.0      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_2_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 fr   4138.7     18.7     18.7      0.0      3.5      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_2_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 rr   4179.2     40.5     40.5      0.0     13.5      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_3_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  rf   4186.2      7.0      7.0      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_3_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 fr   4204.9     18.7     18.7      0.0      3.5      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_3_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 rr   4245.4     40.5     40.5      0.0     13.5      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_4_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  rf   4252.4      7.0      7.0      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_4_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X2                 fr   4271.1     18.7     18.7      0.0      3.5      0.3      2.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_4_full_subtractor/i_0_0/A2->ZN
+                         OR2_X4*                 rr   4311.6     40.5     40.5      0.0     13.5      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_5_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  rf   4318.6      7.0      7.0      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_5_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X4*                fr   4370.6     52.0     52.0      0.0      3.5      0.5     29.4      2    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_6_full_subtractor/h2/i_0_1/A->ZN
+                         INV_X8                  rf   4377.6      7.0      7.0      0.0     15.3      0.3      4.5      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_6_full_subtractor/h2/i_0_2/A1->ZN
+                         NOR2_X4                 fr   4397.8     20.2     20.2      0.0      3.5      0.3      3.7      1    54,   54  /PD_TOP        (1.10)
+emans/subtract_1/genblk1_7_full_subtractor/h2/i_0_0/B->Z
+                         XOR2_X2                 rr   4450.3     52.5     52.5      0.0     14.8      0.3      4.4      1    54,   54  /PD_TOP        (1.10)
+emans/i_0_15/B2->ZN      AOI22_X4                rf   4487.7     37.4     37.4      0.0     26.7      0.3     25.8      1    54,   54  /PD_TOP        (1.10)
+emans/i_0_14/A->ZN       INV_X8                  fr   4509.7     22.0     22.0      0.0     21.8      0.7     21.6      3    54,   54  /PD_TOP        (1.10)
+under/i_0_3/A4->ZN       NOR4_X2                 rf   4520.4     10.7     10.7      0.0      9.6      0.4      2.7      1    54,   54  /PD_TOP        (1.10)
+under/i_0_4/A4->ZN       AND4_X4                 ff   4554.7     34.3     34.3      0.0      6.8      0.4      4.0      1    54,   54  /PD_TOP        (1.10)
+under/i_0_8/A1->ZN       NAND4_X4                fr   4570.7     16.0     16.0      0.0      6.5      0.4      4.5      1    54,   54  /PD_TOP        (1.10)
+under/i_0_9/A1->ZN       NOR4_X4                 rf   4585.8     15.1     15.1      0.0     14.8      3.2     13.2      1    54,   54  /PD_TOP        (1.10)
+under_flow                                        f   4586.2      0.4               0.4      9.5                            108,   51                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O
