@@ -1,0 +1,270 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: multiplier_inst/f8_reg[0]/Q
+    (Clocked by sysclk R)
+Endpoint: multiplier_inst/A_reg[24]/D
+    (Clocked by sysclk R)
+Path Group: default
+Data required time: 3959.3
+    (Clock shift: 4000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 40.7)
+Data arrival time: 1534.9
+Slack: 2424.4
+Logic depth: 52
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      7     0,   51                       
+multiplier_inst/clk_gate_f8_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     25    52,   57  /PD_TOP        (1.10)
+multiplier_inst/f8_reg[0]/CK->Q
+                         DFF_X1                  rf    107.5    107.5    107.5      0.0      0.0      2.0     22.7      7    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_17/i_46/A3->ZN
+                         OR3_X4                  ff    189.1     81.6     81.6      0.0     26.6      0.8      8.5      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_17/i_1/A1->ZN
+                         AND2_X4                 ff    218.4     29.3     29.3      0.0     13.1      0.5      6.0      2    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk1_2_fulladder_f1/i_0_0/B->Z
+                         XOR2_X2                 ff    282.4     64.0     64.0      0.0      6.0      0.8     12.5      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_1_f3/i_0_1/B2->ZN
+                         OAI21_X4                fr    317.0     34.6     34.6      0.0     16.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_1_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    337.3     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_2_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    364.2     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_2_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    384.5     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_3_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    411.4     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_3_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    431.7     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_4_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    458.6     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_4_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    478.9     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_5_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    505.8     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_5_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    526.1     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_6_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    553.0     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_6_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    573.3     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_7_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    600.2     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_7_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    620.5     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_8_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    647.4     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_8_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    667.7     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_9_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    694.6     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_9_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    714.9     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_10_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    741.8     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_10_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    762.1     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_11_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    789.0     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_11_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    809.3     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_12_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    836.2     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_12_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    856.5     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_13_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    883.4     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_13_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    903.7     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_14_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    930.6     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_14_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    950.9     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_15_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr    977.8     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_15_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf    998.1     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_16_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1025.0     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_16_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1045.3     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_17_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1072.2     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_17_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1092.5     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_18_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1119.4     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_18_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1139.7     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_19_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1166.6     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_19_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1186.9     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_20_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1213.8     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_20_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1234.1     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_21_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1261.0     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_21_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1281.3     20.3     20.3      0.0     18.3      0.8     11.7      3    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_22_f3/i_0_1/B1->ZN
+                         OAI21_X4                fr   1308.2     26.9     26.9      0.0      9.9      0.3      4.2      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_22_f3/i_0_0/A2->ZN
+                         NAND2_X4                rf   1323.8     15.6     15.6      0.0     18.3      0.3      4.0      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_23_f3/i_0_0/B->ZN
+                         XNOR2_X2                ff   1360.5     36.7     36.7      0.0      6.8      0.3      3.4      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/subtractor/genblk2_23_f3/i_0_1/A->ZN
+                         XNOR2_X2                ff   1399.0     38.5     38.5      0.0     10.4      0.3      4.4      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_0_63/B2->ZN
+                         AOI22_X4*               fr   1477.7     78.7     78.7      0.0     11.4      0.6     30.0      2    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_0_62/A->ZN
+                         INV_X4                  rf   1483.6      5.9      5.9      0.0     15.3      0.3      1.6      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/A_reg[24]_enable_mux_0/B->Z
+                         MUX2_X2                 ff   1534.9     51.3     51.3      0.0      3.3      0.3      1.5      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/A_reg[24]/D
+                         DFF_X1                   f   1534.9      0.0               0.0      9.8                             52,   57  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: start
+    (Clocked by sysclk R)
+Endpoint: multiplier_inst/A_reg[22]/D
+    (Clocked by sysclk R)
+Path Group: I2R
+Data required time: 3962.0
+    (Clock shift: 4000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 38.0)
+Data arrival time: 424.8
+Slack: 3537.2
+Logic depth: 4
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+start                    {set_input_delay}        r    200.0    200.0    200.0                       14.0    131.0     36     0,   53                       
+multiplier_inst/i_0_101/A->ZN
+                         INV_X8                  rf    207.1      6.7      6.7      0.0      0.0      1.8     20.6      6    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_0_92/A2->ZN
+                         AND3_X4*                ff    265.6     58.5     58.5      0.0      5.3     10.1     74.9     25    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_0_59/C2->ZN
+                         AOI222_X4               fr    418.9    153.3    152.9      0.4     15.3      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/i_0_58/A->ZN
+                         INV_X4                  rf    424.8      5.9      5.9      0.0     18.4      0.3      1.4      1    52,   57  /PD_TOP        (1.10)
+multiplier_inst/A_reg[22]/D
+                         DFF_X1                   f    424.8      0.4               0.4      3.2                             52,   57  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: inputA[24]
+    (Clocked by sysclk R)
+Endpoint: result[30]
+    (Clocked by sysclk R)
+Path Group: I2O
+Data required time: 3500.0
+    (Clock shift: 4000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 1030.7
+Slack: 2469.3
+Logic depth: 19
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+inputA[24]               {set_input_delay}        r    200.0    200.0    200.0                        4.5     19.9      4     0,   58                       
+adder_inst1/genblk1_1_full_adder_inst/i_0_0/A->Z
+                         XOR2_X2                 rr    258.1     57.7     57.7      0.0      0.0      0.6      7.9      2    52,   57  /PD_TOP        (1.10)
+adder_inst1/genblk1_1_full_adder_inst/i_0_1/A->Z
+                         XOR2_X2                 rr    324.7     66.6     66.6      0.0     34.9      0.6      7.7      2    52,   57  /PD_TOP        (1.10)
+adder_inst2/genblk1_1_full_adder_inst/i_0_0/A->Z
+                         XOR2_X2                 rr    391.7     67.0     67.0      0.0     34.4      0.6      7.9      2    52,   57  /PD_TOP        (1.10)
+adder_inst2/genblk1_1_full_adder_inst/i_0_1/A->Z
+                         XOR2_X2                 rr    458.3     66.6     66.6      0.0     34.9      0.6      7.7      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_1_full_adder_inst/i_0_0/A->Z
+                         XOR2_X2                 rf    486.0     27.7     27.7      0.0     34.4      0.6      7.9      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_1_full_adder_inst/i_0_2/A1->ZN
+                         AOI22_X4                fr    547.1     61.1     61.1      0.0     14.5      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_1_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    555.4      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_2_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    617.4     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_2_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    625.7      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_3_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    687.7     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_3_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    696.0      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_4_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    758.0     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_4_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    766.3      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_5_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    828.3     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_5_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    836.6      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_6_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    898.6     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_6_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    904.6      6.0      6.0      0.0     50.3      0.3      3.7      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_7_full_adder_inst/i_0_1/B->Z
+                         XOR2_X2                 ff    961.5     56.9     56.9      0.0      3.4      0.6      5.5      2    52,   57  /PD_TOP        (1.10)
+i_0_0_34/A->Z            MUX2_X2                 ff   1030.2     68.7     68.7      0.0     13.3      3.6     13.6      1    52,   57  /PD_TOP        (1.10)
+result[30]                                        f   1030.7      0.5               0.5     16.0                             44,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group R2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: multiplier_inst/inst2/my_reg_reg[21]/Q
+    (Clocked by sysclk R)
+Endpoint: result[30]
+    (Clocked by sysclk R)
+Path Group: R2O
+Data required time: 3500.0
+    (Clock shift: 4000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 745.1
+Slack: 2754.9
+Logic depth: 16
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0      7     0,   51                       
+multiplier_inst/inst2/clk_gate_my_reg_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     24    52,   57  /PD_TOP        (1.10)
+multiplier_inst/inst2/my_reg_reg[21]/CK->Q
+                         DFF_X1*                 rr    165.3    165.3    165.3      0.0      0.0      7.5     85.2     24    52,   57  /PD_TOP        (1.10)
+normalizer_inst/i_0_0/A->ZN
+                         INV_X8                  rf    172.9      7.6      7.4      0.2     15.3      0.5      6.0      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_0_full_adder_inst/i_0_1/A1->ZN
+                         AND2_X4                 ff    198.5     25.6     25.6      0.0      3.6      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_1_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    261.5     63.0     63.0      0.0      6.6      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_1_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    269.8      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_2_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    331.8     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_2_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    340.1      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_3_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    402.1     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_3_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    410.4      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_4_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    472.4     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_4_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    480.7      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_5_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    542.7     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_5_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    551.0      8.3      8.3      0.0     50.3      0.6      8.3      2    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_6_full_adder_inst/i_0_2/A2->ZN
+                         AOI22_X4                fr    613.0     62.0     62.0      0.0      3.9      0.3     25.8      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_6_full_adder_inst/i_0_3/A->ZN
+                         INV_X8                  rf    619.0      6.0      6.0      0.0     50.3      0.3      3.7      1    52,   57  /PD_TOP        (1.10)
+adder_inst3/genblk1_7_full_adder_inst/i_0_1/B->Z
+                         XOR2_X2                 ff    675.9     56.9     56.9      0.0      3.4      0.6      5.5      2    52,   57  /PD_TOP        (1.10)
+i_0_0_34/A->Z            MUX2_X2                 ff    744.6     68.7     68.7      0.0     13.3      3.6     13.6      1    52,   57  /PD_TOP        (1.10)
+result[30]                                        f    745.1      0.5               0.5     16.0                             44,    0                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------

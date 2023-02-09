@@ -1,0 +1,49 @@
+Report Physical info: 
+------------------------+-------------+-----------+------------
+                        |             |Area (squm)|Leakage (uW)
+------------------------+-------------+-----------+------------
+Design Name             |Radix4       |           |            
+  Total Instances       |         1578|       2638|      55.130
+    Macros              |            0|          0|       0.000
+    Pads                |            0|          0|       0.000
+    Phys                |            0|          0|       0.000
+    Blackboxes          |            0|          0|       0.000
+    Cells               |         1578|       2638|      55.130
+      Buffers           |           53|         42|       1.136
+      Inverters         |          187|         99|       2.684
+      Clock-Gates       |            2|          8|       0.118
+      Combinational     |         1069|       1281|      30.068
+      Latches           |            0|          0|       0.000
+      FlipFlops         |          267|       1207|      21.123
+       Single-Bit FF    |          267|       1207|      21.123
+       Multi-Bit FF     |            0|          0|       0.000
+       Clock-Gated      |           74|           |            
+       Bits             |          267|       1207|      21.123
+         Load-Enabled   |            0|           |            
+         Clock-Gated    |           74|           |            
+  Tristate Pin Count    |            0|           |            
+Physical Info           |Placed       |           |            
+  Chip Size (mm x mm)   |0.126 x 0.126|      15952|            
+  Fixed Cell Area       |             |          0|            
+    Phys Only           |            0|          0|            
+  Placeable Area        |             |       4351|            
+  Movable Cell Area     |             |       2638|            
+  Utilization (%)       |           60|           |            
+  Chip Utilization (%)  |           60|           |            
+  Total Wire Length (mm)|        9.206|           |            
+  Longest Wire (mm)     |        0.069|           |            
+  Average Wire (mm)     |        0.066|           |            
+------------------------+-------------+-----------+------------
+Report Path Groups: 
+-----+-------+------+---------+---------
+     | Path  |Weight|Critical |Worst    
+     | Group |      |Range(ps)|Slack(ps)
+-----+-------+------+---------+---------
+1    |default| 1.000|      0.0|   1116.3
+2    |I2R    | 1.000|      0.0|   3780.1
+3    |I2O    | 1.000|      0.0|<ill>    
+4    |R2O    | 1.000|      0.0|   1402.8
+-----+-------+------+---------+---------
+736  |               |                    |                     |                   |                 
+737  |*TOTAL         |          465.764923|          1070.659912|          55.130165|      1591.555054
+-----+---------------+--------------------+---------------------+-------------------+-----------------

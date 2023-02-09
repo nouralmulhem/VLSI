@@ -1,0 +1,35 @@
+Report 'report_power_summary': Power
+Generated on Thu Dec 22 22:46:48 2022
+  
+---------------------------------------------------------------------------
+|                        Power Summary (nanowatt)                         |
+|-------------------------------------------------------------------------|
+| Component          Internal Switching  Dynamic Leakage  Total   Percent | 
+|-------------------------------------------------------------------------|
+| Entire design       1834196   2040744  3874939  211223  4086162  100.00 | 
+|                                                                         | 
+| Power of all cells  1834196   1637440  3471635  211223  3682858   90.13 | 
+|   Clock cells             0         0        0       0        0    0.00 | 
+|   Data cells        1834196   1637440  3471635  211223  3682858   90.13 | 
+|     Combinational   1346590   1592160  2938751  201095  3139845   76.84 | 
+|     Registers        485436     45279   530716   10128   540844   13.24 | 
+|     Macros                0         0        0       0        0    0.00 | 
+|     Physical              0         0        0       0        0    0.00 | 
+|                                                                         | 
+| Power of all nets              403304   403304           403304    9.87 | 
+|   Clock nets                     3025     3025             3025    0.07 | 
+|     Clock leaves                 3025     3025             3025    0.07 | 
+|   Data nets                    400279   400279           400279    9.80 | 
+---------------------------------------------------------------------------
+
+
+info UI33: performed report_power_summary for 0 sec (CPU time: 0 sec; MEM: RSS - 364M, CVMEM - 1693M, PVMEM - 1845M)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Corner     Enable Setup Hold  CRPR       SI   Power            EM   Voltage Drop DRC        Process                    RC Temp Scale Factor | 
+|---------------------------------------------------------------------------------------------------------------------------------------------|
+| slow       false  true  false setup_hold none leakage          none none         trans, cap new_rcmaster_techFreePDK45 25      1            | 
+| fast       false  false false setup_hold none leakage          none none         trans, cap new_rcmaster_techFreePDK45 25      1            | 
+| corner_0_0 true   true  true  setup_hold none leakage, dynamic none none         trans, cap new_rcmaster_techFreePDK45 25      1            | 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+

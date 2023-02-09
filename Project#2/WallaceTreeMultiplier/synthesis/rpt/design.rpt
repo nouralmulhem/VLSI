@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+--------------+-----------+------------
+                        |              |Area (squm)|Leakage (uW)
+------------------------+--------------+-----------+------------
+Design Name             |TreeMultiplier|           |            
+  Total Instances       |          8481|       8685|     194.838
+    Macros              |             0|          0|       0.000
+    Pads                |             0|          0|       0.000
+    Phys                |             0|          0|       0.000
+    Blackboxes          |             0|          0|       0.000
+    Cells               |          8481|       8685|     194.838
+      Buffers           |             7|          6|       0.150
+      Inverters         |          1032|        549|      14.812
+      Clock-Gates       |             0|          0|       0.000
+      Combinational     |          7314|       7552|     169.749
+      Latches           |             0|          0|       0.000
+      FlipFlops         |           128|        579|      10.126
+       Single-Bit FF    |           128|        579|      10.126
+       Multi-Bit FF     |             0|          0|       0.000
+       Clock-Gated      |             0|           |            
+       Bits             |           128|        579|      10.126
+         Load-Enabled   |             0|           |            
+         Clock-Gated    |             0|           |            
+  Tristate Pin Count    |             0|           |            
+Physical Info           |Placed        |           |            
+  Chip Size (mm x mm)   |0.180 x 0.180 |      32513|            
+  Fixed Cell Area       |              |          0|            
+    Phys Only           |             0|          0|            
+  Placeable Area        |              |      14312|            
+  Movable Cell Area     |              |       8685|            
+  Utilization (%)       |            60|           |            
+  Chip Utilization (%)  |            60|           |            
+  Total Wire Length (mm)|       124.470|           |            
+  Longest Wire (mm)     |         0.169|           |            
+  Average Wire (mm)     |         0.085|           |            
+------------------------+--------------+-----------+------------

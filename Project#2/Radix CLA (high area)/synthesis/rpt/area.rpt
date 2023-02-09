@@ -1,0 +1,73 @@
+Report Instance Areas: 
+-----+------------------------------+---------------------+-----+---------
+     |Instance                      |Module               |Cells|Cell Area
+-----+------------------------------+---------------------+-----+---------
+1    |top                           |                     | 1578|     2638
+2    |  r                           |regFile              |   65|      293
+3    |  ADD                         |carry_lookahead_adder|  588|      601
+4    |    genblk1_0_full_adder_inst |full_adder__0_217    |    1|        2
+5    |    genblk1_1_full_adder_inst |full_adder__0_221    |    2|        3
+6    |    genblk1_2_full_adder_inst |full_adder__0_225    |    2|        3
+7    |    genblk1_3_full_adder_inst |full_adder__0_229    |    2|        3
+8    |    genblk1_4_full_adder_inst |full_adder__0_233    |    2|        3
+9    |    genblk1_5_full_adder_inst |full_adder__0_237    |    2|        3
+10   |    genblk1_6_full_adder_inst |full_adder__0_241    |    2|        3
+11   |    genblk1_7_full_adder_inst |full_adder__0_245    |    2|        3
+12   |    genblk1_8_full_adder_inst |full_adder__0_249    |    2|        3
+13   |    genblk1_9_full_adder_inst |full_adder__0_253    |    2|        3
+14   |    genblk1_10_full_adder_inst|full_adder__0_257    |    2|        3
+15   |    genblk1_11_full_adder_inst|full_adder__0_261    |    2|        3
+16   |    genblk1_12_full_adder_inst|full_adder__0_265    |    2|        3
+17   |    genblk1_13_full_adder_inst|full_adder__0_269    |    2|        3
+18   |    genblk1_14_full_adder_inst|full_adder__0_273    |    2|        3
+19   |    genblk1_15_full_adder_inst|full_adder__0_277    |    2|        3
+20   |    genblk1_16_full_adder_inst|full_adder__0_281    |    2|        3
+21   |    genblk1_17_full_adder_inst|full_adder__0_285    |    2|        3
+22   |    genblk1_18_full_adder_inst|full_adder__0_289    |    2|        3
+23   |    genblk1_19_full_adder_inst|full_adder__0_293    |    2|        3
+24   |    genblk1_20_full_adder_inst|full_adder__0_297    |    2|        3
+25   |    genblk1_21_full_adder_inst|full_adder__0_301    |    2|        3
+26   |    genblk1_22_full_adder_inst|full_adder__0_305    |    2|        3
+27   |    genblk1_23_full_adder_inst|full_adder__0_309    |    2|        3
+28   |    genblk1_24_full_adder_inst|full_adder__0_313    |    2|        3
+29   |    genblk1_25_full_adder_inst|full_adder__0_317    |    2|        3
+30   |    genblk1_26_full_adder_inst|full_adder__0_321    |    2|        3
+31   |    genblk1_27_full_adder_inst|full_adder__0_325    |    2|        3
+32   |    genblk1_28_full_adder_inst|full_adder__0_329    |    2|        3
+33   |    genblk1_29_full_adder_inst|full_adder__0_333    |    2|        3
+34   |    genblk1_30_full_adder_inst|full_adder__0_337    |    2|        3
+35   |    genblk1_31_full_adder_inst|full_adder__0_341    |    2|        3
+36   |    genblk1_32_full_adder_inst|full_adder__0_345    |    2|        3
+37   |    genblk1_33_full_adder_inst|full_adder__0_349    |    2|        3
+38   |    genblk1_34_full_adder_inst|full_adder__0_353    |    2|        3
+39   |    genblk1_35_full_adder_inst|full_adder__0_357    |    2|        3
+40   |    genblk1_36_full_adder_inst|full_adder__0_361    |    2|        3
+41   |    genblk1_37_full_adder_inst|full_adder__0_365    |    2|        3
+42   |    genblk1_38_full_adder_inst|full_adder__0_369    |    2|        3
+43   |    genblk1_39_full_adder_inst|full_adder__0_373    |    2|        3
+44   |    genblk1_40_full_adder_inst|full_adder__0_377    |    2|        3
+45   |    genblk1_41_full_adder_inst|full_adder__0_381    |    2|        3
+46   |    genblk1_42_full_adder_inst|full_adder__0_385    |    2|        3
+47   |    genblk1_43_full_adder_inst|full_adder__0_389    |    2|        3
+48   |    genblk1_44_full_adder_inst|full_adder__0_393    |    2|        3
+49   |    genblk1_45_full_adder_inst|full_adder__0_397    |    2|        3
+50   |    genblk1_46_full_adder_inst|full_adder__0_401    |    2|        3
+51   |    genblk1_47_full_adder_inst|full_adder__0_405    |    2|        3
+52   |    genblk1_48_full_adder_inst|full_adder__0_409    |    2|        3
+53   |    genblk1_49_full_adder_inst|full_adder__0_413    |    2|        3
+54   |    genblk1_50_full_adder_inst|full_adder__0_417    |    2|        3
+55   |    genblk1_51_full_adder_inst|full_adder__0_421    |    2|        3
+56   |    genblk1_52_full_adder_inst|full_adder__0_425    |    2|        3
+57   |    genblk1_53_full_adder_inst|full_adder__0_429    |    2|        3
+58   |    genblk1_54_full_adder_inst|full_adder__0_433    |    2|        3
+59   |    genblk1_55_full_adder_inst|full_adder__0_437    |    2|        3
+60   |    genblk1_56_full_adder_inst|full_adder__0_441    |    2|        3
+61   |    genblk1_57_full_adder_inst|full_adder__0_445    |    2|        3
+62   |    genblk1_58_full_adder_inst|full_adder__0_449    |    2|        3
+63   |    genblk1_59_full_adder_inst|full_adder__0_453    |    2|        3
+64   |    genblk1_60_full_adder_inst|full_adder__0_457    |    2|        3
+65   |    genblk1_61_full_adder_inst|full_adder__0_461    |    2|        3
+66   |    genblk1_62_full_adder_inst|full_adder__0_465    |    6|        5
+67   |    genblk1_63_full_adder_inst|full_adder           |    6|        5
+68   |  r2                          |regFile64            |   65|      290
+-----+------------------------------+---------------------+-----+---------

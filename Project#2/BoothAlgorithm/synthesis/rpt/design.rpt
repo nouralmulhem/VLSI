@@ -1,0 +1,36 @@
+Report Physical info: 
+------------------------+-------------+-----------+------------
+                        |             |Area (squm)|Leakage (uW)
+------------------------+-------------+-----------+------------
+Design Name             |BoothAlgo    |           |            
+  Total Instances       |          853|       1844|      36.037
+    Macros              |            0|          0|       0.000
+    Pads                |            0|          0|       0.000
+    Phys                |            0|          0|       0.000
+    Blackboxes          |            0|          0|       0.000
+    Cells               |          853|       1844|      36.037
+      Buffers           |            0|          0|       0.000
+      Inverters         |           37|         20|       0.531
+      Clock-Gates       |            4|         16|       0.237
+      Combinational     |          579|        755|      16.836
+      Latches           |            0|          0|       0.000
+      FlipFlops         |          233|       1054|      18.433
+       Single-Bit FF    |          233|       1054|      18.433
+       Multi-Bit FF     |            0|          0|       0.000
+       Clock-Gated      |          230|           |            
+       Bits             |          233|       1054|      18.433
+         Load-Enabled   |            0|           |            
+         Clock-Gated    |          230|           |            
+  Tristate Pin Count    |            0|           |            
+Physical Info           |Placed       |           |            
+  Chip Size (mm x mm)   |0.115 x 0.115|      13326|            
+  Fixed Cell Area       |             |          0|            
+    Phys Only           |            0|          0|            
+  Placeable Area        |             |       3019|            
+  Movable Cell Area     |             |       1844|            
+  Utilization (%)       |           61|           |            
+  Chip Utilization (%)  |           61|           |            
+  Total Wire Length (mm)|        7.899|           |            
+  Longest Wire (mm)     |        0.065|           |            
+  Average Wire (mm)     |        0.061|           |            
+------------------------+-------------+-----------+------------

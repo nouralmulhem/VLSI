@@ -1,0 +1,57 @@
+Report 'report_mcmm_variation': MCMM Variation
+Generated on Sat Dec 24 09:05:45 2022
+  
+---------------------------------------------------------
+| MCMM variability report for design 'BoothAlgo' (nano) |
+|-------------------------------------------------------|
+| MODE CORNER WNS TNS #Endpts WHS THS #Endpts           | 
+---------------------------------------------------------
+
+
+info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 423M, CVMEM - 1774M, PVMEM - 2639M)
+Report 'report_path_group': Path Group
+Generated on Sat Dec 24 09:05:45 2022
+  
+-------------------------------------------------------------------------------------------
+|                               PATH GROUPS (SETUP) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 423M, CVMEM - 1774M, PVMEM - 2639M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_LATE
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 4.9990 171       171             | 
+---------------------------------------------
+
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 423M, CVMEM - 1774M, PVMEM - 2639M)
+Report 'report_path_group': Path Group
+Generated on Sat Dec 24 09:05:45 2022
+  
+-------------------------------------------------------------------------------------------
+|                                PATH GROUPS (HOLD) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 423M, CVMEM - 1774M, PVMEM - 2639M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_EARLY
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 0.2490 171       171             | 
+---------------------------------------------
+
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 423M, CVMEM - 1774M, PVMEM - 2639M)

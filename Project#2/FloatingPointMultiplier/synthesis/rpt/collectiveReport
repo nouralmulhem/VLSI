@@ -1,0 +1,49 @@
+Report Physical info: 
+------------------------+-------------+-----------+------------
+                        |             |Area (squm)|Leakage (uW)
+------------------------+-------------+-----------+------------
+Design Name             |fp_multiplier|           |            
+  Total Instances       |          833|       1628|      32.189
+    Macros              |            0|          0|       0.000
+    Pads                |            0|          0|       0.000
+    Phys                |            0|          0|       0.000
+    Blackboxes          |            0|          0|       0.000
+    Cells               |          833|       1628|      32.189
+      Buffers           |            0|          0|       0.000
+      Inverters         |           52|         28|       0.746
+      Clock-Gates       |            4|         16|       0.237
+      Combinational     |          621|        879|      18.864
+      Latches           |            0|          0|       0.000
+      FlipFlops         |          156|        705|      12.342
+       Single-Bit FF    |          156|        705|      12.342
+       Multi-Bit FF     |            0|          0|       0.000
+       Clock-Gated      |          153|           |            
+       Bits             |          156|        705|      12.342
+         Load-Enabled   |            0|           |            
+         Clock-Gated    |          153|           |            
+  Tristate Pin Count    |           32|           |            
+Physical Info           |Placed       |           |            
+  Chip Size (mm x mm)   |0.112 x 0.112|      12563|            
+  Fixed Cell Area       |             |          0|            
+    Phys Only           |            0|          0|            
+  Placeable Area        |             |       2697|            
+  Movable Cell Area     |             |       1628|            
+  Utilization (%)       |           60|           |            
+  Chip Utilization (%)  |           60|           |            
+  Total Wire Length (mm)|        7.992|           |            
+  Longest Wire (mm)     |        0.098|           |            
+  Average Wire (mm)     |        0.053|           |            
+------------------------+-------------+-----------+------------
+Report Path Groups: 
+-----+-------+------+---------+---------
+     | Path  |Weight|Critical |Worst    
+     | Group |      |Range(ps)|Slack(ps)
+-----+-------+------+---------+---------
+1    |default| 1.000|      0.0|   2424.4
+2    |I2R    | 1.000|      0.0|   3537.2
+3    |I2O    | 1.000|      0.0|   2469.3
+4    |R2O    | 1.000|      0.0|   2754.9
+-----+-------+------+---------+---------
+44   |                |                    |                     |                   |                 
+45   |*TOTAL          |          294.646484|           357.598999|          32.188648|       684.434204
+-----+----------------+--------------------+---------------------+-------------------+-----------------

@@ -1,0 +1,32 @@
+Report End Points: 
+-----+-------+------+-------+------+------+-----+------+---------------------------+---------------------------
+     |Group  |Launch|Capture|Shift |Delay |Depth|Slack |Begin Point                |End Point                  
+-----+-------+------+-------+------+------+-----+------+---------------------------+---------------------------
+1    |default|sysclk|sysclk |4000.0|1427.4|   52|2424.4|multiplier_inst/f8_reg[0]/Q|multiplier_inst/A_reg[24]/D
+2    |default|sysclk|sysclk |4000.0|1389.1|   49|2465.4|multiplier_inst/f8_reg[0]/Q|multiplier_inst/A_reg[22]/D
+3    |default|sysclk|sysclk |4000.0|1382.9|   51|2470.5|multiplier_inst/f8_reg[0]/Q|multiplier_inst/A_reg[23]/D
+-----+-------+------+-------+------+------+-----+------+---------------------------+---------------------------
+Report End Points: 
+-----+-----+------+-------+------+-----+-----+------+-----------+---------------------------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack |Begin Point|End Point                  
+-----+-----+------+-------+------+-----+-----+------+-----------+---------------------------
+1    |I2R  |sysclk|sysclk |4000.0|224.8|    4|3537.2|start      |multiplier_inst/A_reg[22]/D
+2    |I2R  |sysclk|sysclk |4000.0|224.8|    4|3537.2|start      |multiplier_inst/A_reg[21]/D
+3    |I2R  |sysclk|sysclk |4000.0|224.8|    4|3537.2|start      |multiplier_inst/A_reg[20]/D
+-----+-----+------+-------+------+-----+-----+------+-----------+---------------------------
+Report End Points: 
+-----+-----+------+-------+------+-----+-----+------+-----------+----------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack |Begin Point|End Point 
+-----+-----+------+-------+------+-----+-----+------+-----------+----------
+1    |I2O  |sysclk|sysclk |4000.0|830.7|   19|2469.3|inputA[24] |result[30]
+2    |I2O  |sysclk|sysclk |4000.0|802.0|   20|2498.0|inputA[24] |over_flow 
+3    |I2O  |sysclk|sysclk |4000.0|763.0|   17|2537.0|inputA[24] |result[29]
+-----+-----+------+-------+------+-----+-----+------+-----------+----------
+Report End Points: 
+-----+-----+------+-------+------+-----+-----+------+--------------------------------------+----------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack |Begin Point                           |End Point 
+-----+-----+------+-------+------+-----+-----+------+--------------------------------------+----------
+1    |R2O  |sysclk|sysclk |4000.0|579.8|   16|2754.9|multiplier_inst/inst2/my_reg_reg[21]/Q|result[30]
+2    |R2O  |sysclk|sysclk |4000.0|551.1|   17|2783.6|multiplier_inst/inst2/my_reg_reg[21]/Q|over_flow 
+3    |R2O  |sysclk|sysclk |4000.0|512.1|   14|2822.6|multiplier_inst/inst2/my_reg_reg[21]/Q|result[29]
+-----+-----+------+-------+------+-----+-----+------+--------------------------------------+----------

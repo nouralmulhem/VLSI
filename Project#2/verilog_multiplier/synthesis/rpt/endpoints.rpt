@@ -1,0 +1,30 @@
+Report End Points: 
+-----+-------+------+-------+------+------+-----+-----+-----------------+------------------
+     |Group  |Launch|Capture|Shift |Delay |Depth|Slack|Begin Point      |End Point         
+-----+-------+------+-------+------+------+-----+-----+-----------------+------------------
+1    |default|sysclk|sysclk |4000.0|3033.5|   87|750.0|regA/out_reg[4]/Q|outB/out_reg[29]/D
+2    |default|sysclk|sysclk |4000.0|3020.0|   86|771.4|regA/out_reg[4]/Q|outB/out_reg[30]/D
+3    |default|sysclk|sysclk |4000.0|3018.2|   86|773.2|regA/out_reg[4]/Q|outB/out_reg[28]/D
+-----+-------+------+-------+------+------+-----+-----+-----------------+------------------
+Report End Points: 
+-----+-----+--------------+-------+------+-----+-----+------+-----------+-----------------------
+     |Group|Launch        |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point              
+-----+-----+--------------+-------+------+-----+-----+------+-----------+-----------------------
+1    |I2R  |rtDefaultClock|sysclk |4000.0| 15.4|    1|3899.5|en         |regA/clk_gate_out_reg/E
+2    |I2R  |rtDefaultClock|sysclk |4000.0| 15.4|    1|3899.5|en         |regB/clk_gate_out_reg/E
+3    |I2R  |rtDefaultClock|sysclk |4000.0| 15.4|    1|3899.5|en         |outB/clk_gate_out_reg/E
+-----+-----+--------------+-------+------+-----+-----+------+-----------+-----------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+------+-----+-----+------+------------------+----------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack |Begin Point       |End Point 
+-----+-----+------+-------+------+-----+-----+------+------------------+----------
+1    |R2O  |sysclk|sysclk |4000.0|  0.4|    0|3403.9|outB/out_reg[31]/Q|result[63]
+2    |R2O  |sysclk|sysclk |4000.0|  0.4|    0|3403.9|outB/out_reg[30]/Q|result[62]
+3    |R2O  |sysclk|sysclk |4000.0|  0.4|    0|3403.9|outB/out_reg[28]/Q|result[60]
+-----+-----+------+-------+------+-----+-----+------+------------------+----------

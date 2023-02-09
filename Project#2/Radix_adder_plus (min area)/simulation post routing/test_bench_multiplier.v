@@ -1,0 +1,205 @@
+module test_bench_shift_accumulate_multiplier();
+
+  reg clk, reset;
+  reg  [31:0] inputM;
+  reg  [31:0] inputQ;
+  wire [63:0] out;
+  integer count;
+  
+   localparam PERIOD = 4000;
+  
+  Radix4 Radix4_inst (
+      inputM, inputQ, out, clk, reset, 5'b00000, 5'b00001
+  );
+
+  always #(PERIOD/2) clk = ~clk;
+  
+
+  initial begin
+    clk   = 1'b1;
+    reset = 1'b1;
+    count = 0;
+	//2 posatives ==> 14
+    inputM = 32'h87234;
+    inputQ = 32'h348;
+    
+    #(3*PERIOD+PERIOD/2);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out === 64'h1bb6baa0) begin
+		$display("TestCase#1 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#1 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h1bb6baa0);
+    reset = 1;
+	//two negatives ==> 10
+    inputM = 32'h50647236;
+    inputQ = 32'h50612336;
+
+    #(3*PERIOD);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out === 64'h193de4ced7437964) begin
+		$display("TestCase#2 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#2 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h193de4ced7437964);
+    reset = 1'b1;
+    //2 posatives ==> 9
+    inputM = 32'h87234;
+    inputQ = 32'hfffffefd;
+    
+    #(3*PERIOD);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out ===  64'hfffffffff7747564) begin
+		$display("TestCase#3 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#3 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'hfffffffff7747564);
+    reset = 1;
+    //two negatives ==> 6
+    inputM = 32'h50647236;
+    inputQ = 32'hb887caaf;
+
+    #(3*PERIOD);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out ===  64'he98e647f4142aeea) begin
+		$display("TestCase#4 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#4 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'he98e647f4142aeea);
+    reset = 1;
+    // M -ve & Q +ve ==> -10
+    inputM = 32'hfffffefd;
+    inputQ = 32'h87234;
+
+    #(3*PERIOD);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out ===  64'hfffffffff7747564) begin
+		$display("TestCase#5 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#5 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'hfffffffff7747564);
+    reset = 1;
+    // M +ve & Q -ve ==> -10
+    inputM = 32'hB887CAAF;
+    inputQ = 32'h50647236;
+
+    #(3*PERIOD);
+    reset = 0;
+
+
+    #(40*PERIOD);
+	if(out ===  64'hFDC57DE4938342EA) begin
+		$display("TestCase#6 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#6 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'hFDC57DE4938342EA);
+    reset = 1;
+    // multiply by 0 ==> 0
+    inputM = 32'hfffffefd;
+    inputQ = 32'hfffffefd;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+    #(40*PERIOD);
+	if(out ===  64'h10609) begin
+		$display("TestCase#7 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#7 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h10609);
+    reset = 1;
+	// multiply by 1
+    inputM = 32'hb887caaf;
+    inputQ = 32'h887caaf3;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+	#(40*PERIOD);
+	if(out ===  64'h215D8B0A7A419A1D) begin
+		$display("TestCase#8 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#8 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h215D8B0A7A419A1D);
+	reset = 1;
+	// multiply by 1
+    inputM = 32'h1;
+    inputQ = 32'h50647236;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+	#(40*PERIOD);
+	if(out === 64'h50647236) begin
+		$display("TestCase#9 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#9 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h50647236);
+reset = 1;
+	// multiply by 1
+    inputM = 32'hB887CAAF;
+    inputQ = 32'h1;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+	#(40*PERIOD);
+	if(out === 64'hffffffffB887CAAF) begin // sign extend
+		$display("TestCase#10 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#10 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'hffffffffB887CAAF);
+	reset = 1;
+	// multiply by 1
+    inputM = 32'h0;
+    inputQ = 32'h50647236;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+	#(40*PERIOD);
+	if(out === 64'h0) begin
+		$display("TestCase#11 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#11 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'h50647236);
+reset = 1;
+	// multiply by 1
+    inputM = 32'hB887CAAF;
+    inputQ = 32'h0;
+
+    #(3*PERIOD);
+    reset = 0;
+
+    
+	#(40*PERIOD);
+	if(out === 64'h0) begin
+		$display("TestCase#12 Success");
+		count = count + 1 ;
+	end
+	else $display("TestCase#12 failure input1= %h input2= %h output= %h, expected = %h", inputM, inputQ, out, 64'hB887CAAF);
+	$display("--------------------- %d   passed testcases out of 12    ---------------------", count);
+	$display("--------------------- %d     failed testcases out of 12    ---------------------", 12-count);
+
+  end
+endmodule

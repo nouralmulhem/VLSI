@@ -1,0 +1,2593 @@
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 04:31:59 2023
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 4cores 7.8GBytes 2.0GHz 64bits mode pid 17041 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+setup_nrf
+source flow_scripts/0_import.tcl
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 749}
+set_option -name window:main:message_area:location -value {328 610}
+set_option -name window:main:message_area:size -value {1592 216}
+set_option -name window:main:view:location -value {30 52}
+set_option -name view:design:scheme0:layer1:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer1:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer1:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer0:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer2:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer4:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer6:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer8:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer10:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer12:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer14:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer16:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer18:pre_route:via_cut:visible -value true
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+zoom_to -target area -xl_area 269239a -yb_area 277841a -xr_area 325429a -yt_area 334658a
+zoom_to -target area -xl_area 269239a -yb_area 332362a -xr_area 325429a -yt_area 389179a
+zoom_to -target area -xl_area 269239a -yb_area 443930a -xr_area 325429a -yt_area 500747a
+zoom_to -target area -xl_area 269239a -yb_area 462181a -xr_area 325429a -yt_area 518998a
+zoom_to -target area -xl_area 269239a -yb_area 545168a -xr_area 325429a -yt_area 601985a
+zoom_to -target area -xl_area 269239a -yb_area 558138a -xr_area 325429a -yt_area 614955a
+zoom_to -target area -xl_area 269239a -yb_area 584079a -xr_area 325429a -yt_area 640896a
+zoom_to -target area -xl_area 269239a -yb_area 591884a -xr_area 325429a -yt_area 648701a
+zoom_to -target area -xl_area 269239a -yb_area 597049a -xr_area 325429a -yt_area 653866a
+zoom_to -target area -xl_area 269239a -yb_area 602329a -xr_area 325429a -yt_area 659146a
+zoom_to -target area -xl_area 269239a -yb_area 607494a -xr_area 325429a -yt_area 664311a
+zoom_to -target area -xl_area 269239a -yb_area 617825a -xr_area 325429a -yt_area 674642a
+zoom_to -target area -xl_area 269239a -yb_area 620465a -xr_area 325429a -yt_area 677282a
+zoom_to -target area -xl_area 269239a -yb_area 625630a -xr_area 325429a -yt_area 682447a
+zoom_to -target area -xl_area 269239a -yb_area 628270a -xr_area 325429a -yt_area 685087a
+zoom_to -target area -xl_area 269239a -yb_area 625631a -xr_area 325429a -yt_area 682448a
+zoom_to -target area -xl_area 269239a -yb_area 602330a -xr_area 325429a -yt_area 659147a
+zoom_to -target area -xl_area 269239a -yb_area 597050a -xr_area 325429a -yt_area 653867a
+zoom_to -target area -xl_area 269239a -yb_area 589360a -xr_area 325429a -yt_area 646177a
+zoom_to -target area -xl_area 269239a -yb_area 584080a -xr_area 325429a -yt_area 640897a
+zoom_to -target area -xl_area 269239a -yb_area 581555a -xr_area 325429a -yt_area 638372a
+zoom_to -target area -xl_area 269239a -yb_area 578915a -xr_area 325429a -yt_area 635732a
+zoom_to -target area -xl_area 269239a -yb_area 573749a -xr_area 325429a -yt_area 630566a
+zoom_to -target area -xl_area 269239a -yb_area 563304a -xr_area 325429a -yt_area 620121a
+zoom_to -target area -xl_area 269239a -yb_area 558139a -xr_area 325429a -yt_area 614956a
+zoom_to -target area -xl_area 269239a -yb_area 552974a -xr_area 325429a -yt_area 609791a
+zoom_to -target area -xl_area 269239a -yb_area 545169a -xr_area 325429a -yt_area 601986a
+zoom_to -target area -xl_area 269239a -yb_area 542644a -xr_area 325429a -yt_area 599461a
+zoom_to -target area -xl_area 269239a -yb_area 547808a -xr_area 325429a -yt_area 604625a
+zoom_to -target area -xl_area 269239a -yb_area 576274a -xr_area 325429a -yt_area 633091a
+zoom_to -target area -xl_area 269239a -yb_area 581554a -xr_area 325429a -yt_area 638371a
+zoom_to -target area -xl_area 269239a -yb_area 584079a -xr_area 325429a -yt_area 640896a
+zoom_to -target area -xl_area 269239a -yb_area 586719a -xr_area 325429a -yt_area 643536a
+zoom_to -target area -xl_area 269239a -yb_area 594524a -xr_area 325429a -yt_area 651341a
+zoom_to -target area -xl_area 269239a -yb_area 591885a -xr_area 325429a -yt_area 648702a
+zoom_to -target area -xl_area 269239a -yb_area 586720a -xr_area 325429a -yt_area 643537a
+zoom_to -target area -xl_area 269239a -yb_area 584080a -xr_area 325429a -yt_area 640897a
+zoom_to -target area -xl_area 269239a -yb_area 581555a -xr_area 325429a -yt_area 638372a
+zoom_to -target area -xl_area 269239a -yb_area 576275a -xr_area 325429a -yt_area 633092a
+zoom_to -target area -xl_area 269239a -yb_area 573749a -xr_area 325429a -yt_area 630566a
+zoom_to -target area -xl_area 269239a -yb_area 568584a -xr_area 325429a -yt_area 625401a
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+## trigger_gui -name main:zoom_in
+zoom_to -target area -xl_area 289722a -yb_area 585376a -xr_area 312735a -yt_area 608646a
+zoom_to -target area -xl_area 358968a -yb_area 585376a -xr_area 381981a -yt_area 608646a
+zoom_to -target area -xl_area 369874a -yb_area 585376a -xr_area 392887a -yt_area 608646a
+zoom_to -target area -xl_area 474942a -yb_area 585376a -xr_area 497955a -yt_area 608646a
+zoom_to -target area -xl_area 525525a -yb_area 585376a -xr_area 548538a -yt_area 608646a
+zoom_to -target area -xl_area 601775a -yb_area 585376a -xr_area 624788a -yt_area 608646a
+zoom_to -target area -xl_area 634494a -yb_area 585376a -xr_area 657507a -yt_area 608646a
+zoom_to -target area -xl_area 647704a -yb_area 585376a -xr_area 670717a -yt_area 608646a
+zoom_to -target area -xl_area 650055a -yb_area 585376a -xr_area 673068a -yt_area 608646a
+zoom_to -target area -xl_area 653157a -yb_area 585376a -xr_area 676170a -yt_area 608646a
+zoom_to -target area -xl_area 654709a -yb_area 585376a -xr_area 677722a -yt_area 608646a
+zoom_to -target area -xl_area 667166a -yb_area 585376a -xr_area 690179a -yt_area 608646a
+zoom_to -target area -xl_area 667966a -yb_area 585376a -xr_area 690979a -yt_area 608646a
+zoom_to -target area -xl_area 666368a -yb_area 585376a -xr_area 689381a -yt_area 608646a
+zoom_to -target area -xl_area 643803a -yb_area 585376a -xr_area 666816a -yt_area 608646a
+zoom_to -target area -xl_area 636799a -yb_area 585376a -xr_area 659812a -yt_area 608646a
+zoom_to -target area -xl_area 633696a -yb_area 585376a -xr_area 656709a -yt_area 608646a
+zoom_to -target area -xl_area 629042a -yb_area 585376a -xr_area 652055a -yt_area 608646a
+zoom_to -target area -xl_area 622038a -yb_area 585376a -xr_area 645051a -yt_area 608646a
+zoom_to -target area -xl_area 618136a -yb_area 585376a -xr_area 641149a -yt_area 608646a
+zoom_to -target area -xl_area 615033a -yb_area 585376a -xr_area 638046a -yt_area 608646a
+zoom_to -target area -xl_area 610332a -yb_area 585376a -xr_area 633345a -yt_area 608646a
+zoom_to -target area -xl_area 603328a -yb_area 585376a -xr_area 626341a -yt_area 608646a
+zoom_to -target area -xl_area 597921a -yb_area 585376a -xr_area 620934a -yt_area 608646a
+zoom_to -target area -xl_area 593220a -yb_area 585376a -xr_area 616233a -yt_area 608646a
+zoom_to -target area -xl_area 587015a -yb_area 585376a -xr_area 610028a -yt_area 608646a
+zoom_to -target area -xl_area 582314a -yb_area 585376a -xr_area 605327a -yt_area 608646a
+zoom_to -target area -xl_area 580763a -yb_area 585376a -xr_area 603776a -yt_area 608646a
+zoom_to -target area -xl_area 579211a -yb_area 585376a -xr_area 602224a -yt_area 608646a
+zoom_to -target area -xl_area 578459a -yb_area 585376a -xr_area 601472a -yt_area 608646a
+zoom_to -target area -xl_area 576109a -yb_area 585376a -xr_area 599122a -yt_area 608646a
+zoom_to -target area -xl_area 558997a -yb_area 585376a -xr_area 582010a -yt_area 608646a
+zoom_to -target area -xl_area 556647a -yb_area 585376a -xr_area 579660a -yt_area 608646a
+zoom_to -target area -xl_area 554343a -yb_area 585376a -xr_area 577356a -yt_area 608646a
+zoom_to -target area -xl_area 553544a -yb_area 585376a -xr_area 576557a -yt_area 608646a
+zoom_to -target area -xl_area 551993a -yb_area 585376a -xr_area 575006a -yt_area 608646a
+zoom_to -target area -xl_area 550441a -yb_area 585376a -xr_area 573454a -yt_area 608646a
+zoom_to -target area -xl_area 548091a -yb_area 585376a -xr_area 571104a -yt_area 608646a
+zoom_to -target area -xl_area 546539a -yb_area 585376a -xr_area 569552a -yt_area 608646a
+zoom_to -target area -xl_area 544988a -yb_area 585376a -xr_area 568001a -yt_area 608646a
+zoom_to -target area -xl_area 542638a -yb_area 585376a -xr_area 565651a -yt_area 608646a
+zoom_to -target area -xl_area 541885a -yb_area 585376a -xr_area 564898a -yt_area 608646a
+zoom_to -target area -xl_area 540334a -yb_area 585376a -xr_area 563347a -yt_area 608646a
+zoom_to -target area -xl_area 539535a -yb_area 585376a -xr_area 562548a -yt_area 608646a
+zoom_to -target area -xl_area 538736a -yb_area 585376a -xr_area 561749a -yt_area 608646a
+zoom_to -target area -xl_area 537984a -yb_area 585376a -xr_area 560997a -yt_area 608646a
+zoom_to -target area -xl_area 537184a -yb_area 585376a -xr_area 560197a -yt_area 608646a
+zoom_to -target area -xl_area 528629a -yb_area 585376a -xr_area 551642a -yt_area 608646a
+zoom_to -target area -xl_area 525526a -yb_area 585376a -xr_area 548539a -yt_area 608646a
+zoom_to -target area -xl_area 524727a -yb_area 585376a -xr_area 547740a -yt_area 608646a
+zoom_to -target area -xl_area 523975a -yb_area 585376a -xr_area 546988a -yt_area 608646a
+zoom_to -target area -xl_area 521624a -yb_area 585376a -xr_area 544637a -yt_area 608646a
+zoom_to -target area -xl_area 515419a -yb_area 585376a -xr_area 538432a -yt_area 608646a
+zoom_to -target area -xl_area 510718a -yb_area 585376a -xr_area 533731a -yt_area 608646a
+zoom_to -target area -xl_area 506863a -yb_area 585376a -xr_area 529876a -yt_area 608646a
+zoom_to -target area -xl_area 501410a -yb_area 585376a -xr_area 524423a -yt_area 608646a
+zoom_to -target area -xl_area 499858a -yb_area 585376a -xr_area 522871a -yt_area 608646a
+zoom_to -target area -xl_area 499059a -yb_area 585376a -xr_area 522072a -yt_area 608646a
+zoom_to -target area -xl_area 498307a -yb_area 585376a -xr_area 521320a -yt_area 608646a
+zoom_to -target area -xl_area 497508a -yb_area 585376a -xr_area 520521a -yt_area 608646a
+zoom_to -target area -xl_area 493606a -yb_area 585376a -xr_area 516619a -yt_area 608646a
+zoom_to -target area -xl_area 492854a -yb_area 585376a -xr_area 515867a -yt_area 608646a
+zoom_to -target area -xl_area 492055a -yb_area 585376a -xr_area 515068a -yt_area 608646a
+zoom_to -target area -xl_area 491303a -yb_area 585376a -xr_area 514316a -yt_area 608646a
+zoom_to -target area -xl_area 490503a -yb_area 585376a -xr_area 513516a -yt_area 608646a
+zoom_to -target area -xl_area 488952a -yb_area 585376a -xr_area 511965a -yt_area 608646a
+zoom_to -target area -xl_area 483499a -yb_area 585376a -xr_area 506512a -yt_area 608646a
+zoom_to -target area -xl_area 478046a -yb_area 585376a -xr_area 501059a -yt_area 608646a
+zoom_to -target area -xl_area 471041a -yb_area 585376a -xr_area 494054a -yt_area 608646a
+zoom_to -target area -xl_area 466387a -yb_area 585376a -xr_area 489400a -yt_area 608646a
+zoom_to -target area -xl_area 464037a -yb_area 585376a -xr_area 487050a -yt_area 608646a
+zoom_to -target area -xl_area 461686a -yb_area 585376a -xr_area 484699a -yt_area 608646a
+zoom_to -target area -xl_area 460135a -yb_area 585376a -xr_area 483148a -yt_area 608646a
+zoom_to -target area -xl_area 458584a -yb_area 585376a -xr_area 481597a -yt_area 608646a
+zoom_to -target area -xl_area 457831a -yb_area 585376a -xr_area 480844a -yt_area 608646a
+zoom_to -target area -xl_area 454682a -yb_area 585376a -xr_area 477695a -yt_area 608646a
+zoom_to -target area -xl_area 451579a -yb_area 585376a -xr_area 474592a -yt_area 608646a
+zoom_to -target area -xl_area 450827a -yb_area 585376a -xr_area 473840a -yt_area 608646a
+zoom_to -target area -xl_area 450028a -yb_area 585376a -xr_area 473041a -yt_area 608646a
+zoom_to -target area -xl_area 448476a -yb_area 585376a -xr_area 471489a -yt_area 608646a
+zoom_to -target area -xl_area 447677a -yb_area 585376a -xr_area 470690a -yt_area 608646a
+zoom_to -target area -xl_area 443822a -yb_area 585376a -xr_area 466835a -yt_area 608646a
+zoom_to -target area -xl_area 442271a -yb_area 585376a -xr_area 465284a -yt_area 608646a
+zoom_to -target area -xl_area 441472a -yb_area 585376a -xr_area 464485a -yt_area 608646a
+set_option -name window:main:interactive_modes:location -value {62 77}
+set_option -name window:main:interactive_modes:size -value {260 749}
+set_option -name window:hierarchy:explorer:location -value {-760 -1249}
+## trigger_gui -name design:move_objects_mode
+set_option -name trigger:design:move_objects_mode:step -value 50
+select_objects -objects [get_area_objects -type wire -xl_area 453700a -yb_area 0a -xr_area 455100a -yt_area 602000a -filter "@net_name == VDD && @length == 602000.0000 && @width == 1400.0000 && @layer == metal5 && @orientation == vertical && @route_type == pre_route"] -keep true
+move_objects -objects [get_selection] -dx 1410a -dy -750a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+clear_selection
+select_objects -objects [get_area_objects -type port -xl_area 453750a -yb_area 601300a -xr_area 454450a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx 4330a -dy -190a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+set_option -name trigger:design:move_objects_mode:step -value 1
+set_option -name trigger:design:move_objects_mode:step -value 10
+set_option -name trigger:design:move_objects_mode:step -value 100
+set_option -name trigger:design:move_objects_mode:step -value 1000
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+select_objects -objects [get_area_objects -type port -xl_area 449950a -yb_area 601300a -xr_area 450650a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep false
+move_objects -objects [get_selection] -dx -2070a -dy -1600a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+select_objects -objects [get_area_objects -type port -xl_area 423350a -yb_area 601300a -xr_area 424050a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx 10860a -dy -4470a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+zoom_to -target area -xl_area 434138a -yb_area 585376a -xr_area 457151a -yt_area 608646a
+zoom_to -target area -xl_area 426805a -yb_area 585376a -xr_area 449818a -yt_area 608646a
+zoom_to -target area -xl_area 419471a -yb_area 585376a -xr_area 442484a -yt_area 608646a
+select_objects -objects [get_area_objects -type port -xl_area 421450a -yb_area 601300a -xr_area 422150a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep false
+move_objects -objects [get_selection] -dx -2960a -dy -2820a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 412138a -yb_area 585376a -xr_area 435151a -yt_area 608646a
+zoom_to -target area -xl_area 404804a -yb_area 585376a -xr_area 427817a -yt_area 608646a
+zoom_to -target area -xl_area 397470a -yb_area 585376a -xr_area 420483a -yt_area 608646a
+zoom_to -target area -xl_area 390137a -yb_area 585376a -xr_area 413150a -yt_area 608646a
+zoom_to -target area -xl_area 382803a -yb_area 585376a -xr_area 405816a -yt_area 608646a
+zoom_to -target area -xl_area 375470a -yb_area 585376a -xr_area 398483a -yt_area 608646a
+zoom_to -target area -xl_area 368136a -yb_area 585376a -xr_area 391149a -yt_area 608646a
+zoom_to -target area -xl_area 360803a -yb_area 585376a -xr_area 383816a -yt_area 608646a
+zoom_to -target area -xl_area 353469a -yb_area 585376a -xr_area 376482a -yt_area 608646a
+zoom_to -target area -xl_area 346135a -yb_area 585376a -xr_area 369148a -yt_area 608646a
+zoom_to -target area -xl_area 338802a -yb_area 585376a -xr_area 361815a -yt_area 608646a
+zoom_to -target area -xl_area 331468a -yb_area 585376a -xr_area 354481a -yt_area 608646a
+zoom_to -target area -xl_area 324135a -yb_area 585376a -xr_area 347148a -yt_area 608646a
+zoom_to -target area -xl_area 316801a -yb_area 585376a -xr_area 339814a -yt_area 608646a
+zoom_to -target area -xl_area 309467a -yb_area 585376a -xr_area 332480a -yt_area 608646a
+zoom_to -target area -xl_area 302134a -yb_area 585376a -xr_area 325147a -yt_area 608646a
+zoom_to -target area -xl_area 294800a -yb_area 585376a -xr_area 317813a -yt_area 608646a
+select_objects -objects [get_area_objects -type port -xl_area 284650a -yb_area 601300a -xr_area 285350a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx 5030a -dy -2020a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+set_option -name trigger:design:move_objects_mode:step -value 5
+set_option -name trigger:design:move_objects_mode:step -value 50
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -50a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+set_option -name trigger:design:move_objects_mode:step -value 1
+set_option -name trigger:design:move_objects_mode:step -value 10
+set_option -name trigger:design:move_objects_mode:step -value 100
+set_option -name trigger:design:move_objects_mode:step -value 1000
+clear_selection
+zoom_to -target area -xl_area 287467a -yb_area 585376a -xr_area 310480a -yt_area 608646a
+zoom_to -target area -xl_area 280133a -yb_area 585376a -xr_area 303146a -yt_area 608646a
+zoom_to -target area -xl_area 272800a -yb_area 585376a -xr_area 295813a -yt_area 608646a
+zoom_to -target area -xl_area 265466a -yb_area 585376a -xr_area 288479a -yt_area 608646a
+zoom_to -target area -xl_area 258132a -yb_area 585376a -xr_area 281145a -yt_area 608646a
+select_objects -objects [get_area_objects -type wire -xl_area 256300a -yb_area 0a -xr_area 257700a -yt_area 602000a -filter "@net_name == VDD && @length == 602000.0000 && @width == 1400.0000 && @layer == metal5 && @orientation == vertical && @route_type == pre_route"] -keep true
+move_objects -objects [get_selection] -dx 3060a -dy -1500a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+clear_selection
+select_objects -objects [get_area_objects -type port -xl_area 256150a -yb_area 601300a -xr_area 256850a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx 4040a -dy -940a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 250799a -yb_area 585376a -xr_area 273812a -yt_area 608646a
+zoom_to -target area -xl_area 243465a -yb_area 585376a -xr_area 266478a -yt_area 608646a
+zoom_to -target area -xl_area 236132a -yb_area 585376a -xr_area 259145a -yt_area 608646a
+zoom_to -target area -xl_area 228798a -yb_area 585376a -xr_area 251811a -yt_area 608646a
+zoom_to -target area -xl_area 221465a -yb_area 585376a -xr_area 244478a -yt_area 608646a
+zoom_to -target area -xl_area 214131a -yb_area 585376a -xr_area 237144a -yt_area 608646a
+zoom_to -target area -xl_area 206797a -yb_area 585376a -xr_area 229810a -yt_area 608646a
+zoom_to -target area -xl_area 199464a -yb_area 585376a -xr_area 222477a -yt_area 608646a
+select_objects -objects [get_area_objects -type port -xl_area 199150a -yb_area 601300a -xr_area 199850a -yt_area 602000a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx -3530a -dy -2300a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 192130a -yb_area 585376a -xr_area 215143a -yt_area 608646a
+zoom_to -target area -xl_area 184797a -yb_area 585376a -xr_area 207810a -yt_area 608646a
+zoom_to -target area -xl_area 177463a -yb_area 585376a -xr_area 200476a -yt_area 608646a
+zoom_to -target area -xl_area 170130a -yb_area 585376a -xr_area 193143a -yt_area 608646a
+zoom_to -target area -xl_area 162796a -yb_area 585376a -xr_area 185809a -yt_area 608646a
+zoom_to -target area -xl_area 155462a -yb_area 585376a -xr_area 178475a -yt_area 608646a
+zoom_to -target area -xl_area 148129a -yb_area 585376a -xr_area 171142a -yt_area 608646a
+zoom_to -target area -xl_area 140795a -yb_area 585376a -xr_area 163808a -yt_area 608646a
+zoom_to -target area -xl_area 133462a -yb_area 585376a -xr_area 156475a -yt_area 608646a
+zoom_to -target area -xl_area 126128a -yb_area 585376a -xr_area 149141a -yt_area 608646a
+zoom_to -target area -xl_area 118795a -yb_area 585376a -xr_area 141808a -yt_area 608646a
+zoom_to -target area -xl_area 111461a -yb_area 585376a -xr_area 134474a -yt_area 608646a
+zoom_to -target area -xl_area 104127a -yb_area 585376a -xr_area 127140a -yt_area 608646a
+zoom_to -target area -xl_area 96794a -yb_area 585376a -xr_area 119807a -yt_area 608646a
+zoom_to -target area -xl_area 89460a -yb_area 585376a -xr_area 112473a -yt_area 608646a
+zoom_to -target area -xl_area 82127a -yb_area 585376a -xr_area 105140a -yt_area 608646a
+zoom_to -target area -xl_area 74793a -yb_area 585376a -xr_area 97806a -yt_area 608646a
+zoom_to -target area -xl_area 67459a -yb_area 585376a -xr_area 90472a -yt_area 608646a
+zoom_to -target area -xl_area 60126a -yb_area 585376a -xr_area 83139a -yt_area 608646a
+zoom_to -target area -xl_area 52792a -yb_area 585376a -xr_area 75805a -yt_area 608646a
+zoom_to -target area -xl_area 45459a -yb_area 585376a -xr_area 68472a -yt_area 608646a
+zoom_to -target area -xl_area 38125a -yb_area 585376a -xr_area 61138a -yt_area 608646a
+zoom_to -target area -xl_area 30792a -yb_area 585376a -xr_area 53805a -yt_area 608646a
+zoom_to -target area -xl_area 23458a -yb_area 585376a -xr_area 46471a -yt_area 608646a
+zoom_to -target area -xl_area 16124a -yb_area 585376a -xr_area 39137a -yt_area 608646a
+zoom_to -target area -xl_area 8791a -yb_area 585376a -xr_area 31804a -yt_area 608646a
+select_objects -objects [get_area_objects -type wire -xl_area 2500a -yb_area 0a -xr_area 3900a -yt_area 602000a -filter "@net_name == VDD && @length == 602000.0000 && @width == 1400.0000 && @layer == metal5 && @orientation == vertical && @route_type == pre_route"] -keep true
+trigger_gui -name design:edit_delete
+set_option -name window:design:edit_delete:state -value visible
+remove_objects -objects [get_selection]
+set_option -name window:design:edit_delete:state -value hidden
+zoom_to -target area -xl_area 8791a -yb_area 572873a -xr_area 31804a -yt_area 596143a
+zoom_to -target area -xl_area 8791a -yb_area 523465a -xr_area 31804a -yt_area 546735a
+zoom_to -target area -xl_area 8791a -yb_area 429821a -xr_area 31804a -yt_area 453091a
+zoom_to -target area -xl_area 8791a -yb_area 367438a -xr_area 31804a -yt_area 390708a
+zoom_to -target area -xl_area 8791a -yb_area 362220a -xr_area 31804a -yt_area 385490a
+zoom_to -target area -xl_area 8791a -yb_area 351831a -xr_area 31804a -yt_area 375101a
+zoom_to -target area -xl_area 8791a -yb_area 310227a -xr_area 31804a -yt_area 333497a
+zoom_to -target area -xl_area 8791a -yb_area 206194a -xr_area 31804a -yt_area 229464a
+zoom_to -target area -xl_area 8791a -yb_area 128157a -xr_area 31804a -yt_area 151427a
+zoom_to -target area -xl_area 10671a -yb_area 83968a -xr_area 33684a -yt_area 107238a
+zoom_to -target area -xl_area 21954a -yb_area 70946a -xr_area 44967a -yt_area 94216a
+zoom_to -target area -xl_area 21954a -yb_area 29342a -xr_area 44967a -yt_area 52612a
+zoom_to -target area -xl_area 23599a -yb_area -7091a -xr_area 46612a -yt_area 16179a
+zoom_to -target area -xl_area 23599a -yb_area -20066a -xr_area 46612a -yt_area 3204a
+zoom_to -target area -xl_area 24163a -yb_area -22698a -xr_area 47176a -yt_area 572a
+zoom_to -target area -xl_area 25715a -yb_area -22698a -xr_area 48728a -yt_area 572a
+zoom_to -target area -xl_area 25715a -yb_area -20067a -xr_area 48728a -yt_area 3203a
+zoom_to -target area -xl_area 26326a -yb_area -9678a -xr_area 49339a -yt_area 13592a
+zoom_to -target area -xl_area 26326a -yb_area -7092a -xr_area 49339a -yt_area 16178a
+zoom_to -target area -xl_area 26326a -yb_area -1874a -xr_area 49339a -yt_area 21396a
+zoom_to -target area -xl_area 26326a -yb_area -4458a -xr_area 49339a -yt_area 18812a
+zoom_to -target area -xl_area 26326a -yb_area -7091a -xr_area 49339a -yt_area 16179a
+zoom_to -target area -xl_area 25903a -yb_area -7045a -xr_area 48916a -yt_area 16225a
+zoom_to -target area -xl_area 19650a -yb_area -7045a -xr_area 42663a -yt_area 16225a
+zoom_to -target area -xl_area 18898a -yb_area -7045a -xr_area 41911a -yt_area 16225a
+zoom_to -target area -xl_area 18099a -yb_area -7045a -xr_area 41112a -yt_area 16225a
+zoom_to -target area -xl_area 17300a -yb_area -7045a -xr_area 40313a -yt_area 16225a
+zoom_to -target area -xl_area 13445a -yb_area -7045a -xr_area 36458a -yt_area 16225a
+zoom_to -target area -xl_area 8744a -yb_area -7045a -xr_area 31757a -yt_area 16225a
+zoom_to -target area -xl_area 7193a -yb_area -7045a -xr_area 30206a -yt_area 16225a
+zoom_to -target area -xl_area 5641a -yb_area -7045a -xr_area 28654a -yt_area 16225a
+zoom_to -target area -xl_area 3338a -yb_area -7045a -xr_area 26351a -yt_area 16225a
+zoom_to -target area -xl_area 2539a -yb_area -7045a -xr_area 25552a -yt_area 16225a
+zoom_to -target area -xl_area 4089a -yb_area -7045a -xr_area 27102a -yt_area 16225a
+zoom_to -target area -xl_area 10294a -yb_area -7045a -xr_area 33307a -yt_area 16225a
+zoom_to -target area -xl_area 13444a -yb_area -7045a -xr_area 36457a -yt_area 16225a
+zoom_to -target area -xl_area 18098a -yb_area -7045a -xr_area 41111a -yt_area 16225a
+zoom_to -target area -xl_area 19649a -yb_area -7045a -xr_area 42662a -yt_area 16225a
+zoom_to -target area -xl_area 25102a -yb_area -7045a -xr_area 48115a -yt_area 16225a
+zoom_to -target area -xl_area 29756a -yb_area -7045a -xr_area 52769a -yt_area 16225a
+zoom_to -target area -xl_area 36009a -yb_area -7045a -xr_area 59022a -yt_area 16225a
+zoom_to -target area -xl_area 43013a -yb_area -7045a -xr_area 66026a -yt_area 16225a
+zoom_to -target area -xl_area 50018a -yb_area -7045a -xr_area 73031a -yt_area 16225a
+zoom_to -target area -xl_area 57022a -yb_area -7045a -xr_area 80035a -yt_area 16225a
+zoom_to -target area -xl_area 60924a -yb_area -7045a -xr_area 83937a -yt_area 16225a
+zoom_to -target area -xl_area 65578a -yb_area -7045a -xr_area 88591a -yt_area 16225a
+zoom_to -target area -xl_area 67929a -yb_area -7045a -xr_area 90942a -yt_area 16225a
+zoom_to -target area -xl_area 69480a -yb_area -7045a -xr_area 92493a -yt_area 16225a
+zoom_to -target area -xl_area 71031a -yb_area -7045a -xr_area 94044a -yt_area 16225a
+zoom_to -target area -xl_area 71783a -yb_area -7045a -xr_area 94796a -yt_area 16225a
+zoom_to -target area -xl_area 74134a -yb_area -7045a -xr_area 97147a -yt_area 16225a
+zoom_to -target area -xl_area 74933a -yb_area -7045a -xr_area 97946a -yt_area 16225a
+zoom_to -target area -xl_area 75685a -yb_area -7045a -xr_area 98698a -yt_area 16225a
+zoom_to -target area -xl_area 79587a -yb_area -7045a -xr_area 102600a -yt_area 16225a
+zoom_to -target area -xl_area 81938a -yb_area -7045a -xr_area 104951a -yt_area 16225a
+zoom_to -target area -xl_area 83489a -yb_area -7045a -xr_area 106502a -yt_area 16225a
+zoom_to -target area -xl_area 84241a -yb_area -7045a -xr_area 107254a -yt_area 16225a
+zoom_to -target area -xl_area 85792a -yb_area -7045a -xr_area 108805a -yt_area 16225a
+zoom_to -target area -xl_area 88942a -yb_area -7045a -xr_area 111955a -yt_area 16225a
+zoom_to -target area -xl_area 92045a -yb_area -7045a -xr_area 115058a -yt_area 16225a
+zoom_to -target area -xl_area 95947a -yb_area -7045a -xr_area 118960a -yt_area 16225a
+zoom_to -target area -xl_area 99049a -yb_area -7045a -xr_area 122062a -yt_area 16225a
+zoom_to -target area -xl_area 103703a -yb_area -7045a -xr_area 126716a -yt_area 16225a
+zoom_to -target area -xl_area 108357a -yb_area -7045a -xr_area 131370a -yt_area 16225a
+zoom_to -target area -xl_area 112259a -yb_area -7045a -xr_area 135272a -yt_area 16225a
+zoom_to -target area -xl_area 116161a -yb_area -7045a -xr_area 139174a -yt_area 16225a
+zoom_to -target area -xl_area 118511a -yb_area -7045a -xr_area 141524a -yt_area 16225a
+zoom_to -target area -xl_area 120063a -yb_area -7045a -xr_area 143076a -yt_area 16225a
+zoom_to -target area -xl_area 123165a -yb_area -7045a -xr_area 146178a -yt_area 16225a
+zoom_to -target area -xl_area 125516a -yb_area -7045a -xr_area 148529a -yt_area 16225a
+zoom_to -target area -xl_area 126268a -yb_area -7045a -xr_area 149281a -yt_area 16225a
+zoom_to -target area -xl_area 129371a -yb_area -7045a -xr_area 152384a -yt_area 16225a
+zoom_to -target area -xl_area 130170a -yb_area -7045a -xr_area 153183a -yt_area 16225a
+zoom_to -target area -xl_area 134072a -yb_area -7045a -xr_area 157085a -yt_area 16225a
+zoom_to -target area -xl_area 135623a -yb_area -7045a -xr_area 158636a -yt_area 16225a
+zoom_to -target area -xl_area 136375a -yb_area -7045a -xr_area 159388a -yt_area 16225a
+zoom_to -target area -xl_area 137174a -yb_area -7045a -xr_area 160187a -yt_area 16225a
+zoom_to -target area -xl_area 137974a -yb_area -7045a -xr_area 160987a -yt_area 16225a
+zoom_to -target area -xl_area 138726a -yb_area -7045a -xr_area 161739a -yt_area 16225a
+zoom_to -target area -xl_area 143380a -yb_area -7045a -xr_area 166393a -yt_area 16225a
+zoom_to -target area -xl_area 147282a -yb_area -7045a -xr_area 170295a -yt_area 16225a
+zoom_to -target area -xl_area 150384a -yb_area -7045a -xr_area 173397a -yt_area 16225a
+zoom_to -target area -xl_area 154286a -yb_area -7045a -xr_area 177299a -yt_area 16225a
+zoom_to -target area -xl_area 155085a -yb_area -7045a -xr_area 178098a -yt_area 16225a
+zoom_to -target area -xl_area 158188a -yb_area -7045a -xr_area 181201a -yt_area 16225a
+zoom_to -target area -xl_area 162090a -yb_area -7045a -xr_area 185103a -yt_area 16225a
+zoom_to -target area -xl_area 163641a -yb_area -7045a -xr_area 186654a -yt_area 16225a
+zoom_to -target area -xl_area 165192a -yb_area -7045a -xr_area 188205a -yt_area 16225a
+zoom_to -target area -xl_area 171398a -yb_area -7045a -xr_area 194411a -yt_area 16225a
+zoom_to -target area -xl_area 174547a -yb_area -7045a -xr_area 197560a -yt_area 16225a
+zoom_to -target area -xl_area 179201a -yb_area -7045a -xr_area 202214a -yt_area 16225a
+zoom_to -target area -xl_area 184655a -yb_area -7045a -xr_area 207668a -yt_area 16225a
+zoom_to -target area -xl_area 186206a -yb_area -7045a -xr_area 209219a -yt_area 16225a
+zoom_to -target area -xl_area 188556a -yb_area -7045a -xr_area 211569a -yt_area 16225a
+zoom_to -target area -xl_area 191659a -yb_area -7045a -xr_area 214672a -yt_area 16225a
+zoom_to -target area -xl_area 194762a -yb_area -7045a -xr_area 217775a -yt_area 16225a
+zoom_to -target area -xl_area 197864a -yb_area -7045a -xr_area 220877a -yt_area 16225a
+zoom_to -target area -xl_area 201766a -yb_area -7045a -xr_area 224779a -yt_area 16225a
+zoom_to -target area -xl_area 203318a -yb_area -7045a -xr_area 226331a -yt_area 16225a
+zoom_to -target area -xl_area 204117a -yb_area -7045a -xr_area 227130a -yt_area 16225a
+zoom_to -target area -xl_area 208771a -yb_area -7045a -xr_area 231784a -yt_area 16225a
+zoom_to -target area -xl_area 212673a -yb_area -7045a -xr_area 235686a -yt_area 16225a
+zoom_to -target area -xl_area 215775a -yb_area -7045a -xr_area 238788a -yt_area 16225a
+zoom_to -target area -xl_area 216575a -yb_area -7045a -xr_area 239588a -yt_area 16225a
+zoom_to -target area -xl_area 217327a -yb_area -7045a -xr_area 240340a -yt_area 16225a
+zoom_to -target area -xl_area 218126a -yb_area -7045a -xr_area 241139a -yt_area 16225a
+zoom_to -target area -xl_area 220429a -yb_area -7045a -xr_area 243442a -yt_area 16225a
+zoom_to -target area -xl_area 224331a -yb_area -7045a -xr_area 247344a -yt_area 16225a
+zoom_to -target area -xl_area 226682a -yb_area -7045a -xr_area 249695a -yt_area 16225a
+zoom_to -target area -xl_area 232135a -yb_area -7045a -xr_area 255148a -yt_area 16225a
+zoom_to -target area -xl_area 236789a -yb_area -7045a -xr_area 259802a -yt_area 16225a
+zoom_to -target area -xl_area 237588a -yb_area -7045a -xr_area 260601a -yt_area 16225a
+zoom_to -target area -xl_area 238340a -yb_area -7045a -xr_area 261353a -yt_area 16225a
+zoom_to -target area -xl_area 238340a -yb_area -7045a -xr_area 261353a -yt_area 16225a
+zoom_to -target area -xl_area 239139a -yb_area -7045a -xr_area 262152a -yt_area 16225a
+zoom_to -target area -xl_area 240691a -yb_area -7045a -xr_area 263704a -yt_area 16225a
+zoom_to -target area -xl_area 244593a -yb_area -7045a -xr_area 267606a -yt_area 16225a
+zoom_to -target area -xl_area 245345a -yb_area -7045a -xr_area 268358a -yt_area 16225a
+zoom_to -target area -xl_area 246144a -yb_area -7045a -xr_area 269157a -yt_area 16225a
+zoom_to -target area -xl_area 249247a -yb_area -7045a -xr_area 272260a -yt_area 16225a
+zoom_to -target area -xl_area 251597a -yb_area -7045a -xr_area 274610a -yt_area 16225a
+move_objects -objects [get_selection] -dx 249110a -dy -594800a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+select_objects -objects [get_area_objects -type port -xl_area 252350a -yb_area 0a -xr_area 253050a -yt_area 700a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx -2960a -dy -2490a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+select_objects -objects [get_area_objects -type port -xl_area 280850a -yb_area 0a -xr_area 281550a -yt_area 700a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx -2020a -dy -2450a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 252349a -yb_area -10054a -xr_area 275362a -yt_area 13216a
+zoom_to -target area -xl_area 256251a -yb_area -10054a -xr_area 279264a -yt_area 13216a
+zoom_to -target area -xl_area 257003a -yb_area -10054a -xr_area 280016a -yt_area 13216a
+zoom_to -target area -xl_area 257802a -yb_area -10054a -xr_area 280815a -yt_area 13216a
+zoom_to -target area -xl_area 260905a -yb_area -10054a -xr_area 283918a -yt_area 13216a
+zoom_to -target area -xl_area 261704a -yb_area -10054a -xr_area 284717a -yt_area 13216a
+zoom_to -target area -xl_area 263256a -yb_area -10054a -xr_area 286269a -yt_area 13216a
+zoom_to -target area -xl_area 267157a -yb_area -10054a -xr_area 290170a -yt_area 13216a
+zoom_to -target area -xl_area 268709a -yb_area -10054a -xr_area 291722a -yt_area 13216a
+zoom_to -target area -xl_area 269461a -yb_area -10054a -xr_area 292474a -yt_area 13216a
+zoom_to -target area -xl_area 270260a -yb_area -10054a -xr_area 293273a -yt_area 13216a
+zoom_to -target area -xl_area 271012a -yb_area -10054a -xr_area 294025a -yt_area 13216a
+zoom_to -target area -xl_area 273363a -yb_area -10054a -xr_area 296376a -yt_area 13216a
+zoom_to -target area -xl_area 278017a -yb_area -10054a -xr_area 301030a -yt_area 13216a
+zoom_to -target area -xl_area 282718a -yb_area -10054a -xr_area 305731a -yt_area 13216a
+zoom_to -target area -xl_area 287372a -yb_area -10054a -xr_area 310385a -yt_area 13216a
+zoom_to -target area -xl_area 288171a -yb_area -10054a -xr_area 311184a -yt_area 13216a
+zoom_to -target area -xl_area 288923a -yb_area -10054a -xr_area 311936a -yt_area 13216a
+select_objects -objects [get_area_objects -type port -xl_area 311250a -yb_area 0a -xr_area 311950a -yt_area 700a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx -470a -dy -2630a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param right
+move_objects -objects [get_selection] -dx 1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 289722a -yb_area -10054a -xr_area 312735a -yt_area 13216a
+zoom_to -target area -xl_area 294376a -yb_area -10054a -xr_area 317389a -yt_area 13216a
+zoom_to -target area -xl_area 296727a -yb_area -10054a -xr_area 319740a -yt_area 13216a
+zoom_to -target area -xl_area 300629a -yb_area -10054a -xr_area 323642a -yt_area 13216a
+zoom_to -target area -xl_area 303731a -yb_area -10054a -xr_area 326744a -yt_area 13216a
+zoom_to -target area -xl_area 306035a -yb_area -10054a -xr_area 329048a -yt_area 13216a
+zoom_to -target area -xl_area 309184a -yb_area -10054a -xr_area 332197a -yt_area 13216a
+zoom_to -target area -xl_area 311488a -yb_area -10054a -xr_area 334501a -yt_area 13216a
+zoom_to -target area -xl_area 313039a -yb_area -10054a -xr_area 336052a -yt_area 13216a
+zoom_to -target area -xl_area 314638a -yb_area -10054a -xr_area 337651a -yt_area 13216a
+zoom_to -target area -xl_area 323193a -yb_area -10054a -xr_area 346206a -yt_area 13216a
+zoom_to -target area -xl_area 326296a -yb_area -10054a -xr_area 349309a -yt_area 13216a
+zoom_to -target area -xl_area 328647a -yb_area -10054a -xr_area 351660a -yt_area 13216a
+zoom_to -target area -xl_area 330198a -yb_area -10054a -xr_area 353211a -yt_area 13216a
+zoom_to -target area -xl_area 330950a -yb_area -10054a -xr_area 353963a -yt_area 13216a
+zoom_to -target area -xl_area 337202a -yb_area -10054a -xr_area 360215a -yt_area 13216a
+select_objects -objects [get_area_objects -type port -xl_area 337850a -yb_area 0a -xr_area 338550a -yt_area 700a -filter "@width == 700 && @height == 700 && @layer == metal2 && @orientation == vertical"] -keep true
+move_objects -objects [get_selection] -dx 280a -dy -1980a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+trigger_gui -name design:edit_undo
+#performed undo of move_objects
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+## trigger_gui -name design:move_objects_mode:move -param left
+move_objects -objects [get_selection] -dx -1000a -dy 0a -cell_state unplaced_to_placed -macro_pad_state unplaced_to_placed -legalize_cell_orientation true -dont_move_fixed false
+clear_selection
+zoom_to -target area -xl_area 337955a -yb_area -10054a -xr_area 360968a -yt_area 13216a
+zoom_to -target area -xl_area 350412a -yb_area -10054a -xr_area 373425a -yt_area 13216a
+zoom_to -target area -xl_area 358216a -yb_area -10054a -xr_area 381229a -yt_area 13216a
+zoom_to -target area -xl_area 362071a -yb_area -10054a -xr_area 385084a -yt_area 13216a
+zoom_to -target area -xl_area 363669a -yb_area -10054a -xr_area 386682a -yt_area 13216a
+zoom_to -target area -xl_area 365220a -yb_area -10054a -xr_area 388233a -yt_area 13216a
+zoom_to -target area -xl_area 365973a -yb_area -10054a -xr_area 388986a -yt_area 13216a
+zoom_to -target area -xl_area 368323a -yb_area -10054a -xr_area 391336a -yt_area 13216a
+zoom_to -target area -xl_area 372977a -yb_area -10054a -xr_area 395990a -yt_area 13216a
+zoom_to -target area -xl_area 375328a -yb_area -10054a -xr_area 398341a -yt_area 13216a
+zoom_to -target area -xl_area 378430a -yb_area -10054a -xr_area 401443a -yt_area 13216a
+zoom_to -target area -xl_area 383084a -yb_area -10054a -xr_area 406097a -yt_area 13216a
+zoom_to -target area -xl_area 386234a -yb_area -10054a -xr_area 409247a -yt_area 13216a
+zoom_to -target area -xl_area 387785a -yb_area -10054a -xr_area 410798a -yt_area 13216a
+zoom_to -target area -xl_area 391640a -yb_area -10054a -xr_area 414653a -yt_area 13216a
+zoom_to -target area -xl_area 394790a -yb_area -10054a -xr_area 417803a -yt_area 13216a
+zoom_to -target area -xl_area 395542a -yb_area -10054a -xr_area 418555a -yt_area 13216a
+zoom_to -target area -xl_area 396341a -yb_area -10054a -xr_area 419354a -yt_area 13216a
+zoom_to -target area -xl_area 398645a -yb_area -10054a -xr_area 421658a -yt_area 13216a
+zoom_to -target area -xl_area 403346a -yb_area -10054a -xr_area 426359a -yt_area 13216a
+zoom_to -target area -xl_area 404897a -yb_area -10054a -xr_area 427910a -yt_area 13216a
+zoom_to -target area -xl_area 405649a -yb_area -10054a -xr_area 428662a -yt_area 13216a
+zoom_to -target area -xl_area 408000a -yb_area -10054a -xr_area 431013a -yt_area 13216a
+zoom_to -target area -xl_area 409551a -yb_area -10054a -xr_area 432564a -yt_area 13216a
+zoom_to -target area -xl_area 410350a -yb_area -10054a -xr_area 433363a -yt_area 13216a
+zoom_to -target area -xl_area 413453a -yb_area -10054a -xr_area 436466a -yt_area 13216a
+zoom_to -target area -xl_area 414252a -yb_area -10054a -xr_area 437265a -yt_area 13216a
+zoom_to -target area -xl_area 415004a -yb_area -10054a -xr_area 438017a -yt_area 13216a
+zoom_to -target area -xl_area 418906a -yb_area -10054a -xr_area 441919a -yt_area 13216a
+zoom_to -target area -xl_area 419658a -yb_area -10054a -xr_area 442671a -yt_area 13216a
+zoom_to -target area -xl_area 422009a -yb_area -10054a -xr_area 445022a -yt_area 13216a
+zoom_to -target area -xl_area 423560a -yb_area -10054a -xr_area 446573a -yt_area 13216a
+zoom_to -target area -xl_area 425910a -yb_area -10054a -xr_area 448923a -yt_area 13216a
+zoom_to -target area -xl_area 428261a -yb_area -10054a -xr_area 451274a -yt_area 13216a
+zoom_to -target area -xl_area 429812a -yb_area -10054a -xr_area 452825a -yt_area 13216a
+zoom_to -target area -xl_area 430564a -yb_area -10054a -xr_area 453577a -yt_area 13216a
+zoom_to -target area -xl_area 433667a -yb_area -10054a -xr_area 456680a -yt_area 13216a
+zoom_to -target area -xl_area 434466a -yb_area -10054a -xr_area 457479a -yt_area 13216a
+zoom_to -target area -xl_area 436817a -yb_area -10054a -xr_area 459830a -yt_area 13216a
+zoom_to -target area -xl_area 439120a -yb_area -10054a -xr_area 462133a -yt_area 13216a
+zoom_to -target area -xl_area 439920a -yb_area -10054a -xr_area 462933a -yt_area 13216a
+zoom_to -target area -xl_area 444574a -yb_area -10054a -xr_area 467587a -yt_area 13216a
+zoom_to -target area -xl_area 446924a -yb_area -10054a -xr_area 469937a -yt_area 13216a
+zoom_to -target area -xl_area 448475a -yb_area -10054a -xr_area 471488a -yt_area 13216a
+zoom_to -target area -xl_area 449275a -yb_area -10054a -xr_area 472288a -yt_area 13216a
+zoom_to -target area -xl_area 452377a -yb_area -10054a -xr_area 475390a -yt_area 13216a
+zoom_to -target area -xl_area 455480a -yb_area -10054a -xr_area 478493a -yt_area 13216a
+zoom_to -target area -xl_area 456279a -yb_area -10054a -xr_area 479292a -yt_area 13216a
+zoom_to -target area -xl_area 457031a -yb_area -10054a -xr_area 480044a -yt_area 13216a
+zoom_to -target area -xl_area 459382a -yb_area -10054a -xr_area 482395a -yt_area 13216a
+zoom_to -target area -xl_area 460134a -yb_area -10054a -xr_area 483147a -yt_area 13216a
+zoom_to -target area -xl_area 461685a -yb_area -10054a -xr_area 484698a -yt_area 13216a
+zoom_to -target area -xl_area 478844a -yb_area -10054a -xr_area 501857a -yt_area 13216a
+zoom_to -target area -xl_area 486601a -yb_area -10054a -xr_area 509614a -yt_area 13216a
+zoom_to -target area -xl_area 493605a -yb_area -10054a -xr_area 516618a -yt_area 13216a
+zoom_to -target area -xl_area 495956a -yb_area -10054a -xr_area 518969a -yt_area 13216a
+zoom_to -target area -xl_area 497507a -yb_area -10054a -xr_area 520520a -yt_area 13216a
+zoom_to -target area -xl_area 499857a -yb_area -10054a -xr_area 522870a -yt_area 13216a
+zoom_to -target area -xl_area 504511a -yb_area -10054a -xr_area 527524a -yt_area 13216a
+zoom_to -target area -xl_area 508413a -yb_area -10054a -xr_area 531426a -yt_area 13216a
+zoom_to -target area -xl_area 513067a -yb_area -10054a -xr_area 536080a -yt_area 13216a
+zoom_to -target area -xl_area 517721a -yb_area -10054a -xr_area 540734a -yt_area 13216a
+zoom_to -target area -xl_area 518520a -yb_area -10054a -xr_area 541533a -yt_area 13216a
+zoom_to -target area -xl_area 523974a -yb_area -10054a -xr_area 546987a -yt_area 13216a
+zoom_to -target area -xl_area 527076a -yb_area -10054a -xr_area 550089a -yt_area 13216a
+zoom_to -target area -xl_area 532529a -yb_area -10054a -xr_area 555542a -yt_area 13216a
+zoom_to -target area -xl_area 536431a -yb_area -10054a -xr_area 559444a -yt_area 13216a
+zoom_to -target area -xl_area 537183a -yb_area -10054a -xr_area 560196a -yt_area 13216a
+zoom_to -target area -xl_area 537983a -yb_area -10054a -xr_area 560996a -yt_area 13216a
+zoom_to -target area -xl_area 539534a -yb_area -10054a -xr_area 562547a -yt_area 13216a
+zoom_to -target area -xl_area 543436a -yb_area -10054a -xr_area 566449a -yt_area 13216a
+zoom_to -target area -xl_area 544987a -yb_area -10054a -xr_area 568000a -yt_area 13216a
+zoom_to -target area -xl_area 547338a -yb_area -10054a -xr_area 570351a -yt_area 13216a
+zoom_to -target area -xl_area 552744a -yb_area -10054a -xr_area 575757a -yt_area 13216a
+zoom_to -target area -xl_area 558197a -yb_area -10054a -xr_area 581210a -yt_area 13216a
+zoom_to -target area -xl_area 561347a -yb_area -10054a -xr_area 584360a -yt_area 13216a
+zoom_to -target area -xl_area 566001a -yb_area -10054a -xr_area 589014a -yt_area 13216a
+zoom_to -target area -xl_area 569902a -yb_area -10054a -xr_area 592915a -yt_area 13216a
+zoom_to -target area -xl_area 573005a -yb_area -10054a -xr_area 596018a -yt_area 13216a
+zoom_to -target area -xl_area 576907a -yb_area -10054a -xr_area 599920a -yt_area 13216a
+zoom_to -target area -xl_area 579210a -yb_area -10054a -xr_area 602223a -yt_area 13216a
+zoom_to -target area -xl_area 580762a -yb_area -10054a -xr_area 603775a -yt_area 13216a
+zoom_to -target area -xl_area 581561a -yb_area -10054a -xr_area 604574a -yt_area 13216a
+zoom_to -target area -xl_area 580763a -yb_area -10054a -xr_area 603776a -yt_area 13216a
+zoom_to -target area -xl_area 576109a -yb_area -10054a -xr_area 599122a -yt_area 13216a
+zoom_to -target area -xl_area 575310a -yb_area -10054a -xr_area 598323a -yt_area 13216a
+zoom_to -target area -xl_area 574557a -yb_area -10054a -xr_area 597570a -yt_area 13216a
+zoom_to -target area -xl_area 573758a -yb_area -10054a -xr_area 596771a -yt_area 13216a
+write_db -file db/import.db
+source flow_scripts/1_place.tcl
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# set_crpr_spec -method margin_based
+# config_default_value -command compile_scan -argument cross_chain_optimization -value false
+# config_place_detail -name min_filler_space -value $MGC_min_filler_space
+# fk_msg -type info Reading OCV from scr/ocv.tcl
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_shell -echo false
+# config_shell -table_lines vertical_lines
+# config_shell -echo false
+# config_shell -echo false
+# config_optimize -dont_create_assign
+# fk_msg -type info "Deriving Clock NDR from technology."
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_layers -type metal
+# fk_msg Setting up NDR: setup_clock_ndr_shield {-ndr_width_multiplier 1  -ndr_space_multiplier 2  -ndr_layers {metal7 metal8}  -top_route_layer metal8}
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# setup_clock_ndr_shield -ndr_width_multiplier 1 -ndr_space_multiplier 2 -ndr_layers metal7 metal8 -top_route_layer metal8
+# get_config -name process -param node
+# config_shell -echo false
+# set_rcd_models -stage pre_cts
+# config_shell -echo false
+# fk_msg -type info Reading configs from scr/config.tcl
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_shell -echo false
+# config_optimize -allow_reroute true -nondef_rule "" 
+# config_timing -disable_clock_gating_checks false
+# config_clockdata_optimize -name hold_corners -value corner_0_0
+# config_flows -preserve_rcd true
+# config_shell -echo false
+# set_max_length -length_threshold $MGC_maxLengthParam 
+# report_max_length
+# fk_msg "Max Length Set to [report_max_length]"
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_shell -echo false
+# fk_msg -type warning Please provide SAIF file when running low power flow. Power analysis will be inaccurate otherwise.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg -type warning MGC_cts_repeater_pruning_objective is not defined. Setting it to default value 'delay'. Please review/update flow_variables.tcl to latest version.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_cts -corner corner_0_0 -min_route_layer metal7 -max_route_layer metal8 -max_transition 0.25n -max_leaf_transition 0.25n -max_skew 0.2n -max_length 400u -enable_port_clock_leaves false
+# config_cts -use_inverters false -buffers CLKBUF_* -inverters 
+# config_shell -echo false
+# fk_msg Delay, Timing, Parasitic, CRPR Configs Report
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_timing -report
+# config_extraction -report
+# report_delay_model
+# report_parasitic_model
+# set_crpr_spec -report
+# source nrf_customization.tcl
+# run_place_timing -effort $MGC_flow_effort  -skip_precondition $MGC_skip_precondition -messages verbose 
+# create_property -name rpt_flow_args -object_type root -storage sparse -data_type string -hidden true -persistent true -init false >> /dev/null
+# get_root
+# set_property -name rpt_flow_args -object root -value {2 effort medium} {6 messages verbose} {11 skip_preconditioning true}
+# config_flows -action is_user_defined -optimize_layers
+# config_shell -echo false
+# get_config -name process -param node
+# config_application -cpus 4
+# config_shell -echo_script false
+# config_shell -echo_script false
+# get_top_partition
+# config_shell -echo_script false
+# config_shell -echo_script false
+# config_place_timing -category user_defined
+# config_place_detail -category user_defined
+# config_route_global -category user_defined
+# config_place_timing -name low_power_effort
+# config_place_timing -name enable_remap_optimization
+# config_place_timing -name enable_remap_optimization
+# config_place_timing -name pass2_optimization_effort
+# config_place_timing -name turbo2
+# config_place_timing -name congestion_effort
+# config_cell_density_map_colors -ignore_bloats false
+# config_place_timing -name combined_multi_objective
+# config_place_timing -name combined_multi_objective
+# get_root
+# get_property -name mxdb.design_state.netlist -object root
+# config_prects_corners -mode set
+# config_shell -echo false
+# report_analysis_corner
+# config_nitro_flow -name power_corner
+# get_config -name ref_flows/power_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# config_clock_timing -name dont_prune_corners -value corner_0_0
+# config_place_timing -name low_power_effort
+# fk_msg -type info Power effort is low. Enabling corner corner_0_0 for leakage and dynamic power.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_analysis_corner -corner corner_0_0 -enable true -setup true -power all
+# config_nitro_flow -name leakage_corner
+# get_config -name ref_flows/leakage_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# report_analysis_corner
+# config_timing -create_io_path_groups true
+# config_shell -echo false
+# config_timing -estimated_delay false
+# config_shell -echo false
+# config_shell -echo false
+# config_place_detail -name follow_drc_for
+# check_floorplan -check row_orient_vs_pg_rails
+# get_objects -type error -filter @name==row_orient_vs_pg_rails
+# factorize_pin_offsets -monitor true
+# config_place_timing -name clock_tree_uncertainty_estimation
+# config_shell -echo_script false
+# config_shell -echo false
+# config_shell -echo_script false
+# redirect -variable report_delay_model -commands report_delay_model
+# config_place_timing -name soft_max_timer_use_plx_for_const_net_wire_cap -value true
+# config_scan_chains -enable false
+# get_objects scan_spec
+# config_scan_chains -enable true
+# remove_routing -route_type detail_route -net_type clock signal
+# config_place_timing -name low_power_effort
+# ipo_vt_expert -create
+# config_nitro_flow -name enable_leakage_control -value true
+# set_config -name ref_flows/enable_leakage_control -value true
+# get_objects root
+# set_property -name auto_ideal_fanout_threshold -val 128 root
+# update_property -name is_auto_ideal -object_type net
+# config_shell -echo_script false
+# config_place_timing -name congestion_effort -reset
+# unplace_objects -cell_types std_cells -skip_physical true
+# get_objects root
+# get_property -name auto_ideal_fanout_threshold root
+# config_place_timing -name fanout_limit
+# get_objects root
+# set_property -name auto_ideal_fanout_threshold -value 1024 root
+# update_property -name is_auto_ideal -object_type net
+# config_shell -echo_script false
+# place_timing -effort none
+# config_place_timing -name congestion_effort -value low
+# set_delay_model -base_model voltage -data true -clock false
+# set_delay_model -base_model voltage -data false -clock true
+# config_place_timing -name soft_max_timer_use_plx_for_const_net_wire_cap -reset
+# config_shell -echo_script false
+# config_shell -echo false
+# get_config -name config_auto_learning -param apply_place_locations
+# get_config -name config_auto_learning -param apply_setup_slack_margins
+# get_config -name config_auto_learning -param apply_density_screens
+# config_shell -echo_script false
+# redirect -variable report_delay_model -commands report_delay_model
+# config_place_timing -name soft_max_timer_use_plx_for_const_net_wire_cap -value true
+# config_place_timing -name congestion_effort -reset
+# config_place_timing -name ipo_target_utilization
+# config_shell -echo_script false
+# config_place_timing -name ipo_target_utilization
+# config_place_timing -name ipo_target_utilization -value 69.21514949955
+# config_place_timing -name ipo_drc_use_placement_regions -value true
+# ipo_sweep_drc -max_slew 5000 -max_radius 1000u -max_cap 500 -max_fanout 48
+# config_place_timing -name ipo_drc_use_placement_regions -reset
+# ipo_sweep_boundary
+# ipo_vr_server -purge true
+# config_shell -echo_script false
+# ipo_sweep_size -target 0.01
+# update_timing
+# config_place_timing -name clock_tree_latency_estimation
+# report_path_group -viol -sort wns
+# cg_annotate_clock_latencies add_latencies
+# report_path_group -viol -sort wns
+# config_place_timing -name clock_tree_uncertainty_estimation
+# ipo_size_timing -target 0.01
+# ipo_vr_server -purge true
+# config_shell -echo_script false
+# create_property -name rpt_gplace_plc_util -object_type partition -storage sparse -data_type double -hidden true -persistent true -init 0
+# get_top_partition
+# set_property -name rpt_gplace_plc_util -object multiplier -value 64.4242
+# config_place_timing -name max_utilization
+# get_top_partition
+# get_property -obj multiplier -name max_layer
+# get_objects tech
+# get_property -obj {} -name max_layer
+# get_layers -type metal
+# config_place_timing -name from_state -value seed
+# config_place_timing -name use_high_spread_effort_for_response -value true
+# place_timing -turbo true
+# config_place_timing -name use_high_spread_effort_for_response -reset
+# config_place_timing -name from_state -reset
+# config_place_timing -name congestion_effort -value low
+# config_place_timing -name do_large_cell_halo_policy
+# set_delay_model -base_model voltage -data true -clock false
+# set_delay_model -base_model voltage -data false -clock true
+# config_place_timing -name soft_max_timer_use_plx_for_const_net_wire_cap -reset
+# config_shell -echo_script false
+# config_shell -echo false
+# config_shell -echo_script false
+# ipo_delete_repeaters
+# ipo_sweep_drc -max_slew 5000 -max_radius 1000u -max_cap 500 -max_fanout 48
+# ipo_vr_server -purge true
+# config_shell -echo_script false
+# config_place_timing -name ipo_target_utilization
+# ipo_sweep_size -target 0.0382324899999999
+# ipo_vr_server -start true
+# update_timing
+# config_place_timing -name clock_tree_latency_estimation
+# report_path_group -viol -sort wns
+# cg_annotate_clock_latencies add_latencies
+# report_path_group -viol -sort wns
+# config_place_timing -name clock_tree_uncertainty_estimation
+# ipo_size_timing -target 0.01
+# report_path_group -violators_only -sort wns
+# ipo_optimize -tns -convergent f -clock f -pipelines t -add f -move f -size f
+# ipo_sweep_size -critical
+# report_path_group -violators_only -sort wns
+# config_shell -echo_script false
+# get_objects root
+# set_property -name auto_ideal_fanout_threshold -value 128 root
+# update_property -name is_auto_ideal -object_type net
+# get_nets -flat -filter @is_auto_ideal && !@is_clock && @is_signal && !@is_user_ideal && !@is_dont_modify
+# place_detail -follow_drc_for 
+# ipo_vr_server -purge true
+# config_place_timing -name ipo_target_utilization -reset
+# ipo_flip_cell
+# route_global -flow turbo
+# report_path_group -violators_only -sort wns
+# get_tdro_congestion_score
+# analyze_congestion
+# config_place_timing -name high_congestion_threshold
+# create_property -name rpt_hfns_grp4 -object_type partition -storage sparse -data_type double -hidden true -persistent true -init 0
+# get_top_partition
+# set_property -name rpt_hfns_grp4 -object multiplier -value 0.0
+# config_shell -echo_script false
+# config_shell -echo false
+# config_shell -echo_script false
+# config_shell -echo false
+# get_top_partition
+# set_property -name optimize_max_util -value 100 -objects multiplier
+# update_cell_density_map -rect_size 16
+# config_place_timing -name enable_feedthrough_buffering_mode
+# ipo_sweep_drc -max_slew 5000 -max_radius 1000u -max_cap 500 -max_fanout 48
+# ipo_vr_server -purge true
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# config_power_optimize -coarse_vt_control_modes  wns tns drc hold 
+# get_config -name config_optimize -param multi_process_count
+# get_config -name config_optimize -param enable_mx
+# optimize -mode global -objective wns tns drc
+# config_shell -echo false
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# config_power_optimize -coarse_vt_control_modes 
+# config_optimize -enable_mx true -multi_process_count 4
+# config_place_timing -name enable_feedthrough_buffering_mode
+# config_place_timing -name low_effort_io_optimization
+# config_shell -echo false
+# debug_opt -enable_prects_usq_for_tns true
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# get_config -name config_auto_learning -param enable_wns_local_optimize
+# get_config -name config_optimize -param multi_process_count
+# get_config -name config_optimize -param enable_mx
+# optimize -mode local -effort medium -objective wns tns drc
+# config_shell -echo false
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# config_optimize -enable_mx true -multi_process_count 4
+# config_place_timing -name low_power_effort
+# config_place_timing -name low_power_effort
+# config_shell -echo false
+# config_place_timing -name apply_clock_offsets_for_power
+# ipo_optimize -convergent false -clock_offsets true -congestion true -messages verbose
+# report_path_group -violators_only -sort wns
+# ipo_vr_server -purge true
+# config_shell -echo true
+# report_path_group -violators_only -sort wns
+# config_shell -echo_script false
+# config_shell -echo_script false
+# config_shell -echo false
+# get_top_partition
+# get_property -name rpt_hfns_grp4 -object multiplier
+# config_place_timing -name low_effort_io_optimization
+# config_shell -echo_script false
+# config_place_timing -name high_congestion_threshold
+# config_place_timing -name group_registers
+# config_shell -echo_script false
+# ipo_vr_server -advanced_cdm true
+# config_place_timing -name low_effort_io_optimization
+# config_shell -echo false
+# ipo_optimize -convergent false -clock_offsets false -congestion false -messages verbose
+# report_path_group -violators_only -sort wns
+# config_shell -echo false
+# get_path_groups -filter @is_special==false && @is_active==true && @is_visible==true && @weight>0 && @is_qor==true
+# config_messages -message_id UI33 -max_message 0
+# config_shell -echo_script false
+# config_messages -message_id UI33 -max_message 0 -reset
+# ipo_optimize -convergent true -clock_offsets true -congestion false -messages verbose
+# get_path_groups _self_loop_ -quiet
+# report_path_group -violators_only -sort wns
+# ipo_vr_server -purge true
+# config_shell -echo false
+# report_path_group -violators_only -sort wns
+# config_shell -echo_script false
+# config_shell -echo false
+# get_config -name config_auto_learning -param apply_setup_slack_margins
+# get_root
+# get_property -name mxdb.design_state.netlist -object root
+# config_cell_density_map_colors -ignore_bloats true
+# factorize_pin_offsets -monitor false
+# config_shell -echo false
+# config_prects_corners -mode reset
+# config_shell -echo false
+# report_analysis_corner
+# report_path_group -violators_only -sort wns
+# config_shell -echo_script false
+# config_shell -echo_script false
+# config_shell -echo_script false
+# config_place_timing -name net_delay_model
+# config_shell -echo_script true
+# write_db -data design -file dbs/place.db
+# save_db -directory dbs/place.db -overwrite true -data design -cpus 4 -description 
+# config_shell -echo false
+# get_config -name config_auto_learning -param store_place_locations
+# get_config -name config_auto_learning -param store_setup_violations
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:size -value {757 600}
+set_option -name window:main:errors:state -value hidden
+write_db -file db/place.db
+report_placement
+source flow_scripts/2_clock.tcl
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# source flow_variables.tcl
+# source scr/kit_utils.tcl
+# load_utils -name nrf_utils 
+# config_messages -message_id UI33 -max_message 0
+# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/nrf_utils.tcl
+# config_messages -message_id UI33 -max_message 10
+# load_utils -name save_vars
+# config_messages -message_id UI33 -max_message 0
+# config_messages -message_id UI33 -max_message 10
+# load_utils -name db_utils
+# config_messages -message_id UI33 -max_message 0
+# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/db_utils.tcl
+# create_command -force -name util::update_split_db \
+	-script db::update_split_db \
+	-desc "Update lib and design DBs to 2.5.  Old DBs will be renamed with _deprecated suffix."
+# create_argument -command util::update_split_db -name lib_db -type string -required -desc "Name of library DB file."
+# create_argument -command util::update_split_db -name design_db -type string -required  -desc "Name of design DB file."
+# create_command -force -name util::update_lib_db \
+	-script db::update_lib_db \
+	-desc "Update lib DB to 2.5.  Old DB will be renamed with _deprecated suffix."
+# create_argument -command util::update_lib_db -name lib_db -type string -required -desc "Name of library DB file."
+# create_command -force -name util::update_full_db \
+	-script db::update_full_db \
+	-desc "Update full design DB to 2.5.  Old DB will be renamed with _deprecated suffix."
+# create_argument -command util::update_full_db -name design_db -type string -required  -desc "Name of design DB file."
+# config_messages -message_id UI33 -max_message 10
+# config_application -cpus $MGC_cpus
+# config_timing -cpus $MGC_cpus
+# get_top_partition
+# config_shell -echo false
+# util::save_vars
+# config_shell -echo false
+# check_design 
+# config_shell -echo_script true
+# config_event_handler -append -command compile_cts -event start_command -script {
+	set ::cts_vr_cdm_overlap_free true
+	RCTU::Cts::AddHalo
+}
+# get_config -name process -param node
+# config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
+# config_name_rules -cell CLOCK
+# config_name_rules -net CLOCK
+# config_timing -use_annotated_cts_offsets false
+# config_route_global -category user_defined
+# fk_msg "Applying NRF non-default GR settings"
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_route_global -name gr_full_timing_update_thresh -value 0.0
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# source scr/ocv.tcl
+# set_crpr_spec -crpr_threshold $MGC_crpr_threshold
+# source scr/config.tcl
+# config_timing -rc_degrade_min_slew_when_rd_less_than_rnet false
+# config_timing -disable_recovery_removal false
+# config_timing -enable_exception_proxy true
+# config_timing -disable_time_borrow false
+# config_timing -disable_annotation_factor_calc true
+# config_timing -enable_clock_propagation_through_three_state_enable_pins false
+# config_timing -disable_internal_inout_cell_paths true
+# config_timing -enable_cond_arcs_with_default true 
+# config_timing -enable_default_for_cond_arcs true
+# config_timing -enable_setup_independent_hold_checks true
+# config_timing -enable_ideal_clock_data_tags true
+# config_timing -enable_clock_gating_propagate true
+# config_timing -disable_seq_case_analysis true
+# config_timing -early_launch_at_borrowing_latches false
+# config_timing -enable_preset_clear_arcs false
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -pt_min_max_compatibility on_chip_variation
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -disable_sequential_generation_of_waveform_preserving_clocks false
+# config_timing -capacitance_violation_threshold 0
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_default_input_delay false
+# config_extraction -gr_short_route_gcell_span 3
+# config_extraction -search_distance_multiple 15
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# config_extraction -coupling_abs_threshold 0.1f
+# config_extraction -coupling_rel_threshold 1.0
+# ta_debug -cc_ratio 0
+# get_lib_cells $MGC_DLY_cells
+# set_property -name is_dont_use -value true -objects [get_lib_cells $MGC_DLY_cells]
+# get_lib_cells $MGC_DLY_cells 
+# config_flows -hold_opt_cell_list [ get_lib_cells $MGC_DLY_cells ]
+# config_shell -echo false
+# config_cts -corner corner_0_0 -min_route_layer metal7 -max_route_layer metal8 -max_transition 0.25n -max_leaf_transition 0.25n -max_skew 0.2n -max_length 400u -enable_port_clock_leaves false
+# config_cts -use_inverters false -buffers CLKBUF_* -inverters 
+# update_timing -stage mark_clocks
+# get_pins -leaf -filter is_clock && is_out
+# get_cells -of reg3/clk_gate_out_reg/GCK controller/clk_gate_c_output_reg/GCK controller/clk_gate_out_reg/GCK controller/clk_gate_count_reg/GCK controller/clk_gate_Acc_reg/GCK controller/clk_gate_inputQ_reg_reg/GCK -filter !@is_buffer && !@is_inverter && !@is_macro && !@is_physical && @type!=pad
+# get_lib_cells -of reg3/clk_gate_out_reg controller/clk_gate_c_output_reg controller/clk_gate_out_reg controller/clk_gate_count_reg controller/clk_gate_Acc_reg controller/clk_gate_inputQ_reg_reg
+# get_equiv_lib_cells -lib_cell CLKGATETST_X1
+# add_to_collection CLKGATETST_X1 -add CLKGATETST_X1 CLKGATETST_X2 CLKGATETST_X4 CLKGATETST_X8
+# get_lib_cells * -filter !@is_buffer && !@is_inverter && !@is_macro && !@is_physical && @type!=pad
+# add_to_collection  -add CLKGATETST_X8
+# add_to_collection CLKGATETST_X8 -add CLKGATETST_X4
+# add_to_collection CLKGATETST_X8 CLKGATETST_X4 -add CLKGATETST_X2
+# add_to_collection CLKGATETST_X8 CLKGATETST_X4 CLKGATETST_X2 -add CLKGATETST_X1
+# fk_msg -type info Usage of dont_use libcells: false
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_lib_cells CLKGATETST_X8 CLKGATETST_X4 CLKGATETST_X2 CLKGATETST_X1
+# filter_collection CLKGATETST_X8 CLKGATETST_X4 CLKGATETST_X2 CLKGATETST_X1 -expression !@is_dont_use
+# fk_msg -type info CG Pruning enabled: true
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# prune_cts_cells -type clock_gates CLKGATETST_X8 CLKGATETST_X4 CLKGATETST_X2 CLKGATETST_X1
+# sizeof_collection 
+# fk_msg -type info Selected 0 libcells for CTS CG Optimization.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# sizeof_collection 
+# fk_msg -type warning No usable libcell for CG sizing found. CG Sizing will be disabled during CTS
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_cts_spec -quiet -name CTS
+# get_report_value -name CTS -table config_cts_report -row opt_clock_gates
+# config_cts -opt_clock_gates latency move 
+# config_cts
+# config_clock_timing -name refine_cts -value $MGC_clock_refine_cts
+# fk_msg Delay, Timing, Parasitic, CRPR Configs Report
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_timing -report
+# config_extraction -report
+# report_delay_model
+# report_parasitic_model
+# set_crpr_spec -report
+# config_clock_timing -name preserve_rcd_models -value true
+# config_clock_timing -name enable_optimize_clock_tree -value $MGC_enable_clock_data_opt
+# config_clock_timing -name dont_prune_corners
+# get_corners $current_excluded_corners_for_pruning
+# get_corners $::MGC_activeCorners(clock:ref)
+# add_to_collection -unique true -object [get_corners $current_excluded_corners_for_pruning] -add [get_corners $::MGC_activeCorners(clock:ref)]
+# config_clock_timing -name dont_prune_corners -value [add_to_collection -unique true -object [get_corners $current_excluded_corners_for_pruning] -add [get_corners $::MGC_activeCorners(clock:ref)]]
+# config_optimize -buffer_removal_max_length_limit $MGC_maxLengthParam
+# source nrf_customization.tcl
+# run_clock_timing -cpus $MGC_cpus
+# config_place_timing -name clock_tree_latency_estimation
+# config_application -cpu 2
+# config_timing -cpu 2
+# fk_msg -set_prompt RCT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RCT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# get_objects -type root
+# report_property -cat all root -output names
+# create_property -name rct_last_stage -data_type string -object_type root -storage sparse -persistent true
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value 
+# get_objects -type root
+# report_property -cat all root -output names
+# create_property -name rct_clock_opt_ran -data_type bool -object_type root -storage sparse -persistent true
+# get_objects -type root
+# set_property -objects root -name rct_clock_opt_ran -value false
+# config_shell -echo_script false
+# get_modes
+# get_property -name enable default
+# get_property -name enable new_mode
+# get_corners
+# get_property -name enable slow
+# get_property -name hold slow
+# get_property -name setup slow
+# get_property -name enable fast
+# get_property -name hold fast
+# get_property -name setup fast
+# get_property -name enable corner_0_0
+# get_property -name hold corner_0_0
+# get_property -name setup corner_0_0
+# get_modes
+# get_corners -of_object new_mode
+# config_messages -message_id UI33 -max_message 0
+# fk_msg Adjusting TNS range
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for input -value_type time -units pico
+# config_units -for output -value_type time -units pico
+# get_path_groups -filter is_qor==true
+# get_property -name tns_range **default**
+# group_path -name **default** -tns_range 10000
+# get_property -name tns_range **async**
+# group_path -name **async** -tns_range 10000
+# get_property -name tns_range **clock_gating**
+# group_path -name **clock_gating** -tns_range 10000
+# get_property -name tns_range **inputs**
+# group_path -name **inputs** -tns_range 10000
+# get_property -name tns_range **outputs**
+# group_path -name **outputs** -tns_range 10000
+# get_property -name tns_range **feedthroughs**
+# group_path -name **feedthroughs** -tns_range 10000
+# get_property -name tns_range sysclk_new_mode
+# group_path -name sysclk_new_mode -tns_range 10000
+# get_property -name tns_range I2R
+# group_path -name I2R -tns_range 10000
+# get_property -name tns_range I2O
+# group_path -name I2O -tns_range 10000
+# get_property -name tns_range R2O
+# group_path -name R2O -tns_range 10000
+# config_units -for input -value_type time -units nano
+# config_units -for output -value_type time -units nano
+# config_messages -message_id UI33 -max_message 10
+# fk_msg Preserving USER-Specified RCD settings
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -mode report_only
+# report_parasitic_model
+# report_delay_model
+# report_parasitic_derate
+# get_config -name config_optimize -param preserve_congestion -properties is_modified
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_init
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg entering context cts
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg  Stage cts MCMM : 
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_mcmm_scenarios
+# route_global -flow turbo -repair -timing_effort none -congestion_effort none
+# fk_msg Configuring the timer for Estimated CTS Optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -stage post_cts
+# config_shell -echo false
+# get_clocks -filter @is_virtual==false
+# remove_propagated_clock sysclk_new_mode
+# config_timing -use_pin_specific_clock_latency_and_propagation false
+# fk_msg Disabling CRPR
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_corners
+# get_property -name crpr -object slow
+# set_analysis_corner slow -crpr none
+# get_property -name crpr -object fast
+# set_analysis_corner fast -crpr none
+# get_property -name crpr -object corner_0_0
+# set_analysis_corner corner_0_0 -crpr none
+# set_crpr_spec -method margin_based
+# fk_msg Initial Timing
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_path_group -viol -sort wns
+# report_path_group -viol -sort wns -min
+# report_variability
+# config_shell -echo false
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# get_corners -filter @hold&&@enable -of new_mode
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# get_modes -filter @enable
+# get_corners -filter @hold&&@enable -of new_mode
+# fk_msg cts : new_mode:corner_0_0:late new_mode:corner_0_0:early
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Not met scenario prunning criteria : original/dominant scenarios 2/2
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_modes
+# get_modes default
+# get_property -name enable default
+# get_modes new_mode
+# get_property -name enable new_mode
+# get_corners
+# get_corners slow
+# get_property -name enable slow
+# get_corners slow
+# get_property -name setup slow
+# get_corners slow
+# get_property -name hold slow
+# get_corners fast
+# get_property -name enable fast
+# get_corners fast
+# get_property -name setup fast
+# get_corners fast
+# get_property -name hold fast
+# get_corners corner_0_0
+# get_property -name enable corner_0_0
+# get_corners corner_0_0
+# get_property -name setup corner_0_0
+# get_corners corner_0_0
+# get_property -name hold corner_0_0
+# fk_msg Restored Initially Activated Modes and Corners
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_nitro_flow -name power_corner
+# get_config -name ref_flows/power_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# config_clock_timing -name dont_prune_corners -value corner_0_0
+# config_clock_timing -name low_power_effort
+# fk_msg -type info Power effort is low. Enabling corner corner_0_0 for leakage and dynamic power.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_analysis_corner -corner corner_0_0 -enable true -setup true -power all
+# config_nitro_flow -name leakage_corner
+# get_config -name ref_flows/leakage_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# report_analysis_corner
+# report_design_mode
+# report_analysis_corner
+# fk_msg  Stage cts MCMM : 
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_mcmm_scenarios
+# fk_msg Prunned MCMM Timing
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_path_group -viol -sort wns
+# report_path_group -viol -sort wns -min
+# report_variability
+# config_shell -echo false
+# fk_msg cts_init complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_init
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_opt_off
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_pins -filter cts_pin_delay_offset!=""
+# fk_msg No cts pin offsets. Skipping
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg cts_opt_off complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_opt_off
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_mcmm
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_modes
+# get_modes default
+# get_property -name enable default
+# get_modes new_mode
+# get_property -name enable new_mode
+# get_corners
+# get_corners slow
+# get_property -name enable slow
+# get_corners slow
+# get_property -name setup slow
+# get_corners slow
+# get_property -name hold slow
+# get_corners fast
+# get_property -name enable fast
+# get_corners fast
+# get_property -name setup fast
+# get_corners fast
+# get_property -name hold fast
+# get_corners corner_0_0
+# get_property -name enable corner_0_0
+# get_corners corner_0_0
+# get_property -name setup corner_0_0
+# get_corners corner_0_0
+# get_property -name hold corner_0_0
+# fk_msg Restored Initially Activated Modes and Corners
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg cts_mcmm complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_mcmm
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_time_cts
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Configuring the timer for CTS
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -stage cts
+# config_shell -echo false
+# get_clocks -filter @is_virtual==false
+# remove_propagated_clock sysclk_new_mode
+# config_timing -enable_skew_estimation false
+# fk_msg cts_time_cts complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_time_cts
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_compile
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_shell -echo_script false
+# get_cts_specs
+# remove_objects 
+# fk_msg Enabling Timing Constrained Placement of Clock Gates
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id CTS604 -max_message 0
+# report_cts_spec -name spec_report -quiet
+# config_messages -message_id CTS604 -max_message 10
+# get_report_value -name spec_report -table config_cts_report -row 11 -col 0
+# config_cts -opt_clock_gates timing move
+# config_default_value -command compile_cts -argument legalize -value false
+# current_design
+# config_clock_timing -name enable_compile_cts_mode_corner_pruning
+# config_cts -pruning_mode_corner true
+# report_application -name _rct_pid -quiet
+# get_report_value -name _rct_pid -table application_status -row process_id
+# analyze_clocks -outfile scr/multiplier_auto_cts_spec.tcl
+# source scr/multiplier_auto_cts_spec.tcl
+# get_clocks  sysclk_new_mode  
+# get_pins -of [get_clocks  sysclk_new_mode  ]
+# create_cts_spec -name cts_sysclk_new_mode \
+  -balance_roots false \
+  -root_pins [get_pins -of [get_clocks  sysclk_new_mode  ]]
+# check_cts_constraints -write_repair scr/cts_repair_17041_1672799771.tcl -cts_spec { cts_sysclk_new_mode }
+# read_constraints -context scr/cts_repair_17041_1672799771.tcl
+# compile_cts -cts_spec { cts_sysclk_new_mode }
+# remove_timing -type context
+# config_default_value -command compile_cts -argument legalize -value true
+# fk_msg cts_compile complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_compile
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_legalize
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# collect_clock_nets
+# config_shell -echo false
+# get_pins -leaf -of controller/clk_CTS_0_PP_0 clk reg3/CTS_n_tid1_10 reg3/CTS_n_tid1_11 controller/CTS_n_tid0_198 controller/CTS_n_tid0_121 controller/CTS_n_tid0_209 controller/CTS_n_tid0_188 controller/CTS_n_tid0_49 controller/CTS_n_tid0_56 controller/CTS_n_tid0_122 controller/CTS_n_tid1_17 controller/CTS_n_tid0_112 controller/n_133 controller/n_201 controller/CTS_n_tid1_16 -filter @direction==out
+# get_cells -leaf -of controller/CTS_L1_c_tid0_175/Z reg3/CTS_L3_c_tid1_11/Z reg3/clk_gate_out_reg/GCK controller/CTS_L3_c_tid0_153/Z controller/CTS_L4_c_tid0_94/Z controller/CTS_L2_c_tid0_164/Z controller/clk_gate_out_reg/GCK controller/CTS_L4_c_tid0_39/Z controller/clk_gate_Acc_reg/GCK controller/CTS_L4_c_tid0_95/Z controller/clk_gate_c_output_reg/GCK controller/CTS_L4_c_tid0_85/Z controller/clk_gate_inputQ_reg_reg/GCK controller/clk_gate_count_reg/GCK controller/CTS_L4_c_tid1_23/Z -filter !@is_macro && @type!=pad && logic_type!='flip-flop'
+# config_shell -echo_script false
+# get_cells -filter is_physical && is_fixed
+# set_property -name placed -value unplaced 
+# fk_msg -type info Converting CTS libcell-based halo constraints to instance-based ones
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# place_detail -cells_only controller/CTS_L1_c_tid0_175 reg3/CTS_L3_c_tid1_11 reg3/clk_gate_out_reg controller/CTS_L3_c_tid0_153 controller/CTS_L4_c_tid0_94 controller/CTS_L2_c_tid0_164 controller/clk_gate_out_reg controller/CTS_L4_c_tid0_39 controller/clk_gate_Acc_reg controller/CTS_L4_c_tid0_95 controller/clk_gate_c_output_reg controller/CTS_L4_c_tid0_85 controller/clk_gate_inputQ_reg_reg controller/clk_gate_count_reg controller/CTS_L4_c_tid1_23
+# config_shell -echo_script false
+# place_detail -cells_only controller/CTS_L1_c_tid0_175 reg3/CTS_L3_c_tid1_11 reg3/clk_gate_out_reg controller/CTS_L3_c_tid0_153 controller/CTS_L4_c_tid0_94 controller/CTS_L2_c_tid0_164 controller/clk_gate_out_reg controller/CTS_L4_c_tid0_39 controller/clk_gate_Acc_reg controller/CTS_L4_c_tid0_95 controller/clk_gate_c_output_reg controller/CTS_L4_c_tid0_85 controller/clk_gate_inputQ_reg_reg controller/clk_gate_count_reg controller/CTS_L4_c_tid1_23
+# get_cells controller/CTS_L1_c_tid0_175 reg3/CTS_L3_c_tid1_11 reg3/clk_gate_out_reg controller/CTS_L3_c_tid0_153 controller/CTS_L4_c_tid0_94 controller/CTS_L2_c_tid0_164 controller/clk_gate_out_reg controller/CTS_L4_c_tid0_39 controller/clk_gate_Acc_reg controller/CTS_L4_c_tid0_95 controller/clk_gate_c_output_reg controller/CTS_L4_c_tid0_85 controller/clk_gate_inputQ_reg_reg controller/clk_gate_count_reg controller/CTS_L4_c_tid1_23
+# set_property -name placed -value fixed controller/CTS_L1_c_tid0_175 reg3/CTS_L3_c_tid1_11 reg3/clk_gate_out_reg controller/CTS_L3_c_tid0_153 controller/CTS_L4_c_tid0_94 controller/CTS_L2_c_tid0_164 controller/clk_gate_out_reg controller/CTS_L4_c_tid0_39 controller/clk_gate_Acc_reg controller/CTS_L4_c_tid0_95 controller/clk_gate_c_output_reg controller/CTS_L4_c_tid0_85 controller/clk_gate_inputQ_reg_reg controller/clk_gate_count_reg controller/CTS_L4_c_tid1_23
+# fk_msg -type info Removing CTS instance-based halo constraints
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# place_detail
+# config_clock_timing -name perform_checks
+# fk_msg cts_legalize complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_legalize
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_route
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# run_route_timing -mode clock -dump_qor_stages 
+# help run_route_timing -return
+# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 0 messages default timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode clock trial false dump_qor_stages {} user_params {}
+# fk_msg Setting up run_route_timing flow ...
+
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id UI24 -max_messages 0
+# config_messages -message_id UI24 -max_log_messages 0
+# config_messages -message_id UI34 -max_messages 0
+# config_messages -message_id UI34 -max_log_messages 0
+# config_messages -message_id UI54 -max_messages 0
+# config_messages -message_id UI54 -max_log_messages 0
+# config_messages -message_id UI705 -max_messages 0
+# config_messages -message_id UI705 -max_log_messages 0
+# config_messages -message_id UI156 -max_messages 0
+# config_messages -message_id UI156 -max_log_messages 0
+# config_messages -message_id config1 -max_messages 0
+# config_messages -message_id config1 -max_log_messages 0
+# config_messages -message_id config3 -max_messages 0
+# config_messages -message_id config3 -max_log_messages 0
+# config_messages -message_id config5 -max_messages 0
+# config_messages -message_id config5 -max_log_messages 0
+# config_messages -message_id CSDB57 -max_messages 0
+# config_messages -message_id CSDB57 -max_log_messages 0
+# config_messages -message_id CSDB87 -max_messages 0
+# config_messages -message_id CSDB87 -max_log_messages 0
+# config_messages -message_id TA_CMDS1618 -max_messages 0
+# config_messages -message_id TA_CMDS1618 -max_log_messages 0
+# config_messages -message_id TA_CMDS1619 -max_messages 0
+# config_messages -message_id TA_CMDS1619 -max_log_messages 0
+# config_messages -message_id TA_CMDS7412 -max_messages 0
+# config_messages -message_id TA_CMDS7412 -max_log_messages 0
+# config_messages -message_id SDB43 -max_messages 0
+# config_messages -message_id SDB43 -max_log_messages 0
+# config_messages -message_id CSDB45 -max_messages 0
+# config_messages -message_id CSDB45 -max_log_messages 0
+# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
+# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# fk_msg -set_prompt RRT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level _d%ve_
+# fk_msg -set_verbosity_filter info
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value info -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_si_repair -argument check -value  
+# config_route_final -opt_strict_drc false
+# config_clock_timing -name perform_checks
+# fk_msg cts_route complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_route
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_time_pco
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name align_virtual_clocks
+# fk_msg Propagating Real Clocks and Re-Aligning Virtual Clocks. "set_io_bias" constraints will be added in the design constraints modeling the virtual clock alignment.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# align_virtual_clocks -method fast
+# get_clocks -filter @is_propagate==false && @is_virtual==false
+# get_clocks -filter @is_virtual==false
+# set_propagated_clock sysclk_new_mode
+# fk_msg cts_time_pco complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_time_pco
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_gr
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# route_global -flow turbo -repair
+# analyze_congestion
+# fk_msg cts_gr complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_gr
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running cts_refine
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name refine_cts
+# fk_msg cts_refine complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value cts_refine
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_init
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Configuring the timer for OPT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -stage post_cts
+# config_shell -echo false
+# config_timing -use_pin_specific_clock_latency_and_propagation false
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_skew_estimation false
+# get_clocks -filter @is_propagate==false && @is_virtual==false
+# set_analysis_corner slow -crpr setup_hold
+# set_analysis_corner fast -crpr setup_hold
+# set_analysis_corner corner_0_0 -crpr setup_hold
+# set_crpr_spec -method graph_based
+# fk_msg Dominant Scenarios Per Context
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# get_corners -filter @hold&&@enable -of new_mode
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# fk_msg setup : new_mode:corner_0_0:late
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Met scenario prunning criteria : original/dominant scenarios 2/1
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# get_corners -filter @hold&&@enable -of new_mode
+# get_modes -filter @enable
+# get_corners -filter @setup&&@enable -of new_mode
+# get_modes -filter @enable
+# get_corners -filter @hold&&@enable -of new_mode
+# fk_msg hold : new_mode:corner_0_0:late new_mode:corner_0_0:early
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Not met scenario prunning criteria : original/dominant scenarios 2/2
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name optimize_effort_level
+# get_timing_endpoints -setup -type negative_slack
+# config_clock_timing -name optimize_effort_level -value low
+# config_clock_timing -name optimize_effort_level
+# fk_msg run_clock_timing : effort level set to low
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name skip_dominant_scenario_pruning
+# set_ds -dominant_scenarios new_mode:corner_0_0:late
+# config_nitro_flow -name power_corner
+# get_config -name ref_flows/power_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# config_clock_timing -name dont_prune_corners -value corner_0_0
+# config_clock_timing -name low_power_effort
+# fk_msg -type info Power effort is low. Enabling corner corner_0_0 for leakage and dynamic power.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_analysis_corner -corner corner_0_0 -enable true -setup true -power all
+# config_nitro_flow -name leakage_corner
+# get_config -name ref_flows/leakage_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# report_analysis_corner
+# report_design_mode
+# report_analysis_corner
+# get_corners
+# fk_msg  Stage setup MCMM : 
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_mcmm_scenarios
+# fk_msg setup_init complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_init
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_reg_lock
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_clock_network -allow_reg size
+# config_shell -echo false
+# get_cells -filter rct_fixed_cell==true
+# set_property -name is_fixed -value true -object 
+# fk_msg setup_reg_lock complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_reg_lock
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_long_net
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name enable_long_net_fixing_in_setup
+# ipo_sweep_drc -max_radius 1000u
+# fk_msg setup_long_net complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_long_net
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_global
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 115
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# config_power_optimize -coarse_vt_control_modes  wns tns drc hold 
+# optimize -mode global -obj wns tns drc
+# config_shell -echo false
+# config_nitro_flow -name enable_leakage_control
+# get_config -name ref_flows/enable_leakage_control
+# config_power_optimize -coarse_vt_control_modes 
+# get_config -name config_auto_learning -param enable_wns_local_optimize
+# optimize -mode local -obj wns tns -effort fast
+# config_shell -echo false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg setup_global complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_global
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_area
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_clock_timing -name low_power_effort
+# fk_msg Optimizing for Power
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name low_power_effort
+# config_shell -echo false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_optimize -density_recovery_threshold 20
+# optimize -mode local -objective density
+# config_shell -echo false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg setup_area complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_area
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_local
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# get_config -name config_auto_learning -param enable_wns_local_optimize
+# optimize -mode local -obj wns tns
+# config_shell -echo false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg setup_local complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_local
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running setup_conv
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage setup_conv due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg setup_conv complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value setup_conv
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_init
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Configuring the timer for OPT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -stage post_cts
+# config_shell -echo false
+# config_timing -use_pin_specific_clock_latency_and_propagation false
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_skew_estimation false
+# get_clocks -filter @is_propagate==false && @is_virtual==false
+# set_ds -remove
+# get_modes
+# get_modes default
+# get_property -name enable default
+# get_modes new_mode
+# get_property -name enable new_mode
+# get_corners
+# get_corners slow
+# get_property -name enable slow
+# get_corners slow
+# get_property -name setup slow
+# get_corners slow
+# get_property -name hold slow
+# get_corners fast
+# get_property -name enable fast
+# get_corners fast
+# get_property -name setup fast
+# get_corners fast
+# get_property -name hold fast
+# get_corners corner_0_0
+# get_property -name enable corner_0_0
+# get_corners corner_0_0
+# get_property -name setup corner_0_0
+# get_corners corner_0_0
+# get_property -name hold corner_0_0
+# fk_msg Restored Initially Activated Modes and Corners
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_nitro_flow -name power_corner
+# get_config -name ref_flows/power_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# config_clock_timing -name dont_prune_corners -value corner_0_0
+# config_clock_timing -name low_power_effort
+# fk_msg -type info Power effort is low. Enabling corner corner_0_0 for leakage and dynamic power.
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_analysis_corner -corner corner_0_0 -enable true -setup true -power all
+# config_nitro_flow -name leakage_corner
+# get_config -name ref_flows/leakage_corner
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_shell -max_output_line_len 2048
+# report_analysis_corner
+# report_design_mode
+# report_analysis_corner
+# get_corners
+# fk_msg  Stage hold MCMM : 
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_mcmm_scenarios
+# fk_msg hold_init complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_init
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_sweep
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage hold_sweep due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg hold_sweep complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_sweep
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_setup
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage hold_setup due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg hold_setup complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_setup
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_local
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_optimize -enable_area_leakage_tradeoff_in_hold_opt true
+# config_clock_timing -name holdopt_repeater_list
+# config_flows -action get -hold_opt_cell_list 
+# config_shell -echo false
+# fk_msg -type warning No explicit cells were specified for hold optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_config -name config_auto_learning -param reserve_white_space_for_hold
+# config_power_optimize -dont_increase_area true
+# optimize -mode local -objective hold
+# config_shell -echo false
+# config_power_optimize -dont_increase_area false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg hold_local complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_local
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_incr
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for output -value_type time -units pico
+# get_slack -wns -min
+# config_units -for output -value_type time -units nano
+# get_timing_endpoints -hold -type negative_slack
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_optimize -density_recovery_threshold 20
+# optimize -mode local -objective density
+# config_shell -echo false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_optimize -enable_area_leakage_tradeoff_in_hold_opt true
+# config_clock_timing -name holdopt_repeater_list
+# config_flows -action get -hold_opt_cell_list 
+# config_shell -echo false
+# fk_msg -type warning No explicit cells were specified for hold optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_config -name config_auto_learning -param reserve_white_space_for_hold
+# config_power_optimize -dont_increase_area true
+# optimize -mode local -objective hold
+# config_shell -echo false
+# config_power_optimize -dont_increase_area false
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg hold_incr complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_incr
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running hold_legalize_clock
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage hold_legalize_clock due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg hold_legalize_clock complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value hold_legalize_clock
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_init
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Configuring the timer for OPT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_rcd_models -stage post_cts
+# config_shell -echo false
+# config_timing -use_pin_specific_clock_latency_and_propagation false
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_skew_estimation false
+# get_clocks -filter @is_propagate==false && @is_virtual==false
+# get_modes
+# get_modes default
+# get_property -name enable default
+# get_modes new_mode
+# get_property -name enable new_mode
+# get_corners
+# get_corners slow
+# get_property -name enable slow
+# get_corners slow
+# get_property -name setup slow
+# get_corners slow
+# get_property -name hold slow
+# get_corners fast
+# get_property -name enable fast
+# get_corners fast
+# get_property -name setup fast
+# get_corners fast
+# get_property -name hold fast
+# get_corners corner_0_0
+# get_property -name enable corner_0_0
+# get_corners corner_0_0
+# get_property -name setup corner_0_0
+# get_corners corner_0_0
+# get_property -name hold corner_0_0
+# fk_msg Restored Initially Activated Modes and Corners
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg  Stage converge MCMM : 
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# report_mcmm_scenarios
+# get_corners
+# fk_msg converge_init complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_init
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_vclk_bal
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name balance_virtual_clocks
+# fk_msg Balancing virtual clocks
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_clocks -filter is_virtual
+# fk_msg Skipping virtual clock balancing due to absence of virtual clocks
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg converge_vclk_bal complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_vclk_bal
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_clock_opt
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage converge_clock_opt due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg converge_clock_opt complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_clock_opt
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_hold
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Skipping stage converge_hold due to low effort execution
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg converge_hold complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_hold
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_legalize_clock
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# get_property -objects root -name rct_clock_opt_ran
+# set_clock_network -allow_tree fix -allow_reg move -nets clear_dont_modify clear_dont_route
+# config_shell -echo false
+# get_cells -filter rct_fixed_cell==true
+# set_property -name is_fixed -value true -object 
+# place_detail
+# run_route_timing -mode clock -dump_qor_stages  -user_params -clock_effort low
+# help run_route_timing -return
+# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 0 messages default timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode clock trial false dump_qor_stages {} user_params {-clock_effort low}
+# fk_msg Setting up run_route_timing flow ...
+
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id UI24 -max_messages 0
+# config_messages -message_id UI24 -max_log_messages 0
+# config_messages -message_id UI34 -max_messages 0
+# config_messages -message_id UI34 -max_log_messages 0
+# config_messages -message_id UI54 -max_messages 0
+# config_messages -message_id UI54 -max_log_messages 0
+# config_messages -message_id UI705 -max_messages 0
+# config_messages -message_id UI705 -max_log_messages 0
+# config_messages -message_id UI156 -max_messages 0
+# config_messages -message_id UI156 -max_log_messages 0
+# config_messages -message_id config1 -max_messages 0
+# config_messages -message_id config1 -max_log_messages 0
+# config_messages -message_id config3 -max_messages 0
+# config_messages -message_id config3 -max_log_messages 0
+# config_messages -message_id config5 -max_messages 0
+# config_messages -message_id config5 -max_log_messages 0
+# config_messages -message_id CSDB57 -max_messages 0
+# config_messages -message_id CSDB57 -max_log_messages 0
+# config_messages -message_id CSDB87 -max_messages 0
+# config_messages -message_id CSDB87 -max_log_messages 0
+# config_messages -message_id TA_CMDS1618 -max_messages 0
+# config_messages -message_id TA_CMDS1618 -max_log_messages 0
+# config_messages -message_id TA_CMDS1619 -max_messages 0
+# config_messages -message_id TA_CMDS1619 -max_log_messages 0
+# config_messages -message_id TA_CMDS7412 -max_messages 0
+# config_messages -message_id TA_CMDS7412 -max_log_messages 0
+# config_messages -message_id SDB43 -max_messages 0
+# config_messages -message_id SDB43 -max_log_messages 0
+# config_messages -message_id CSDB45 -max_messages 0
+# config_messages -message_id CSDB45 -max_log_messages 0
+# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
+# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# fk_msg -set_prompt RRT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level _d%ve_
+# fk_msg -set_verbosity_filter info
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value info -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_si_repair -argument check -value  
+# config_route_final -opt_strict_drc false
+# fk_msg -set_prompt RCT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RCT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level normal
+# fk_msg -set_verbosity_filter info
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value info -quiet
+# config_shell -echo true
+# config_shell -ignore_errors false
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_si_repair -argument check -value  
+# config_route_final -opt_strict_drc false
+# config_clock_timing -name perform_checks
+# route_global -flow turbo -repair
+# analyze_congestion
+# set_clock_network -allow_reg fix -allow_tree_elements fix -nets dont_route dont_modify
+# config_shell -echo false
+# fk_msg converge_legalize_clock complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_legalize_clock
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_pro_opt
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_top_partition
+# get_property -objects multiplier -name optimize_max_util
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100
+# config_cost -objective MAX_SLEW -limit_objective HOLD -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_SLEW -limit_objective WNS -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_SLEW -limit_objective TNS -margin 1
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_SLEW -limit_objective MAX_CAP -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_CAP -limit_objective HOLD -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_CAP -limit_objective WNS -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_CAP -limit_objective TNS -margin 1
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective MAX_CAP -limit_objective MAX_SLEW -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective HOLD -limit_objective WNS -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective TNS -limit_objective WNS -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective TNS -limit_objective HOLD -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective TNS -limit_objective MAX_SLEW -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective TNS -limit_objective MAX_CAP -margin 0
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective WNS -limit_objective TNS -margin 15
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective WNS -limit_objective HOLD -margin 5
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective WNS -limit_objective MAX_SLEW -margin 15
+# config_shell -echo false
+# config_shell -echo false
+# config_cost -objective WNS -limit_objective MAX_CAP -margin 15
+# config_shell -echo false
+# config_shell -echo false
+# optimize -mode post_route -obj wns tns hold drc -post_route_driven_by white_space
+# config_shell -echo false
+# config_cost -reset
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# config_shell -echo false
+# route_global -flow turbo -repair -enforce_max_length false
+# get_objects -type root
+# report_property -cat all root -output names
+# get_top_partition
+# set_property -objects multiplier -name optimize_max_util -value 100.0
+# fk_msg converge_pro_opt complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_pro_opt
+# config_clock_timing -name low_effort_io_optimization
+# config_clock_timing -name optimize_effort_level
+# fk_msg Running converge_tie_ins
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_clock_timing -name add_tie_cells
+# fk_msg Tie Insertion Skipped
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg converge_tie_ins complete
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# get_objects -type root
+# set_property -objects root -name rct_last_stage -value converge_tie_ins
+# config_clock_timing -name low_effort_io_optimization
+# config_messages -message_id UI33 -max_message 0
+# config_units -for input -value_type time -units pico
+# config_units -for output -value_type time -units pico
+# group_path -name **feedthroughs** -reset_tns_range true
+# group_path -name **outputs** -reset_tns_range true
+# group_path -name I2R -reset_tns_range true
+# group_path -name **clock_gating** -reset_tns_range true
+# group_path -name **default** -reset_tns_range true
+# group_path -name I2O -reset_tns_range true
+# group_path -name sysclk_new_mode -reset_tns_range true
+# group_path -name **async** -reset_tns_range true
+# group_path -name R2O -reset_tns_range true
+# group_path -name **inputs** -reset_tns_range true
+# config_units -for input -value_type time -units nano
+# config_units -for output -value_type time -units nano
+# config_messages -message_id UI33 -max_message 10
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_application -cpu 2
+# config_timing -cpu 2
+# set_config -name config_optimize -param preserve_congestion -reset
+# config_units -for output -value_type time -units pico
+# config_shell -echo_script false
+# config_units -for output -value_type time -units nano
+# config_clock_timing -name low_effort_io_optimization
+# print_table -title run_clock_timing QoR Progress Summary -column_names Stage WNS TNS WHS THS Utilization Congestion {Total Runtime (min)} Memory -values Initial 0.00 0.00 0.00 0.00 64.36 0.000 4.17 1215 CTS 0.00 0.00 -37.00 -39.00 64.97 0.000 4.35 1245 Setup 0.00 0.00 0.00 0.00 64.97 0.000 4.40 1245 Hold 0.00 0.00 0.00 0.00 64.99 0.000 4.43 1245 Converge 0.00 0.00 0.00 0.00 64.99 0.000 4.45 1245 Final 0.00 0.00 0.00 0.00 64.99 0.000 4.45 1245
+# config_clock_timing -name optimize_effort_level
+# config_name_rules -cell c
+# config_name_rules -net n
+# write_db -data design -file dbs/clock.db
+# save_db -directory dbs/clock.db -overwrite true -data design -cpus 4 -description 
+# config_shell -echo false
+# get_config -name config_auto_learning -param store_hold_violations
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:state -value hidden
+write_db -file db/clock.db
+## trigger_gui -name main:view_clock_tree_cockpit
+set_option -name window:design:view:state -value hidden
+set_option -name window:design:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+set_option -name window:cts:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+## trigger_gui -name main:activate_window -param cts:view
+set_option -name window:design:view:size -value {264 218}
+## trigger_gui -name main:view_clock_tree_cockpit:new_window -param "ctg_scenario:false:clk:corner_0_0:new_mode:default:Fall "
+set_option -name toolbar:cts:select:visible -value true
+set_option -name toolbar:cts:find:visible -value true
+set_option -name toolbar:cts:merge:visible -value true
+set_option -name toolbar:cts:group:visible -value true
+set_option -name toolbar:cts:ungroup:visible -value true
+set_option -name toolbar:cts::visible -value true
+set_option -name toolbar:cts:create:visible -value true
+set_option -name toolbar:cts:user:visible -value true
+set_option -name window:cts:view:state -value hidden
+set_option -name window:cts:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+## trigger_gui -name main:activate_window -param cts:view_1
+set_option -name window:cts:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+set_option -name window:cts:view:state -value hidden
+set_option -name window:cts:view:state -value visible
+set_option -name window:cts:view:tabbed -value true
+set_option -name window:cts:view:state -value maximized
+set_option -name toolbar:cts:find:location -value {60 0}
+set_option -name toolbar:cts:merge:location -value {557 0}
+set_option -name toolbar:cts:group:location -value {755 0}
+set_option -name toolbar:cts:ungroup:location -value {815 0}
+set_option -name toolbar:cts::location -value {898 0}
+set_option -name toolbar:cts:create:location -value {958 0}
+set_option -name toolbar:cts:user:location -value {995 0}
+set_option -name window:cts:view:state -value visible
+## trigger_gui -name main:activate_window -param cts:view
+set_option -name window:cts:view:state -value maximized
+set_option -name window:cts:view:state -value visible
+## trigger_gui -name main:view_clock_tree_cockpit:new_window -param "ctg_scenario:true:clk:corner_0_0:new_mode:default:Rise "
+## trigger_gui -name main:activate_window -param cts:view_2
+set_option -name window:cts:view:state -value maximized
+set_option -name window:cts:view:state -value visible
+## trigger_gui -name main:activate_window -param design:view
+set_option -name window:design:view:tabbed -value true
+set_option -name window:design:view:state -value maximized
+set_option -name window:design:view:state -value visible
+set_option -name window:design:view:state -value maximized
+source flow_scripts/3_route.tcl
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# source flow_variables.tcl
+# source scr/kit_utils.tcl
+# load_utils -name nrf_utils 
+# config_messages -message_id UI33 -max_message 0
+# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/nrf_utils.tcl
+# config_messages -message_id UI33 -max_message 10
+# load_utils -name save_vars
+# config_messages -message_id UI33 -max_message 0
+# config_messages -message_id UI33 -max_message 10
+# load_utils -name db_utils
+# config_messages -message_id UI33 -max_message 0
+# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/db_utils.tcl
+# create_command -force -name util::update_split_db \
+	-script db::update_split_db \
+	-desc "Update lib and design DBs to 2.5.  Old DBs will be renamed with _deprecated suffix."
+# create_argument -command util::update_split_db -name lib_db -type string -required -desc "Name of library DB file."
+# create_argument -command util::update_split_db -name design_db -type string -required  -desc "Name of design DB file."
+# create_command -force -name util::update_lib_db \
+	-script db::update_lib_db \
+	-desc "Update lib DB to 2.5.  Old DB will be renamed with _deprecated suffix."
+# create_argument -command util::update_lib_db -name lib_db -type string -required -desc "Name of library DB file."
+# create_command -force -name util::update_full_db \
+	-script db::update_full_db \
+	-desc "Update full design DB to 2.5.  Old DB will be renamed with _deprecated suffix."
+# create_argument -command util::update_full_db -name design_db -type string -required  -desc "Name of design DB file."
+# config_messages -message_id UI33 -max_message 10
+# config_application -cpus $MGC_cpus
+# config_timing -cpus $MGC_cpus
+# get_top_partition
+# config_shell -echo false
+# util::save_vars
+# config_shell -echo false
+# check_design 
+# config_shell -echo_script true
+# get_config -name process -param node
+# config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
+# config_shell -echo false
+# config_shell -echo false
+# config_timing -disable_clock_gating_checks false
+# set_crpr_spec -method graph_based
+# config_flows -preserve_rcd false
+# config_shell -echo false
+# source scr/config.tcl
+# config_timing -rc_degrade_min_slew_when_rd_less_than_rnet false
+# config_timing -disable_recovery_removal false
+# config_timing -enable_exception_proxy true
+# config_timing -disable_time_borrow false
+# config_timing -disable_annotation_factor_calc true
+# config_timing -enable_clock_propagation_through_three_state_enable_pins false
+# config_timing -disable_internal_inout_cell_paths true
+# config_timing -enable_cond_arcs_with_default true 
+# config_timing -enable_default_for_cond_arcs true
+# config_timing -enable_setup_independent_hold_checks true
+# config_timing -enable_ideal_clock_data_tags true
+# config_timing -enable_clock_gating_propagate true
+# config_timing -disable_seq_case_analysis true
+# config_timing -early_launch_at_borrowing_latches false
+# config_timing -enable_preset_clear_arcs false
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -pt_min_max_compatibility on_chip_variation
+# config_timing -enable_non_unate_clock_paths true
+# config_timing -disable_sequential_generation_of_waveform_preserving_clocks false
+# config_timing -capacitance_violation_threshold 0
+# config_timing -disable_clock_gating_checks false
+# config_timing -enable_default_input_delay false
+# config_extraction -gr_short_route_gcell_span 3
+# config_extraction -search_distance_multiple 15
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# config_extraction -coupling_abs_threshold 0.1f
+# config_extraction -coupling_rel_threshold 1.0
+# ta_debug -cc_ratio 0
+# config_route_timing -name dvia_mode -value dfm
+# config_place_detail -name follow_drc_for
+# source nrf_customization.tcl
+# config_extraction -use_thickness_variation false
+# config_extraction -use_thickness_variation_for_cap false
+# config_extraction -use_thickness_variation_for_res true
+# set_crpr_spec -crpr_threshold 5p
+# set_crpr_spec -method graph_based
+# set_crpr_spec -transition same_transition
+# fk_msg Max Length Constraint
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# set_max_length -length_threshold 1000u
+# report_max_length
+# fk_msg Max Length Set to 10000000
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# fk_msg Running RRT with Interleave Optimization
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# run_route_timing -mode interleave_opt -cpus 2 -messages verbose
+# help run_route_timing -return
+# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 2 messages verbose timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode interleave_opt trial false dump_qor_stages {} user_params {}
+# fk_msg Setting up run_route_timing flow ...
+
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name verbose_level
+# config_messages -message_id UI24 -max_messages 0
+# config_messages -message_id UI24 -max_log_messages 0
+# config_messages -message_id UI34 -max_messages 0
+# config_messages -message_id UI34 -max_log_messages 0
+# config_messages -message_id UI54 -max_messages 0
+# config_messages -message_id UI54 -max_log_messages 0
+# config_messages -message_id UI705 -max_messages 0
+# config_messages -message_id UI705 -max_log_messages 0
+# config_messages -message_id UI156 -max_messages 0
+# config_messages -message_id UI156 -max_log_messages 0
+# config_messages -message_id config1 -max_messages 0
+# config_messages -message_id config1 -max_log_messages 0
+# config_messages -message_id config3 -max_messages 0
+# config_messages -message_id config3 -max_log_messages 0
+# config_messages -message_id config5 -max_messages 0
+# config_messages -message_id config5 -max_log_messages 0
+# config_messages -message_id CSDB57 -max_messages 0
+# config_messages -message_id CSDB57 -max_log_messages 0
+# config_messages -message_id CSDB87 -max_messages 0
+# config_messages -message_id CSDB87 -max_log_messages 0
+# config_messages -message_id TA_CMDS1618 -max_messages 0
+# config_messages -message_id TA_CMDS1618 -max_log_messages 0
+# config_messages -message_id TA_CMDS1619 -max_messages 0
+# config_messages -message_id TA_CMDS1619 -max_log_messages 0
+# config_messages -message_id TA_CMDS7412 -max_messages 0
+# config_messages -message_id TA_CMDS7412 -max_log_messages 0
+# config_messages -message_id SDB43 -max_messages 0
+# config_messages -message_id SDB43 -max_log_messages 0
+# config_messages -message_id CSDB45 -max_messages 0
+# config_messages -message_id CSDB45 -max_log_messages 0
+# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
+# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
+# fk_msg -set_prompt RRT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level _d%ve_
+# fk_msg -set_verbosity_filter debug
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value debug -quiet
+# config_shell -echo false
+# config_shell -ignore_errors false
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_si_repair -argument check -value  
+# config_route_final -opt_strict_drc false
+# fk_msg -set_prompt RCT
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value RCT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level normal
+# fk_msg -set_verbosity_filter info
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value info -quiet
+# config_shell -echo true
+# config_shell -ignore_errors false
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_si_repair -argument check -value  
+# config_route_final -opt_strict_drc false
+# fk_msg -set_prompt NRF
+# new_config_flow -name flow_msg_prompt -quiet
+# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
+# config_shell -level normal
+# fk_msg -set_verbosity_filter info
+# new_config_flow -name verbose_level
+# new_config_flow -name verbose_level -value info -quiet
+# config_shell -echo true
+# config_shell -ignore_errors false
+# config_application -cpus 2
+# config_timing -cpus 2
+# config_default_value -command route_global -argument check -value  technology libraries routing 
+# config_default_value -command route_global -argument messages -value normal
+# config_default_value -command route_track -argument check -value  technology libraries routing 
+# config_default_value -command route_track -argument messages -value normal
+# config_default_value -command route_final -argument check -value  technology libraries routing 
+# config_default_value -command route_final -argument messages -value normal
+# config_default_value -command route_si_repair -argument check -value  
+# config_default_value -command route_si_repair -argument messages -value normal
+# config_route_final -opt_strict_drc false
+# write_db -data design -file dbs/route.db
+# save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
+# config_shell -echo false
+write_db -file db/route.db
+report_timing
+## trigger_gui -name main:view_critical_paths
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "**global**"
+set_option -name window:main:critical_path:state -value visible
+set_option -name window:main:critical_path:location -value {30 32}
+
+group_path -name I2R -from [all_inputs]
+group_path -name I2O -from [all_inputs] -to [all_outputs]
+group_path -name R2O -to [all_outputs]
+
+
+
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "**global**"
+set_option -name window:main:critical_path:state -value hidden
+report_timing -max_delay
+report_timing -min_delay
+report_placement
+report_power
+write_db -file db/route.db
+source flow_scripts/4_export.tcl
+# config_shell -echo_script false
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"
+source ../save_design.sh
+config_report_timing -path_type full_data
+x_get_timing_path -modes { new_mode } -corners { corner_0_0 } -rise true -fall true -max_delay true -min_delay false -max_paths 50 -group "sysclk_new_mode"

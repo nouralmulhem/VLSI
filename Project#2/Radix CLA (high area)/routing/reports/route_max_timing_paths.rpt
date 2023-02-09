@@ -1,0 +1,1291 @@
+ Timing Path to r2/my_reg_reg[50]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[50] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_41/A1                          AND3_X1   Rise  0.7230 0.0030 0.0380    0.0030            0.879747                                                  | 
+|    ADD/i_0_41/ZN                          AND3_X1   Rise  0.7790 0.0560 0.0140             0.788745 2.56515  3.35389           2       55.8147                | 
+|    ADD/i_0_72/B1                          AOI21_X1  Rise  0.7790 0.0000 0.0140                      1.647                                                     | 
+|    ADD/i_0_72/ZN                          AOI21_X1  Fall  0.7990 0.0200 0.0170             0.572488 3.34723  3.91972           2       55.8147                | 
+|    ADD/i_0_73/B1                          AOI21_X1  Fall  0.7990 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_73/ZN                          AOI21_X1  Rise  0.8450 0.0460 0.0370             0.857347 4.0735   4.93085           2       55.8147                | 
+|    ADD/i_0_76/B1                          OAI21_X1  Rise  0.8450 0.0000 0.0370                      1.66205                                                   | 
+|    ADD/i_0_76/ZN                          OAI21_X1  Fall  0.8720 0.0270 0.0170             0.699209 3.34723  4.04644           2       62.3631                | 
+|    ADD/i_0_79/B1                          AOI21_X1  Fall  0.8720 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_79/ZN                          AOI21_X1  Rise  0.9170 0.0450 0.0360             0.689442 4.0735   4.76295           2       62.3631                | 
+|    ADD/i_0_81/B1                          OAI21_X1  Rise  0.9170 0.0000 0.0360                      1.66205                                                   | 
+|    ADD/i_0_81/ZN                          OAI21_X1  Fall  0.9440 0.0270 0.0170             0.76253  3.34723  4.10976           2       62.3631                | 
+|    ADD/i_0_82/B1                          AOI21_X1  Fall  0.9440 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_82/ZN                          AOI21_X1  Rise  0.9920 0.0480 0.0390             1.39469  4.0735   5.4682            2       62.3631                | 
+|    ADD/i_0_84/B1                          OAI21_X1  Rise  0.9920 0.0000 0.0390                      1.66205                                                   | 
+|    ADD/i_0_84/ZN                          OAI21_X1  Fall  1.0120 0.0200 0.0140             0.229055 1.70023  1.92929           1       62.3631                | 
+|    ADD/i_0_3/A                            INV_X1    Fall  1.0120 0.0000 0.0140                      1.54936                                                   | 
+|    ADD/i_0_3/ZN                           INV_X1    Rise  1.0300 0.0180 0.0100             0.232214 2.41145  2.64367           1       62.3631                | 
+|    ADD/genblk1_50_full_adder_inst/i_carry           Rise  1.0300 0.0000                                                                                       | 
+|    ADD/genblk1_50_full_adder_inst/i_0_1/B XOR2_X1   Rise  1.0300 0.0000 0.0100                      2.36355                                                   | 
+|    ADD/genblk1_50_full_adder_inst/i_0_1/Z XOR2_X1   Rise  1.0810 0.0510 0.0280             0.944735 2.11492  3.05965           2       52.5298                | 
+|    ADD/genblk1_50_full_adder_inst/o_sum             Rise  1.0810 0.0000                                                                                       | 
+|    ADD/o_result[50]                                 Rise  1.0810 0.0000                                                                                       | 
+|    r2/write_data[50]                                Rise  1.0810 0.0000                                                                                       | 
+|    r2/my_reg_reg[50]/D                    DFF_X1    Rise  1.0810 0.0000 0.0280                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[50]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[50]/CK            DFF_X1    Rise  2.1690 0.0050 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1690 2.1690 | 
+| library setup check                      | -0.0340 2.1350 | 
+| data required time                       |  2.1350        | 
+|                                          |                | 
+| data required time                       |  2.1350        | 
+| data arrival time                        | -1.0810        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.0540        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[49]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[49] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_41/A1                          AND3_X1   Rise  0.7230 0.0030 0.0380    0.0030            0.879747                                                  | 
+|    ADD/i_0_41/ZN                          AND3_X1   Rise  0.7790 0.0560 0.0140             0.788745 2.56515  3.35389           2       55.8147                | 
+|    ADD/i_0_72/B1                          AOI21_X1  Rise  0.7790 0.0000 0.0140                      1.647                                                     | 
+|    ADD/i_0_72/ZN                          AOI21_X1  Fall  0.7990 0.0200 0.0170             0.572488 3.34723  3.91972           2       55.8147                | 
+|    ADD/i_0_73/B1                          AOI21_X1  Fall  0.7990 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_73/ZN                          AOI21_X1  Rise  0.8450 0.0460 0.0370             0.857347 4.0735   4.93085           2       55.8147                | 
+|    ADD/i_0_76/B1                          OAI21_X1  Rise  0.8450 0.0000 0.0370                      1.66205                                                   | 
+|    ADD/i_0_76/ZN                          OAI21_X1  Fall  0.8720 0.0270 0.0170             0.699209 3.34723  4.04644           2       62.3631                | 
+|    ADD/i_0_79/B1                          AOI21_X1  Fall  0.8720 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_79/ZN                          AOI21_X1  Rise  0.9170 0.0450 0.0360             0.689442 4.0735   4.76295           2       62.3631                | 
+|    ADD/i_0_81/B1                          OAI21_X1  Rise  0.9170 0.0000 0.0360                      1.66205                                                   | 
+|    ADD/i_0_81/ZN                          OAI21_X1  Fall  0.9440 0.0270 0.0170             0.76253  3.34723  4.10976           2       62.3631                | 
+|    ADD/i_0_82/B1                          AOI21_X1  Fall  0.9440 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_82/ZN                          AOI21_X1  Rise  0.9920 0.0480 0.0390             1.39469  4.0735   5.4682            2       62.3631                | 
+|    ADD/genblk1_49_full_adder_inst/i_carry           Rise  0.9920 0.0000                                                                                       | 
+|    ADD/genblk1_49_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9920 0.0000 0.0390                      2.36355                                                   | 
+|    ADD/genblk1_49_full_adder_inst/i_0_1/Z XOR2_X1   Rise  1.0500 0.0580 0.0270             0.707729 2.11492  2.82265           2       65.5109                | 
+|    ADD/genblk1_49_full_adder_inst/o_sum             Rise  1.0500 0.0000                                                                                       | 
+|    ADD/o_result[49]                                 Rise  1.0500 0.0000                                                                                       | 
+|    r2/write_data[49]                                Rise  1.0500 0.0000                                                                                       | 
+|    r2/my_reg_reg[49]/D                    DFF_X1    Rise  1.0500 0.0000 0.0270                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[49]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[49]/CK            DFF_X1    Rise  2.1690 0.0050 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1690 2.1690 | 
+| library setup check                      | -0.0330 2.1360 | 
+| data required time                       |  2.1360        | 
+|                                          |                | 
+| data required time                       |  2.1360        | 
+| data arrival time                        | -1.0500        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.0860        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[60]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[60] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_135/A1                         NAND3_X1  Rise  0.7230 0.0030 0.0380    0.0030            1.59029                                                   | 
+|    ADD/i_0_135/ZN                         NAND3_X1  Fall  0.7580 0.0350 0.0210             1.10838  3.18932  4.29769           2       55.8147                | 
+|    ADD/i_0_325/A1                         NAND3_X1  Fall  0.7580 0.0000 0.0210                      1.56203                                                   | 
+|    ADD/i_0_325/ZN                         NAND3_X1  Rise  0.7880 0.0300 0.0190             0.797151 4.10207  4.89922           3       61.4509                | 
+|    ADD/i_0_324/A                          INV_X1    Rise  0.7880 0.0000 0.0190                      1.70023                                                   | 
+|    ADD/i_0_324/ZN                         INV_X1    Fall  0.7980 0.0100 0.0070             0.646014 1.6163   2.26231           1       61.4509                | 
+|    ADD/i_0_313/A3                         NOR3_X1   Fall  0.7980 0.0000 0.0070                      1.55272                                                   | 
+|    ADD/i_0_313/ZN                         NOR3_X1   Rise  0.8730 0.0750 0.0500             0.719337 4.32668  5.04602           3       67.0759                | 
+|    ADD/i_0_350/A3                         NOR3_X1   Rise  0.8730 0.0000 0.0500                      1.6163                                                    | 
+|    ADD/i_0_350/ZN                         NOR3_X1   Fall  0.8910 0.0180 0.0150             0.430558 1.65135  2.0819            1       67.0759                | 
+|    ADD/i_0_349/A2                         NOR2_X1   Fall  0.8910 0.0000 0.0150                      1.56385                                                   | 
+|    ADD/i_0_349/ZN                         NOR2_X1   Rise  0.9370 0.0460 0.0290             0.653327 4.0628   4.71613           2       67.0759                | 
+|    ADD/i_0_348/A2                         NOR2_X1   Rise  0.9370 0.0000 0.0290                      1.65135                                                   | 
+|    ADD/i_0_348/ZN                         NOR2_X1   Fall  0.9510 0.0140 0.0100             0.376036 1.65135  2.02738           1       60.6845                | 
+|    ADD/i_0_347/A2                         NOR2_X1   Fall  0.9510 0.0000 0.0100                      1.56385                                                   | 
+|    ADD/i_0_347/ZN                         NOR2_X1   Rise  0.9850 0.0340 0.0210             0.409447 2.41145  2.8209            1       60.6845                | 
+|    ADD/genblk1_60_full_adder_inst/i_carry           Rise  0.9850 0.0000                                                                                       | 
+|    ADD/genblk1_60_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9850 0.0000 0.0210                      2.36355                                                   | 
+|    ADD/genblk1_60_full_adder_inst/i_0_1/Z XOR2_X1   Rise  1.0390 0.0540 0.0270             0.790913 2.11492  2.90583           2       63.3185                | 
+|    ADD/genblk1_60_full_adder_inst/o_sum             Rise  1.0390 0.0000                                                                                       | 
+|    ADD/o_result[60]                                 Rise  1.0390 0.0000                                                                                       | 
+|    r2/write_data[60]                                Rise  1.0390 0.0000                                                                                       | 
+|    r2/my_reg_reg[60]/D                    DFF_X1    Rise  1.0390 0.0000 0.0270                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[60]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[60]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0330 2.1350 | 
+| data required time                       |  2.1350        | 
+|                                          |                | 
+| data required time                       |  2.1350        | 
+| data arrival time                        | -1.0390        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.0960        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[48]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[48] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_41/A1                          AND3_X1   Rise  0.7230 0.0030 0.0380    0.0030            0.879747                                                  | 
+|    ADD/i_0_41/ZN                          AND3_X1   Rise  0.7790 0.0560 0.0140             0.788745 2.56515  3.35389           2       55.8147                | 
+|    ADD/i_0_72/B1                          AOI21_X1  Rise  0.7790 0.0000 0.0140                      1.647                                                     | 
+|    ADD/i_0_72/ZN                          AOI21_X1  Fall  0.7990 0.0200 0.0170             0.572488 3.34723  3.91972           2       55.8147                | 
+|    ADD/i_0_73/B1                          AOI21_X1  Fall  0.7990 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_73/ZN                          AOI21_X1  Rise  0.8450 0.0460 0.0370             0.857347 4.0735   4.93085           2       55.8147                | 
+|    ADD/i_0_76/B1                          OAI21_X1  Rise  0.8450 0.0000 0.0370                      1.66205                                                   | 
+|    ADD/i_0_76/ZN                          OAI21_X1  Fall  0.8720 0.0270 0.0170             0.699209 3.34723  4.04644           2       62.3631                | 
+|    ADD/i_0_79/B1                          AOI21_X1  Fall  0.8720 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_79/ZN                          AOI21_X1  Rise  0.9170 0.0450 0.0360             0.689442 4.0735   4.76295           2       62.3631                | 
+|    ADD/i_0_81/B1                          OAI21_X1  Rise  0.9170 0.0000 0.0360                      1.66205                                                   | 
+|    ADD/i_0_81/ZN                          OAI21_X1  Fall  0.9440 0.0270 0.0170             0.76253  3.34723  4.10976           2       62.3631                | 
+|    ADD/i_0_4/A                            INV_X1    Fall  0.9440 0.0000 0.0170                      1.54936                                                   | 
+|    ADD/i_0_4/ZN                           INV_X1    Rise  0.9630 0.0190 0.0100             0.237614 2.41145  2.64907           1       62.3631                | 
+|    ADD/genblk1_48_full_adder_inst/i_carry           Rise  0.9630 0.0000                                                                                       | 
+|    ADD/genblk1_48_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9630 0.0000 0.0100                      2.36355                                                   | 
+|    ADD/genblk1_48_full_adder_inst/i_0_1/Z XOR2_X1   Rise  1.0120 0.0490 0.0260             0.475697 2.11492  2.59062           2       62.3631                | 
+|    ADD/genblk1_48_full_adder_inst/o_sum             Rise  1.0120 0.0000                                                                                       | 
+|    ADD/o_result[48]                                 Rise  1.0120 0.0000                                                                                       | 
+|    r2/write_data[48]                                Rise  1.0120 0.0000                                                                                       | 
+|    r2/my_reg_reg[48]/D                    DFF_X1    Rise  1.0120 0.0000 0.0260                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[48]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[48]/CK            DFF_X1    Rise  2.1670 0.0030 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1670 2.1670 | 
+| library setup check                      | -0.0330 2.1340 | 
+| data required time                       |  2.1340        | 
+|                                          |                | 
+| data required time                       |  2.1340        | 
+| data arrival time                        | -1.0120        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1220        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[63]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[63] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                        Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                               Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A             CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z             CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                      CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                      CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                     | 
+|    sum_reg[1]/CK                           DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                            DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                     Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                          NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                          NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                          NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                          NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                          AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                          AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                          OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                          OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                          AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                          AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                          OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                          OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                          AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                          AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                          NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                          NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                          NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                          NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                          OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                          OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_135/A1                          NAND3_X1  Rise  0.7230 0.0030 0.0380    0.0030            1.59029                                                   | 
+|    ADD/i_0_135/ZN                          NAND3_X1  Fall  0.7580 0.0350 0.0210             1.10838  3.18932  4.29769           2       55.8147                | 
+|    ADD/i_0_325/A1                          NAND3_X1  Fall  0.7580 0.0000 0.0210                      1.56203                                                   | 
+|    ADD/i_0_325/ZN                          NAND3_X1  Rise  0.7880 0.0300 0.0190             0.797151 4.10207  4.89922           3       61.4509                | 
+|    ADD/i_0_324/A                           INV_X1    Rise  0.7880 0.0000 0.0190                      1.70023                                                   | 
+|    ADD/i_0_324/ZN                          INV_X1    Fall  0.7980 0.0100 0.0070             0.646014 1.6163   2.26231           1       61.4509                | 
+|    ADD/i_0_313/A3                          NOR3_X1   Fall  0.7980 0.0000 0.0070                      1.55272                                                   | 
+|    ADD/i_0_313/ZN                          NOR3_X1   Rise  0.8730 0.0750 0.0500             0.719337 4.32668  5.04602           3       67.0759                | 
+|    ADD/i_0_299/A1                          NOR3_X1   Rise  0.8730 0.0000 0.0500                      1.76357                                                   | 
+|    ADD/i_0_299/ZN                          NOR3_X1   Fall  0.8870 0.0140 0.0150             0.738057 1.65135  2.3894            1       67.0759                | 
+|    ADD/i_0_298/A2                          NOR2_X1   Fall  0.8870 0.0000 0.0150                      1.56385                                                   | 
+|    ADD/i_0_298/ZN                          NOR2_X1   Rise  0.9210 0.0340 0.0190             0.862381 1.58335  2.44573           1       67.0759                | 
+|    ADD/i_0_297/C2                          OAI221_X1 Rise  0.9230 0.0020 0.0190    0.0020            1.56205                                                   | 
+|    ADD/i_0_297/ZN                          OAI221_X1 Fall  0.9530 0.0300 0.0170             0.338372 1.6642   2.00257           1       63.3185                | 
+|    ADD/i_0_296/A2                          NAND2_X1  Fall  0.9530 0.0000 0.0170                      1.50228                                                   | 
+|    ADD/i_0_296/ZN                          NAND2_X1  Rise  0.9800 0.0270 0.0150             0.742469 3.29926  4.04173           2       63.3185                | 
+|    ADD/genblk1_63_full_adder_inst/i_carry            Rise  0.9800 0.0000                                                                                       | 
+|    ADD/genblk1_63_full_adder_inst/i_0_4/A1 NAND2_X1  Rise  0.9800 0.0000 0.0150                      1.59903                                                   | 
+|    ADD/genblk1_63_full_adder_inst/i_0_4/ZN NAND2_X1  Fall  0.9950 0.0150 0.0090             0.425288 1.6642   2.08949           1       63.3185                | 
+|    ADD/genblk1_63_full_adder_inst/i_0_0/A2 NAND2_X1  Fall  0.9950 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/genblk1_63_full_adder_inst/i_0_0/ZN NAND2_X1  Rise  1.0150 0.0200 0.0120             0.765857 2.11492  2.88078           2       63.3185                | 
+|    ADD/genblk1_63_full_adder_inst/o_sum              Rise  1.0150 0.0000                                                                                       | 
+|    ADD/o_result[63]                                  Rise  1.0150 0.0000                                                                                       | 
+|    r2/write_data[63]                                 Rise  1.0150 0.0000                                                                                       | 
+|    r2/my_reg_reg[63]/D                     DFF_X1    Rise  1.0150 0.0000 0.0120                      1.14029                                     F             | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[63]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[63]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0300 2.1380 | 
+| data required time                       |  2.1380        | 
+|                                          |                | 
+| data required time                       |  2.1380        | 
+| data arrival time                        | -1.0150        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1230        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[59]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[59] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_135/A1                         NAND3_X1  Rise  0.7230 0.0030 0.0380    0.0030            1.59029                                                   | 
+|    ADD/i_0_135/ZN                         NAND3_X1  Fall  0.7580 0.0350 0.0210             1.10838  3.18932  4.29769           2       55.8147                | 
+|    ADD/i_0_325/A1                         NAND3_X1  Fall  0.7580 0.0000 0.0210                      1.56203                                                   | 
+|    ADD/i_0_325/ZN                         NAND3_X1  Rise  0.7880 0.0300 0.0190             0.797151 4.10207  4.89922           3       61.4509                | 
+|    ADD/i_0_324/A                          INV_X1    Rise  0.7880 0.0000 0.0190                      1.70023                                                   | 
+|    ADD/i_0_324/ZN                         INV_X1    Fall  0.7980 0.0100 0.0070             0.646014 1.6163   2.26231           1       61.4509                | 
+|    ADD/i_0_313/A3                         NOR3_X1   Fall  0.7980 0.0000 0.0070                      1.55272                                                   | 
+|    ADD/i_0_313/ZN                         NOR3_X1   Rise  0.8730 0.0750 0.0500             0.719337 4.32668  5.04602           3       67.0759                | 
+|    ADD/i_0_350/A3                         NOR3_X1   Rise  0.8730 0.0000 0.0500                      1.6163                                                    | 
+|    ADD/i_0_350/ZN                         NOR3_X1   Fall  0.8910 0.0180 0.0150             0.430558 1.65135  2.0819            1       67.0759                | 
+|    ADD/i_0_349/A2                         NOR2_X1   Fall  0.8910 0.0000 0.0150                      1.56385                                                   | 
+|    ADD/i_0_349/ZN                         NOR2_X1   Rise  0.9370 0.0460 0.0290             0.653327 4.0628   4.71613           2       67.0759                | 
+|    ADD/genblk1_59_full_adder_inst/i_carry           Rise  0.9370 0.0000                                                                                       | 
+|    ADD/genblk1_59_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9370 0.0000 0.0290                      2.36355                                                   | 
+|    ADD/genblk1_59_full_adder_inst/i_0_1/Z XOR2_X1   Rise  0.9930 0.0560 0.0270             0.749624 2.11492  2.86454           2       60.6845                | 
+|    ADD/genblk1_59_full_adder_inst/o_sum             Rise  0.9930 0.0000                                                                                       | 
+|    ADD/o_result[59]                                 Rise  0.9930 0.0000                                                                                       | 
+|    r2/write_data[59]                                Rise  0.9930 0.0000                                                                                       | 
+|    r2/my_reg_reg[59]/D                    DFF_X1    Rise  0.9930 0.0000 0.0270                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[59]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[59]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0330 2.1350 | 
+| data required time                       |  2.1350        | 
+|                                          |                | 
+| data required time                       |  2.1350        | 
+| data arrival time                        | -0.9930        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1420        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[40]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[40] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_282/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_282/ZN                         NOR2_X1   Fall  0.6580 0.0090 0.0250             0.843468 1.65135  2.49481           1       68.4598                | 
+|    ADD/i_0_281/A2                         NOR2_X1   Fall  0.6580 0.0000 0.0250                      1.56385                                                   | 
+|    ADD/i_0_281/ZN                         NOR2_X1   Rise  0.7010 0.0430 0.0240             0.767552 2.595    3.36255           2       54.6763                | 
+|    ADD/i_0_280/B2                         AOI21_X1  Rise  0.7010 0.0000 0.0240                      1.67685                                                   | 
+|    ADD/i_0_280/ZN                         AOI21_X1  Fall  0.7300 0.0290 0.0180             1.43208  5.01143  6.44351           3       54.6763                | 
+|    ADD/i_0_279/A2                         NAND2_X1  Fall  0.7300 0.0000 0.0180                      1.50228                                                   | 
+|    ADD/i_0_279/ZN                         NAND2_X1  Rise  0.7580 0.0280 0.0160             1.10965  3.21151  4.32117           2       54.6763                | 
+|    ADD/i_0_278/A2                         NAND3_X1  Rise  0.7580 0.0000 0.0160                      1.62122                                                   | 
+|    ADD/i_0_278/ZN                         NAND3_X1  Fall  0.7810 0.0230 0.0130             0.473383 1.6642   2.13758           1       59.7433                | 
+|    ADD/i_0_277/A2                         NAND2_X1  Fall  0.7810 0.0000 0.0130                      1.50228                                                   | 
+|    ADD/i_0_277/ZN                         NAND2_X1  Rise  0.8070 0.0260 0.0160             0.5373   4.02706  4.56436           2       59.7433                | 
+|    ADD/i_0_276/B2                         OAI22_X1  Rise  0.8070 0.0000 0.0160                      1.61561                                                   | 
+|    ADD/i_0_276/ZN                         OAI22_X1  Fall  0.8360 0.0290 0.0160             0.74179  3.37708  4.11887           2       59.7433                | 
+|    ADD/i_0_275/B2                         AOI21_X1  Fall  0.8360 0.0000 0.0160                      1.40993                                                   | 
+|    ADD/i_0_275/ZN                         AOI21_X1  Rise  0.8850 0.0490 0.0360             0.597812 4.12592  4.72374           2       59.7433                | 
+|    ADD/i_0_353/A1                         NOR2_X1   Rise  0.8850 0.0000 0.0360                      1.71447                                                   | 
+|    ADD/i_0_353/ZN                         NOR2_X1   Fall  0.8970 0.0120 0.0100             0.364577 1.65135  2.01592           1       59.7433                | 
+|    ADD/i_0_352/A2                         NOR2_X1   Fall  0.8970 0.0000 0.0100                      1.56385                                                   | 
+|    ADD/i_0_352/ZN                         NOR2_X1   Rise  0.9300 0.0330 0.0200             0.240587 2.41145  2.65204           1       55.8147                | 
+|    ADD/genblk1_40_full_adder_inst/i_carry           Rise  0.9300 0.0000                                                                                       | 
+|    ADD/genblk1_40_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9300 0.0000 0.0200                      2.36355                                                   | 
+|    ADD/genblk1_40_full_adder_inst/i_0_1/Z XOR2_X1   Rise  0.9870 0.0570 0.0300             1.31891  2.11492  3.43383           2       55.8147                | 
+|    ADD/genblk1_40_full_adder_inst/o_sum             Rise  0.9870 0.0000                                                                                       | 
+|    ADD/o_result[40]                                 Rise  0.9870 0.0000                                                                                       | 
+|    r2/write_data[40]                                Rise  0.9870 0.0000                                                                                       | 
+|    r2/my_reg_reg[40]/D                    DFF_X1    Rise  0.9870 0.0000 0.0300                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[40]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[40]/CK            DFF_X1    Rise  2.1670 0.0030 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1670 2.1670 | 
+| library setup check                      | -0.0340 2.1330 | 
+| data required time                       |  2.1330        | 
+|                                          |                | 
+| data required time                       |  2.1330        | 
+| data arrival time                        | -0.9870        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1460        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[47]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[47] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_41/A1                          AND3_X1   Rise  0.7230 0.0030 0.0380    0.0030            0.879747                                                  | 
+|    ADD/i_0_41/ZN                          AND3_X1   Rise  0.7790 0.0560 0.0140             0.788745 2.56515  3.35389           2       55.8147                | 
+|    ADD/i_0_72/B1                          AOI21_X1  Rise  0.7790 0.0000 0.0140                      1.647                                                     | 
+|    ADD/i_0_72/ZN                          AOI21_X1  Fall  0.7990 0.0200 0.0170             0.572488 3.34723  3.91972           2       55.8147                | 
+|    ADD/i_0_73/B1                          AOI21_X1  Fall  0.7990 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_73/ZN                          AOI21_X1  Rise  0.8450 0.0460 0.0370             0.857347 4.0735   4.93085           2       55.8147                | 
+|    ADD/i_0_76/B1                          OAI21_X1  Rise  0.8450 0.0000 0.0370                      1.66205                                                   | 
+|    ADD/i_0_76/ZN                          OAI21_X1  Fall  0.8720 0.0270 0.0170             0.699209 3.34723  4.04644           2       62.3631                | 
+|    ADD/i_0_79/B1                          AOI21_X1  Fall  0.8720 0.0000 0.0170                      1.44682                                                   | 
+|    ADD/i_0_79/ZN                          AOI21_X1  Rise  0.9170 0.0450 0.0360             0.689442 4.0735   4.76295           2       62.3631                | 
+|    ADD/genblk1_47_full_adder_inst/i_carry           Rise  0.9170 0.0000                                                                                       | 
+|    ADD/genblk1_47_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9170 0.0000 0.0360                      2.36355                                                   | 
+|    ADD/genblk1_47_full_adder_inst/i_0_1/Z XOR2_X1   Rise  0.9730 0.0560 0.0260             0.438258 2.11492  2.55318           2       62.3631                | 
+|    ADD/genblk1_47_full_adder_inst/o_sum             Rise  0.9730 0.0000                                                                                       | 
+|    ADD/o_result[47]                                 Rise  0.9730 0.0000                                                                                       | 
+|    r2/write_data[47]                                Rise  0.9730 0.0000                                                                                       | 
+|    r2/my_reg_reg[47]/D                    DFF_X1    Rise  0.9730 0.0000 0.0260                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[47]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[47]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0330 2.1350 | 
+| data required time                       |  2.1350        | 
+|                                          |                | 
+| data required time                       |  2.1350        | 
+| data arrival time                        | -0.9730        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1620        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[58]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[58] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                       Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                              Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A            CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z            CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                     CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                     CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                    | 
+|    sum_reg[1]/CK                          DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                           DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                    Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                         NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                         NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                         NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                         NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                         AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                         AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                         OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                         OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                         AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                         AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                         OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                         OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                         AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                         AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                         NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                         NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                         NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                         NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                         OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                         OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_135/A1                         NAND3_X1  Rise  0.7230 0.0030 0.0380    0.0030            1.59029                                                   | 
+|    ADD/i_0_135/ZN                         NAND3_X1  Fall  0.7580 0.0350 0.0210             1.10838  3.18932  4.29769           2       55.8147                | 
+|    ADD/i_0_325/A1                         NAND3_X1  Fall  0.7580 0.0000 0.0210                      1.56203                                                   | 
+|    ADD/i_0_325/ZN                         NAND3_X1  Rise  0.7880 0.0300 0.0190             0.797151 4.10207  4.89922           3       61.4509                | 
+|    ADD/i_0_324/A                          INV_X1    Rise  0.7880 0.0000 0.0190                      1.70023                                                   | 
+|    ADD/i_0_324/ZN                         INV_X1    Fall  0.7980 0.0100 0.0070             0.646014 1.6163   2.26231           1       61.4509                | 
+|    ADD/i_0_313/A3                         NOR3_X1   Fall  0.7980 0.0000 0.0070                      1.55272                                                   | 
+|    ADD/i_0_313/ZN                         NOR3_X1   Rise  0.8730 0.0750 0.0500             0.719337 4.32668  5.04602           3       67.0759                | 
+|    ADD/i_0_351/A1                         OR2_X1    Rise  0.8730 0.0000 0.0500                      0.946814                                                  | 
+|    ADD/i_0_351/ZN                         OR2_X1    Rise  0.9070 0.0340 0.0100             0.199491 2.41145  2.61094           1       67.0759                | 
+|    ADD/genblk1_58_full_adder_inst/i_carry           Rise  0.9070 0.0000                                                                                       | 
+|    ADD/genblk1_58_full_adder_inst/i_0_1/B XOR2_X1   Rise  0.9070 0.0000 0.0100                      2.36355                                                   | 
+|    ADD/genblk1_58_full_adder_inst/i_0_1/Z XOR2_X1   Rise  0.9600 0.0530 0.0300             1.36841  2.11492  3.48333           2       67.0759                | 
+|    ADD/genblk1_58_full_adder_inst/o_sum             Rise  0.9600 0.0000                                                                                       | 
+|    ADD/o_result[58]                                 Rise  0.9600 0.0000                                                                                       | 
+|    r2/write_data[58]                                Rise  0.9600 0.0000                                                                                       | 
+|    r2/my_reg_reg[58]/D                    DFF_X1    Rise  0.9600 0.0000 0.0300                      1.14029                                     F             | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[58]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[58]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0340 2.1340 | 
+| data required time                       |  2.1340        | 
+|                                          |                | 
+| data required time                       |  2.1340        | 
+| data arrival time                        | -0.9600        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1740        | 
+-------------------------------------------------------------
+
+
+ Timing Path to r2/my_reg_reg[62]/D 
+  
+ Path Start Point : sum_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : r2/my_reg_reg[62] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode') 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                        Cell      Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                               Rise  0.0000 0.0000 0.0000             0.713528 1.42116  2.13469           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A             CLKBUF_X3 Rise  0.0000 0.0000 0.0000                      1.42116                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z             CLKBUF_X3 Rise  0.0480 0.0480 0.0270             9.19503  20.2475  29.4426           6       65.5109  F    K        | 
+|    CTS_L2_c_tid1_77/A                      CLKBUF_X2 Rise  0.0490 0.0010 0.0270                      1.40591                                     F             | 
+|    CTS_L2_c_tid1_77/Z                      CLKBUF_X2 Rise  0.1440 0.0950 0.0680             21.0472  34.1875  55.2347           36      67.0759  F    K        | 
+| Data Path:                                                                                                                                                     | 
+|    sum_reg[1]/CK                           DFF_X1    Rise  0.1470 0.0030 0.0680                      0.949653                                    F             | 
+|    sum_reg[1]/Q                            DFF_X1    Rise  0.2580 0.1110 0.0170             0.894382 4.9573   5.85168           3       59.2746  F             | 
+|    ADD/i_add2[1]                                     Rise  0.2580 0.0000                                                                                       | 
+|    ADD/i_0_418/A1                          NAND2_X1  Rise  0.2580 0.0000 0.0170                      1.59903                                                   | 
+|    ADD/i_0_418/ZN                          NAND2_X1  Fall  0.2740 0.0160 0.0090             0.280046 1.6642   1.94425           1       66.1049                | 
+|    ADD/i_0_417/A2                          NAND2_X1  Fall  0.2740 0.0000 0.0090                      1.50228                                                   | 
+|    ADD/i_0_417/ZN                          NAND2_X1  Rise  0.2940 0.0200 0.0120             0.454805 2.60566  3.06046           2       66.1049                | 
+|    ADD/i_0_415/A1                          AOI22_X1  Rise  0.2940 0.0000 0.0120                      1.68751                                                   | 
+|    ADD/i_0_415/ZN                          AOI22_X1  Fall  0.3140 0.0200 0.0170             0.561898 3.37992  3.94182           2       66.1049                | 
+|    ADD/i_0_413/B1                          OAI22_X1  Fall  0.3140 0.0000 0.0170                      1.40838                                                   | 
+|    ADD/i_0_413/ZN                          OAI22_X1  Rise  0.3620 0.0480 0.0370             0.530031 2.56515  3.09518           2       66.1049                | 
+|    ADD/i_0_267/B1                          AOI21_X1  Rise  0.3620 0.0000 0.0370                      1.647                                                     | 
+|    ADD/i_0_267/ZN                          AOI21_X1  Fall  0.3890 0.0270 0.0170             0.881924 3.28636  4.16829           2       66.1049                | 
+|    ADD/i_0_265/B2                          OAI21_X1  Fall  0.3890 0.0000 0.0170                      1.55833                                                   | 
+|    ADD/i_0_265/ZN                          OAI21_X1  Rise  0.4480 0.0590 0.0410             0.643643 5.86735  6.511             4       64.3973                | 
+|    ADD/i_0_246/C1                          AOI211_X1 Rise  0.4480 0.0000 0.0410                      1.6552                                                    | 
+|    ADD/i_0_246/ZN                          AOI211_X1 Fall  0.4740 0.0260 0.0170             1.37479  1.60595  2.98074           1       64.7991                | 
+|    ADD/i_0_244/A4                          NOR4_X1   Fall  0.4740 0.0000 0.0170                      1.55423                                                   | 
+|    ADD/i_0_244/ZN                          NOR4_X1   Rise  0.6420 0.1680 0.1190             2.91377  6.85635  9.77013           4       60.8147                | 
+|    ADD/i_0_196/A1                          NOR2_X1   Rise  0.6490 0.0070 0.1190    0.0060            1.71447                                                   | 
+|    ADD/i_0_196/ZN                          NOR2_X1   Fall  0.6610 0.0120 0.0250             1.40291  1.55566  2.95856           1       68.4598                | 
+|    ADD/i_0_189/C2                          OAI211_X1 Fall  0.6610 0.0000 0.0250                      1.55566                                                   | 
+|    ADD/i_0_189/ZN                          OAI211_X1 Rise  0.7200 0.0590 0.0380             1.89791  3.43486  5.33276           3       59.7433                | 
+|    ADD/i_0_341/A3                          AND3_X1   Rise  0.7230 0.0030 0.0380    0.0030            0.964824                                                  | 
+|    ADD/i_0_341/ZN                          AND3_X1   Rise  0.7760 0.0530 0.0130             1.1632   1.76357  2.92677           1       55.8147                | 
+|    ADD/i_0_342/A1                          NOR3_X1   Rise  0.7760 0.0000 0.0130                      1.76357                                                   | 
+|    ADD/i_0_342/ZN                          NOR3_X1   Fall  0.7880 0.0120 0.0090             1.30028  1.63225  2.93253           1       61.4509                | 
+|    ADD/i_0_343/C1                          AOI221_X1 Fall  0.7880 0.0000 0.0090                      1.38349                                                   | 
+|    ADD/i_0_343/ZN                          AOI221_X1 Rise  0.8600 0.0720 0.0650             0.816404 4.11168  4.92809           2       60.6845                | 
+|    ADD/i_0_345/A                           INV_X1    Rise  0.8600 0.0000 0.0650                      1.70023                                                   | 
+|    ADD/i_0_345/ZN                          INV_X1    Fall  0.8700 0.0100 0.0140             0.349082 1.647    1.99609           1       63.3185                | 
+|    ADD/i_0_346/B1                          AOI21_X1  Fall  0.8700 0.0000 0.0140                      1.44682                                                   | 
+|    ADD/i_0_346/ZN                          AOI21_X1  Rise  0.9090 0.0390 0.0320             0.595672 3.29926  3.89493           2       63.3185                | 
+|    ADD/genblk1_62_full_adder_inst/i_carry            Rise  0.9090 0.0000                                                                                       | 
+|    ADD/genblk1_62_full_adder_inst/i_0_4/A1 NAND2_X1  Rise  0.9090 0.0000 0.0320                      1.59903                                                   | 
+|    ADD/genblk1_62_full_adder_inst/i_0_4/ZN NAND2_X1  Fall  0.9270 0.0180 0.0120             0.211136 1.6642   1.87533           1       63.3185                | 
+|    ADD/genblk1_62_full_adder_inst/i_0_0/A2 NAND2_X1  Fall  0.9270 0.0000 0.0120                      1.50228                                                   | 
+|    ADD/genblk1_62_full_adder_inst/i_0_0/ZN NAND2_X1  Rise  0.9480 0.0210 0.0120             0.663499 2.11492  2.77842           2       63.3185                | 
+|    ADD/genblk1_62_full_adder_inst/o_sum              Rise  0.9480 0.0000                                                                                       | 
+|    ADD/o_result[62]                                  Rise  0.9480 0.0000                                                                                       | 
+|    r2/write_data[62]                                 Rise  0.9480 0.0000                                                                                       | 
+|    r2/my_reg_reg[62]/D                     DFF_X1    Rise  0.9480 0.0000 0.0120                      1.14029                                     F             | 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to r2/my_reg_reg[62]/CK 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                       Fall  2.0000 2.0000 0.0000 0.713528 1.24879  1.96232           1       65.5109  c    K        | 
+|    CTS_L1_tid1__c1_tid1__c85/A     CLKBUF_X3 Fall  2.0000 0.0000 0.0000          1.24879                                     F             | 
+|    CTS_L1_tid1__c1_tid1__c85/Z     CLKBUF_X3 Fall  2.0490 0.0490 0.0250 9.19503  18.2863  27.4813           6       65.5109  F    K        | 
+|    r2/clk__CTS_1_PP_1                        Fall  2.0490 0.0000                                                                           | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/A  INV_X4    Fall  2.0500 0.0010 0.0250          5.70005                                     F             | 
+|    r2/CTS_L2_tid1__c2_tid1__c11/ZN INV_X4    Rise  2.0640 0.0140 0.0080 0.160724 1.24879  1.40951           1       66.5513  F    K        | 
+|    r2/CTS_L3_c_tid1_4/A            CLKBUF_X3 Rise  2.0640 0.0000 0.0080          1.42116                                     F             | 
+|    r2/CTS_L3_c_tid1_4/Z            CLKBUF_X3 Rise  2.1640 0.1000 0.0770 38.3443  54.8122  93.1565           64      66.5513  F    K        | 
+|    r2/my_reg_reg[62]/CK            DFF_X1    Rise  2.1680 0.0040 0.0770          0.949653                                    F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (fall edge) |  2.0000 2.0000 | 
+| target clock cycle shift                 |  0.0000 2.0000 | 
+| target clock propagated network latency  |  0.1680 2.1680 | 
+| library setup check                      | -0.0300 2.1380 | 
+| data required time                       |  2.1380        | 
+|                                          |                | 
+| data required time                       |  2.1380        | 
+| data arrival time                        | -0.9480        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  1.1900        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 429M, CVMEM - 1814M, PVMEM - 2638M)

@@ -1,0 +1,30 @@
+Report End Points: 
+-----+-------+------+-------+------+------+-----+------+------------------------------+------------------------
+     |Group  |Launch|Capture|Shift |Delay |Depth|Slack |Begin Point                   |End Point               
+-----+-------+------+-------+------+------+-----+------+------------------------------+------------------------
+1    |default|sysclk|sysclk |4000.0|2613.1|   59|1248.4|controller/inputQ_reg_reg[0]/Q|controller/out_reg[61]/D
+2    |default|sysclk|sysclk |4000.0|2612.2|   60|1249.3|controller/inputQ_reg_reg[0]/Q|controller/out_reg[63]/D
+3    |default|sysclk|sysclk |4000.0|2597.8|   60|1263.7|controller/inputQ_reg_reg[0]/Q|controller/out_reg[62]/D
+-----+-------+------+-------+------+------+-----+------+------------------------------+------------------------
+Report End Points: 
+-----+-----+------+-------+------+------+-----+------+-----------+------------------------
+     |Group|Launch|Capture|Shift |Delay |Depth|Slack |Begin Point|End Point               
+-----+-----+------+-------+------+------+-----+------+-----------+------------------------
+1    |I2R  |sysclk|sysclk |4000.0|2596.8|   60|1165.2|input_plus |controller/out_reg[61]/D
+2    |I2R  |sysclk|sysclk |4000.0|2595.9|   61|1166.1|input_plus |controller/out_reg[63]/D
+3    |I2R  |sysclk|sysclk |4000.0|2581.5|   61|1180.5|input_plus |controller/out_reg[62]/D
+-----+-----+------+-------+------+------+-----+------+-----------+------------------------
+Report End Points: 
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+1    |I2O  |      |       |     |     |     |     |           |         
+-----+-----+------+-------+-----+-----+-----+-----+-----------+---------
+Report End Points: 
+-----+-----+------+-------+------+-----+-----+------+------------------+---------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack |Begin Point       |End Point
+-----+-----+------+-------+------+-----+-----+------+------------------+---------
+1    |R2O  |sysclk|sysclk |4000.0|  0.6|    0|3402.8|reg3/out_reg[63]/Q|out[63]  
+2    |R2O  |sysclk|sysclk |4000.0|  0.6|    0|3402.8|reg3/out_reg[62]/Q|out[62]  
+3    |R2O  |sysclk|sysclk |4000.0|  0.6|    0|3402.8|reg3/out_reg[61]/Q|out[61]  
+-----+-----+------+-------+------+-----+-----+------+------------------+---------
